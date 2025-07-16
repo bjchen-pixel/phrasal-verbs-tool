@@ -1,4 +1,43 @@
-<!DOCTYPE html>
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -785,4 +824,388 @@
                     meaning: "Investigate",
                     example: "They're looking into the cause of the issue.",
                     chinese: "他們正在調查問題原因。",
-                    scenario: "
+                    scenario: "問題解決、研究"
+                },
+                "look out": {
+                    meaning: "Be careful",
+                    example: "Look out! There's a car coming!",
+                    chinese: "小心！有車來了！",
+                    scenario: "警告、安全"
+                },
+                "look up": {
+                    meaning: "Search or improve",
+                    example: "I looked up the word in the dictionary.",
+                    chinese: "我在字典裡查了這個詞。",
+                    scenario: "查詢、樂觀"
+                }
+            },
+            "turn": {
+                "turn down": {
+                    meaning: "Reject or reduce",
+                    example: "She turned down the job offer.",
+                    chinese: "她拒絕了工作邀請。",
+                    scenario: "工作機會、音量控制"
+                },
+                "turn into": {
+                    meaning: "Transform",
+                    example: "The caterpillar turned into a butterfly.",
+                    chinese: "毛毛蟲變成了蝴蝶。",
+                    scenario: "轉變"
+                },
+                "turn off": {
+                    meaning: "Switch off or discourage",
+                    example: "Turn off the lights before leaving.",
+                    chinese: "離開前關燈。",
+                    scenario: "電器、情感"
+                },
+                "turn on": {
+                    meaning: "Switch on or excite",
+                    example: "Turn on the TV, please.",
+                    chinese: "請開電視。",
+                    scenario: "電器、熱情"
+                },
+                "turn up": {
+                    meaning: "Arrive or increase",
+                    example: "He turned up late to the party.",
+                    chinese: "他晚到派對。",
+                    scenario: "到達、音量控制"
+                }
+            },
+            "bring": {
+                "bring up": {
+                    meaning: "Raise or mention",
+                    example: "She brought up an interesting point in the meeting.",
+                    chinese: "她在會議中提出了一個有趣的觀點。",
+                    scenario: "討論、養育"
+                },
+                "bring about": {
+                    meaning: "Cause or bring about",
+                    example: "The new policy brought about many changes.",
+                    chinese: "新政策帶來了很多改變。",
+                    scenario: "改變、影響"
+                },
+                "bring along": {
+                    meaning: "Bring someone or something along",
+                    example: "Can I bring a friend along to the party?",
+                    chinese: "我可以帶個朋友去派對嗎？",
+                    scenario: "社交、攜帶"
+                },
+                "bring back": {
+                    meaning: "Return or recall",
+                    example: "This song brings back old memories.",
+                    chinese: "這首歌喚起了舊回憶。",
+                    scenario: "回憶、歸還"
+                },
+                "bring out": {
+                    meaning: "Release or highlight",
+                    example: "They brought out a new product line.",
+                    chinese: "他們推出了一個新產品系列。",
+                    scenario: "產品發布、特點"
+                }
+            },
+            "give": {
+                "give up": {
+                    meaning: "Abandon or stop",
+                    example: "He gave up smoking last year.",
+                    chinese: "他去年戒菸了。",
+                    scenario: "改變習慣"
+                },
+                "give in": {
+                    meaning: "Yield or surrender",
+                    example: "She gave in to her kids' demands.",
+                    chinese: "她向孩子們的要求讓步了。",
+                    scenario: "妥協、爭論"
+                },
+                "give out": {
+                    meaning: "Distribute or run out",
+                    example: "They gave out free samples at the store.",
+                    chinese: "他們在商店分發免費樣品。",
+                    scenario: "分享、資源耗盡"
+                },
+                "give away": {
+                    meaning: "Give for free or reveal",
+                    example: "Don’t give away the surprise!",
+                    chinese: "別洩露驚喜！",
+                    scenario: "禮物、秘密"
+                },
+                "give back": {
+                    meaning: "Return or contribute",
+                    example: "I gave the book back to her.",
+                    chinese: "我把書還給了她。",
+                    scenario: "歸還、慈善"
+                }
+            },
+            "keep": {
+                "keep up": {
+                    meaning: "Maintain or keep pace",
+                    example: "Keep up with the latest trends.",
+                    chinese: "跟上最新趨勢。",
+                    scenario: "進度、學習"
+                },
+                "keep on": {
+                    meaning: "Continue",
+                    example: "She kept on working despite being tired.",
+                    chinese: "她雖然累了但繼續工作。",
+                    scenario: "堅持、行動"
+                },
+                "keep out": {
+                    meaning: "Prevent from entering",
+                    example: "The sign says 'Keep Out'.",
+                    chinese: "標誌上寫著「禁止進入」。",
+                    scenario: "安全、限制"
+                },
+                "keep off": {
+                    meaning: "Stay away",
+                    example: "Keep off the grass, please.",
+                    chinese: "請勿踐踏草坪。",
+                    scenario: "規則、保護"
+                },
+                "keep in": {
+                    meaning: "Stay inside or control",
+                    example: "Try to keep your anger in.",
+                    chinese: "試著控制你的憤怒。",
+                    scenario: "情緒管理、限制"
+                }
+            }
+        };
+
+        // 創建完整題庫
+        let questions = [];
+        Object.keys(phrasalVerbs).forEach(verb => {
+            Object.keys(phrasalVerbs[verb]).forEach(phrasal => {
+                const data = phrasalVerbs[verb][phrasal];
+                questions.push({
+                    question: `What does "${phrasal}" mean?`,
+                    example: data.example,
+                    answer: data.meaning,
+                    phrasal: phrasal
+                });
+            });
+        });
+
+        // 全局變量
+        let currentVerb = 'take';
+        let currentQuestion = 0;
+        let correctCount = 0;
+        let totalCount = 0;
+        let isQuizActive = false;
+
+        // DOM 元素
+        const quizContent = document.getElementById('quiz-content');
+        const quizOptions = document.getElementById('quizOptions');
+        const startButton = document.getElementById('start-quiz');
+        const nextButton = document.getElementById('next-question');
+        const resetButton = document.getElementById('reset-stats');
+        const correctAnswers = document.getElementById('correct-answers');
+        const totalQuestions = document.getElementById('total-questions');
+        const accuracy = document.getElementById('accuracy');
+
+        // 初始化
+        function init() {
+            createVerbButtons();
+            displayPhrasalVerbs(currentVerb);
+            
+            // 綁定事件監聽器
+            startButton.addEventListener('click', startQuiz);
+            nextButton.addEventListener('click', nextQuestion);
+            resetButton.addEventListener('click', resetStats);
+        }
+
+        // 創建動詞按鈕
+        function createVerbButtons() {
+            const verbSelector = document.getElementById('verbSelector');
+            const verbs = Object.keys(phrasalVerbs);
+            
+            verbs.forEach(verb => {
+                const button = document.createElement('button');
+                button.className = 'verb-btn';
+                button.textContent = verb;
+                button.addEventListener('click', () => selectVerb(verb));
+                if (verb === currentVerb) {
+                    button.classList.add('active');
+                }
+                verbSelector.appendChild(button);
+            });
+        }
+
+        // 選擇動詞
+        function selectVerb(verb) {
+            currentVerb = verb;
+            
+            // 更新按鈕狀態
+            document.querySelectorAll('.verb-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent === verb) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            displayPhrasalVerbs(verb);
+        }
+
+        // 顯示片語動詞
+        function displayPhrasalVerbs(verb) {
+            const container = document.getElementById('phrasalVerbs');
+            container.innerHTML = '';
+            
+            const verbData = phrasalVerbs[verb];
+            Object.entries(verbData).forEach(([phrasal, data]) => {
+                const card = document.createElement('div');
+                card.className = 'phrasal-card';
+                card.innerHTML = `
+                    <div class="phrasal-title">${phrasal}</div>
+                    <div class="phrasal-meaning">${data.meaning}</div>
+                    <div class="phrasal-example">
+                        <div class="english-example">${data.example}</div>
+                        <div class="chinese-example">${data.chinese}</div>
+                    </div>
+                    <div class="scenario">${data.scenario}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // 開始測驗
+        function startQuiz() {
+            isQuizActive = true;
+            currentQuestion = 0;
+            shuffleArray(questions);
+            showQuestion();
+            startButton.disabled = true;
+            nextButton.disabled = true;
+        }
+
+        // 顯示問題
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                endQuiz();
+                return;
+            }
+
+            const question = questions[currentQuestion];
+            
+            // 生成錯誤選項
+            const wrongAnswers = [];
+            const allMeanings = [];
+            Object.keys(phrasalVerbs).forEach(verb => {
+                Object.keys(phrasalVerbs[verb]).forEach(phrasal => {
+                    const meaning = phrasalVerbs[verb][phrasal].meaning;
+                    if (meaning !== question.answer) {
+                        allMeanings.push(meaning);
+                    }
+                });
+            });
+            
+            shuffleArray(allMeanings);
+            wrongAnswers.push(...allMeanings.slice(0, 3));
+
+            // 混合選項
+            const allOptions = [question.answer, ...wrongAnswers];
+            shuffleArray(allOptions);
+
+            // 更新UI
+            quizContent.innerHTML = `
+                <strong>${question.question}</strong><br>
+                <em style="color: #64748b; font-size: 0.9rem;">例句：${question.example}</em>
+            `;
+
+            quizOptions.innerHTML = '';
+            allOptions.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'quiz-option';
+                button.textContent = option;
+                button.addEventListener('click', () => checkAnswer(option, button, question.answer));
+                quizOptions.appendChild(button);
+            });
+        }
+
+        // 檢查答案
+        function checkAnswer(selectedAnswer, buttonElement, correctAnswer) {
+            totalCount++;
+            
+            if (selectedAnswer === correctAnswer) {
+                correctCount++;
+                buttonElement.classList.add('correct');
+            } else {
+                buttonElement.classList.add('incorrect');
+                // 標示正確答案
+                document.querySelectorAll('.quiz-option').forEach(btn => {
+                    if (btn.textContent === correctAnswer) {
+                        btn.classList.add('correct');
+                    }
+                });
+            }
+
+            // 禁用所有按鈕
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.disabled = true;
+            });
+
+            updateStats();
+            currentQuestion++;
+            
+            if (currentQuestion < questions.length) {
+                nextButton.disabled = false;
+            } else {
+                setTimeout(endQuiz, 2000);
+            }
+        }
+
+        // 下一題
+        function nextQuestion() {
+            if (isQuizActive && currentQuestion < questions.length) {
+                showQuestion();
+                nextButton.disabled = true;
+            }
+        }
+
+        // 結束測驗
+        function endQuiz() {
+            isQuizActive = false;
+            quizContent.innerHTML = `
+                <div style="text-align: center;">
+                    <h3 style="color: #4f46e5; margin-bottom: 10px;">🎉 測驗完成！</h3>
+                    <p>您答對了 ${correctCount} 題，共 ${totalCount} 題</p>
+                    <p>正確率：${totalCount > 0 ? ((correctCount / totalCount) * 100).toFixed(1) : 0}%</p>
+                </div>
+            `;
+            quizOptions.innerHTML = '';
+            startButton.disabled = false;
+            nextButton.disabled = true;
+        }
+
+        // 更新統計
+        function updateStats() {
+            correctAnswers.textContent = correctCount;
+            totalQuestions.textContent = totalCount;
+            const acc = totalCount > 0 ? ((correctCount / totalCount) * 100).toFixed(1) : 0;
+            accuracy.textContent = acc + '%';
+        }
+
+        // 重置統計
+        function resetStats() {
+            correctCount = 0;
+            totalCount = 0;
+            currentQuestion = 0;
+            isQuizActive = false;
+            updateStats();
+            
+            quizContent.innerHTML = '點擊「開始測驗」開始練習！';
+            quizOptions.innerHTML = '';
+            startButton.disabled = false;
+            nextButton.disabled = true;
+        }
+
+        // 洗牌函數
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // 頁面載入完成後初始化
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
