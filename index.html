@@ -1,0 +1,1211 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英語片語動詞互動學習工具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .verb-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .verb-btn {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4f46e5;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .verb-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .verb-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+        }
+        
+        .phrasal-verbs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .phrasal-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .phrasal-card:hover {
+            border-color: #4f46e5;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+        
+        .phrasal-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4f46e5;
+            margin-bottom: 8px;
+        }
+        
+        .phrasal-meaning {
+            font-size: 1rem;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+        
+        .phrasal-example {
+            background: #e0e7ff;
+            border-left: 4px solid #4f46e5;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .english-example {
+            font-style: italic;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+        
+        .chinese-example {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .scenario {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .quiz-section {
+            background: #f1f5f9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .quiz-title {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .quiz-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .quiz-question {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .quiz-option {
+            padding: 12px 16px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .quiz-option:hover:not(:disabled) {
+            background: #cbd5e1;
+        }
+        
+        .quiz-option.correct {
+            background: #dcfce7;
+            color: #166534;
+            border: 2px solid #22c55e;
+        }
+        
+        .quiz-option.incorrect {
+            background: #fecaca;
+            color: #991b1b;
+            border: 2px solid #ef4444;
+        }
+        
+        .quiz-option:disabled {
+            cursor: not-allowed;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #475569;
+        }
+        
+        .btn-secondary:hover:not(:disabled) {
+            background: #cbd5e1;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .verb-selector {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+            
+            .phrasal-verbs {
+                grid-template-columns: 1fr;
+            }
+            
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 英語片語動詞學習工具</h1>
+            <p>掌握最常用的萬用動詞片語，提升英語表達能力</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="verb-selector" id="verbSelector">
+                <!-- 動詞按鈕將由JavaScript生成 -->
+            </div>
+            
+            <div class="phrasal-verbs" id="phrasalVerbs">
+                <!-- 片語卡片將由JavaScript生成 -->
+            </div>
+            
+            <div class="quiz-section">
+                <h2 class="quiz-title">🎯 片語練習測驗</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="correct-answers">0</div>
+                        <div class="stat-label">答對題數</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-questions">0</div>
+                        <div class="stat-label">總題數</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="accuracy">0%</div>
+                        <div class="stat-label">正確率</div>
+                    </div>
+                </div>
+                
+                <div class="quiz-card" id="quizCard">
+                    <div class="quiz-question" id="quiz-content">點擊「開始測驗」開始練習！</div>
+                    <div class="quiz-options" id="quizOptions">
+                        <!-- 選項將由JavaScript生成 -->
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn btn-primary" id="start-quiz">開始測驗</button>
+                    <button class="btn btn-secondary" id="next-question" disabled>下一題</button>
+                    <button class="btn btn-secondary" id="reset-stats">重置統計</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 片語動詞數據
+        const phrasalVerbs = {
+            "take": {
+                "take after": {
+                    meaning: "Resemble someone",
+                    example: "She takes after her father's sense of humor.",
+                    chinese: "她繼承了父親的幽默感。",
+                    scenario: "描述家族相似性"
+                },
+                "take away": {
+                    meaning: "Take something away or takeout (food)",
+                    example: "Can you take away the trash?",
+                    chinese: "你能把垃圾拿走嗎？",
+                    scenario: "清理、點餐"
+                },
+                "take back": {
+                    meaning: "Return something or retract",
+                    example: "I take back what I said.",
+                    chinese: "我收回我說的話。",
+                    scenario: "道歉、退貨"
+                },
+                "take down": {
+                    meaning: "Write down or remove",
+                    example: "Take down the meeting notes.",
+                    chinese: "記下會議筆記。",
+                    scenario: "筆記、移除裝飾"
+                },
+                "take in": {
+                    meaning: "Understand, shelter, or alter (clothes)",
+                    example: "It's hard to take in all the details.",
+                    chinese: "很難吸收所有細節。",
+                    scenario: "學習、收養、改衣"
+                },
+                "take off": {
+                    meaning: "Remove clothing, take flight, or succeed",
+                    example: "Take off your jacket.",
+                    chinese: "脫下你的外套。",
+                    scenario: "穿脫、旅行、成功"
+                },
+                "take on": {
+                    meaning: "Undertake, challenge, or hire",
+                    example: "Don't take on too much work.",
+                    chinese: "別承擔太多工作。",
+                    scenario: "工作、挑戰、招聘"
+                },
+                "take out": {
+                    meaning: "Take something out or takeout",
+                    example: "He took out his phone to check.",
+                    chinese: "他拿出手機查看。",
+                    scenario: "付錢、約會、點餐"
+                },
+                "take over": {
+                    meaning: "Take control",
+                    example: "She took over the project.",
+                    chinese: "她接管了這個項目。",
+                    scenario: "業務交接"
+                },
+                "take up": {
+                    meaning: "Start a hobby or occupy space",
+                    example: "I took up yoga last month.",
+                    chinese: "我上個月開始練瑜伽。",
+                    scenario: "興趣、空間安排"
+                }
+            },
+            "get": {
+                "get along": {
+                    meaning: "Get on well with someone",
+                    example: "I get along well with my neighbors.",
+                    chinese: "我和鄰居相處得很融洽。",
+                    scenario: "人際關係"
+                },
+                "get around": {
+                    meaning: "Move around or spread",
+                    example: "She gets around by subway.",
+                    chinese: "她搭地鐵四處走動。",
+                    scenario: "交通、消息傳播"
+                },
+                "get away": {
+                    meaning: "Escape or take a break",
+                    example: "We got away for a weekend trip.",
+                    chinese: "我們去度了個週末假。",
+                    scenario: "旅行、放鬆"
+                },
+                "get back": {
+                    meaning: "Return or retrieve",
+                    example: "I'll get back to you later.",
+                    chinese: "我稍後回覆你。",
+                    scenario: "回覆、取物"
+                },
+                "get by": {
+                    meaning: "Manage with limited resources",
+                    example: "I can get by with my limited French.",
+                    chinese: "我的法語有限，但能應付。",
+                    scenario: "語言、經濟"
+                },
+                "get in": {
+                    meaning: "Enter or arrive",
+                    example: "Get in the car, we're late!",
+                    chinese: "快上車，我們遲到了！",
+                    scenario: "交通、進入"
+                },
+                "get off": {
+                    meaning: "Leave or escape punishment",
+                    example: "I get off at 5 p.m.",
+                    chinese: "我下午5點下班。",
+                    scenario: "下班、法律"
+                },
+                "get on": {
+                    meaning: "Board or make progress",
+                    example: "Get on the bus quickly.",
+                    chinese: "快上公車。",
+                    scenario: "交通、工作進度"
+                },
+                "get out": {
+                    meaning: "Leave or leak",
+                    example: "Let's get out and have fun.",
+                    chinese: "我們出去玩吧。",
+                    scenario: "外出、秘密"
+                },
+                "get over": {
+                    meaning: "Recover from",
+                    example: "She got over her fear of public speaking.",
+                    chinese: "她克服了公開演講的恐懼。",
+                    scenario: "情感、挑戰"
+                },
+                "get through": {
+                    meaning: "Complete or contact",
+                    example: "I got through the exam.",
+                    chinese: "我通過了考試。",
+                    scenario: "考試、聯繫"
+                },
+                "get up": {
+                    meaning: "Wake up or stand",
+                    example: "I get up at 6 a.m. daily.",
+                    chinese: "我每天早上6點起床。",
+                    scenario: "日常、行動"
+                }
+            },
+            "make": {
+                "make for": {
+                    meaning: "Lead to or move toward",
+                    example: "Good teamwork makes for success.",
+                    chinese: "良好的團隊合作帶來成功。",
+                    scenario: "結果、移動"
+                },
+                "make it": {
+                    meaning: "Succeed or arrive on time",
+                    example: "She made it to the top of the company.",
+                    chinese: "她成功登上公司高層。",
+                    scenario: "成功、趕時間"
+                },
+                "make out": {
+                    meaning: "Discern or kiss",
+                    example: "I can't make out the handwriting.",
+                    chinese: "我看不清這字跡。",
+                    scenario: "閱讀、親密行為"
+                },
+                "make up": {
+                    meaning: "Invent or reconcile",
+                    example: "He made up a funny story.",
+                    chinese: "他編了個有趣的故事。",
+                    scenario: "說謊、關係修復"
+                },
+                "make over": {
+                    meaning: "Transform",
+                    example: "They made over their old apartment.",
+                    chinese: "他們翻新了舊公寓。",
+                    scenario: "裝修、外觀改變"
+                }
+            },
+            "break": {
+                "break down": {
+                    meaning: "Stop working or collapse",
+                    example: "The car broke down on the highway.",
+                    chinese: "車在高速公路上拋錨了。",
+                    scenario: "機械故障、情緒"
+                },
+                "break in": {
+                    meaning: "Enter forcibly or adapt",
+                    example: "Someone broke in last night.",
+                    chinese: "昨晚有人闖入。",
+                    scenario: "安全、新品"
+                },
+                "break off": {
+                    meaning: "End or interrupt",
+                    example: "They broke off their engagement.",
+                    chinese: "他們解除了婚約。",
+                    scenario: "關係、談判"
+                },
+                "break out": {
+                    meaning: "Start suddenly or escape",
+                    example: "A fire broke out in the building.",
+                    chinese: "大樓裡發生火災。",
+                    scenario: "災害、逃跑"
+                },
+                "break up": {
+                    meaning: "End a relationship or disperse",
+                    example: "They broke up after two years.",
+                    chinese: "他們交往兩年後分手了。",
+                    scenario: "感情、會議"
+                }
+            },
+            "run": {
+                "run into": {
+                    meaning: "Meet by chance or encounter (problem)",
+                    example: "I ran into an old friend yesterday.",
+                    chinese: "昨天我偶遇了一個老朋友。",
+                    scenario: "社交、困難"
+                },
+                "run out": {
+                    meaning: "Use up",
+                    example: "We ran out of milk.",
+                    chinese: "我們的牛奶用完了。",
+                    scenario: "資源短缺"
+                },
+                "run over": {
+                    meaning: "Hit or review quickly",
+                    example: "A car ran over my bike.",
+                    chinese: "一輛車輾過了我的腳踏車。",
+                    scenario: "事故、檢查"
+                },
+                "run through": {
+                    meaning: "Review or use up",
+                    example: "I ran through the document quickly.",
+                    chinese: "我快速瀏覽了文件。",
+                    scenario: "檢查、財務"
+                },
+                "run up": {
+                    meaning: "Accumulate (expenses)",
+                    example: "He ran up a huge bill at the bar.",
+                    chinese: "他在酒吧累積了高額帳單。",
+                    scenario: "消費、債務"
+                }
+            },
+            "do": {
+                "do away with": {
+                    meaning: "Eliminate",
+                    example: "They did away with outdated policies.",
+                    chinese: "他們廢除了過時的政策。",
+                    scenario: "制度改變"
+                },
+                "do over": {
+                    meaning: "Redo",
+                    example: "I need to do this essay over.",
+                    chinese: "我得重寫這篇作文。",
+                    scenario: "工作重做"
+                },
+                "do up": {
+                    meaning: "Renovate or fasten",
+                    example: "We're doing up the living room.",
+                    chinese: "我們在裝修客廳。",
+                    scenario: "裝修、整理衣物"
+                },
+                "do with": {
+                    meaning: "Need or relate to",
+                    example: "I could do with a coffee.",
+                    chinese: "我需要杯咖啡。",
+                    scenario: "需求、解釋"
+                },
+                "do without": {
+                    meaning: "Manage without",
+                    example: "I can do without dessert tonight.",
+                    chinese: "今晚沒甜點我也行。",
+                    scenario: "缺少應對"
+                }
+            },
+            "have": {
+                "have on": {
+                    meaning: "Wear or have plans",
+                    example: "She has on a blue scarf.",
+                    chinese: "她戴著藍色圍巾。",
+                    scenario: "穿著、行程"
+                },
+                "have over": {
+                    meaning: "Invite to home",
+                    example: "We had friends over for lunch.",
+                    chinese: "我們邀請朋友來家裡吃午餐。",
+                    scenario: "社交聚會"
+                },
+                "have to": {
+                    meaning: "Must do something",
+                    example: "I have to finish this by tonight.",
+                    chinese: "我今晚必須完成這個。",
+                    scenario: "責任、義務"
+                },
+                "have out": {
+                    meaning: "Discuss thoroughly",
+                    example: "Let's have it out and solve this issue.",
+                    chinese: "我們徹底談談，解決這問題。",
+                    scenario: "爭端解決"
+                },
+                "have up": {
+                    meaning: "Summon or discuss",
+                    example: "He was had up for parking illegally.",
+                    chinese: "他因違規停車被傳喚。",
+                    scenario: "法律、討論"
+                }
+            },
+            "put": {
+                "put across": {
+                    meaning: "Express clearly",
+                    example: "She put her point across clearly.",
+                    chinese: "她清楚表達了自己的觀點。",
+                    scenario: "演講、溝通"
+                },
+                "put in": {
+                    meaning: "Invest effort or install",
+                    example: "I put in three hours on this task.",
+                    chinese: "我在這任務上投入了三小時。",
+                    scenario: "努力、裝修"
+                },
+                "put off": {
+                    meaning: "Postpone or discourage",
+                    example: "The meeting was put off until next week.",
+                    chinese: "會議推遲到下週。",
+                    scenario: "改期、反感"
+                },
+                "put out": {
+                    meaning: "Extinguish or publish",
+                    example: "Put out the cigarette.",
+                    chinese: "熄掉香菸。",
+                    scenario: "消防、出版、不滿"
+                },
+                "put up": {
+                    meaning: "Erect or accommodate",
+                    example: "They put up a tent.",
+                    chinese: "他們搭了帳篷。",
+                    scenario: "露營、留宿、告示"
+                }
+            },
+            "go": {
+                "go for": {
+                    meaning: "Choose or pursue",
+                    example: "I'll go for the pasta.",
+                    chinese: "我選義大利麵。",
+                    scenario: "點餐、努力"
+                },
+                "go off": {
+                    meaning: "Explode or spoil",
+                    example: "The milk went off.",
+                    chinese: "牛奶壞了。",
+                    scenario: "食物、警報"
+                },
+                "go on": {
+                    meaning: "Continue or happen",
+                    example: "Go on, tell me more!",
+                    chinese: "繼續說，我想聽更多！",
+                    scenario: "鼓勵、詢問"
+                },
+                "go over": {
+                    meaning: "Review or visit",
+                    example: "Let's go over the plan again.",
+                    chinese: "我們再審查一次計劃。",
+                    scenario: "檢查、探訪"
+                },
+                "go through": {
+                    meaning: "Experience or examine",
+                    example: "She went through a hard time.",
+                    chinese: "她經歷了艱難時期。",
+                    scenario: "情感、整理"
+                }
+            },
+            "come": {
+                "come across": {
+                    meaning: "Find by chance",
+                    example: "I came across an old photo.",
+                    chinese: "我無意中找到一張舊照片。",
+                    scenario: "發現、第一印象"
+                },
+                "come back": {
+                    meaning: "Return or become popular",
+                    example: "I'll come back later.",
+                    chinese: "我稍後回來。",
+                    scenario: "返回、時尚"
+                },
+                "come by": {
+                    meaning: "Obtain or visit",
+                    example: "Jobs are hard to come by.",
+                    chinese: "工作難找。",
+                    scenario: "資源、探訪"
+                },
+                "come up": {
+                    meaning: "Arise or be mentioned",
+                    example: "Something came up, so I'm late.",
+                    chinese: "臨時有事，所以我遲到了。",
+                    scenario: "突發事件、討論"
+                },
+                "come up with": {
+                    meaning: "Propose",
+                    example: "She came up with a great plan.",
+                    chinese: "她提出了很棒的計劃。",
+                    scenario: "創意、建議"
+                }
+            },
+            "set": {
+                "set about": {
+                    meaning: "Start doing",
+                    example: "She set about cleaning the house.",
+                    chinese: "她開始打掃房子。",
+                    scenario: "開工、行動"
+                },
+                "set aside": {
+                    meaning: "Reserve",
+                    example: "Set aside some time for studying.",
+                    chinese: "留點時間學習。",
+                    scenario: "時間管理"
+                },
+                "set off": {
+                    meaning: "Start a journey or trigger",
+                    example: "We set off for the beach at dawn.",
+                    chinese: "我們黎明時出發去海邊。",
+                    scenario: "旅行、事件"
+                },
+                "set out": {
+                    meaning: "Begin or explain",
+                    example: "They set out to build a new app.",
+                    chinese: "他們開始開發新應用程式。",
+                    scenario: "創業、表達"
+                },
+                "set up": {
+                    meaning: "Establish or arrange",
+                    example: "They set up a new company.",
+                    chinese: "他們成立了一家新公司。",
+                    scenario: "創業、計劃"
+                }
+            },
+            "look": {
+                "look after": {
+                    meaning: "Take care of",
+                    example: "She looks after her younger brother on weekends.",
+                    chinese: "她週末照顧弟弟。",
+                    scenario: "育兒、寵物照顧"
+                },
+                "look for": {
+                    meaning: "Search for",
+                    example: "I'm looking for my keys everywhere.",
+                    chinese: "我到處找我的鑰匙。",
+                    scenario: "尋找物品"
+                },
+                "look into": {
+                    meaning: "Investigate",
+                    example: "They're looking into the cause of the issue.",
+                    chinese: "他們正在調查問題原因。",
+                    scenario: "問題解決、研究"
+                },
+                "look out": {
+                    meaning: "Be careful",
+                    example: "Look out! There's a car coming!",
+                    chinese: "小心！有車來了！",
+                    scenario: "警告、安全"
+                },
+                "look up": {
+                    meaning: "Search or improve",
+                    example: "I looked up the word in the dictionary.",
+                    chinese: "我在字典裡查了這個詞。",
+                    scenario: "查詢、樂觀"
+                }
+            },
+            "turn": {
+                "turn down": {
+                    meaning: "Reject or reduce",
+                    example: "She turned down the job offer.",
+                    chinese: "她拒絕了工作邀請。",
+                    scenario: "工作機會、音量控制"
+                },
+                "turn into": {
+                    meaning: "Transform",
+                    example: "The caterpillar turned into a butterfly.",
+                    chinese: "毛毛蟲變成了蝴蝶。",
+                    scenario: "轉變"
+                },
+                "turn off": {
+                    meaning: "Switch off or discourage",
+                    example: "Turn off the lights before leaving.",
+                    chinese: "離開前關燈。",
+                    scenario: "電器、情感"
+                },
+                "turn on": {
+                    meaning: "Switch on or excite",
+                    example: "Turn on the TV, please.",
+                    chinese: "請開電視。",
+                    scenario: "電器、熱情"
+                },
+                "turn up": {
+                    meaning: "Arrive or increase",
+                    example: "He turned up late to the party.",
+                    chinese: "他晚到派對。",
+                    scenario: "到達、音量控制"
+                }
+            },
+            "bring": {
+                "bring up": {
+                    meaning: "Raise or mention",
+                    example: "She brought up an interesting point in the meeting.",
+                    chinese: "她在會議中提出了一個有趣的觀點。",
+                    scenario: "討論、養育"
+                },
+                "bring about": {
+                    meaning: "Cause or bring about",
+                    example: "The new policy brought about many changes.",
+                    chinese: "新政策帶來了很多改變。",
+                    scenario: "改變、影響"
+                },
+                "bring along": {
+                    meaning: "Bring someone or something along",
+                    example: "Can I bring a friend along to the party?",
+                    chinese: "我可以帶個朋友去派對嗎？",
+                    scenario: "社交、攜帶"
+                },
+                "bring back": {
+                    meaning: "Return or recall",
+                    example: "This song brings back old memories.",
+                    chinese: "這首歌喚起了舊回憶。",
+                    scenario: "回憶、歸還"
+                },
+                "bring out": {
+                    meaning: "Release or highlight",
+                    example: "They brought out a new product line.",
+                    chinese: "他們推出了一個新產品系列。",
+                    scenario: "產品發布、特點"
+                }
+            },
+            "give": {
+                "give up": {
+                    meaning: "Abandon or stop",
+                    example: "He gave up smoking last year.",
+                    chinese: "他去年戒菸了。",
+                    scenario: "改變習慣"
+                },
+                "give in": {
+                    meaning: "Yield or surrender",
+                    example: "She gave in to her kids' demands.",
+                    chinese: "她向孩子們的要求讓步了。",
+                    scenario: "妥協、爭論"
+                },
+                "give out": {
+                    meaning: "Distribute or run out",
+                    example: "They gave out free samples at the store.",
+                    chinese: "他們在商店分發免費樣品。",
+                    scenario: "分享、資源耗盡"
+                },
+                "give away": {
+                    meaning: "Give for free or reveal",
+                    example: "Don’t give away the surprise!",
+                    chinese: "別洩露驚喜！",
+                    scenario: "禮物、秘密"
+                },
+                "give back": {
+                    meaning: "Return or contribute",
+                    example: "I gave the book back to her.",
+                    chinese: "我把書還給了她。",
+                    scenario: "歸還、慈善"
+                }
+            },
+            "keep": {
+                "keep up": {
+                    meaning: "Maintain or keep pace",
+                    example: "Keep up with the latest trends.",
+                    chinese: "跟上最新趨勢。",
+                    scenario: "進度、學習"
+                },
+                "keep on": {
+                    meaning: "Continue",
+                    example: "She kept on working despite being tired.",
+                    chinese: "她雖然累了但繼續工作。",
+                    scenario: "堅持、行動"
+                },
+                "keep out": {
+                    meaning: "Prevent from entering",
+                    example: "The sign says 'Keep Out'.",
+                    chinese: "標誌上寫著「禁止進入」。",
+                    scenario: "安全、限制"
+                },
+                "keep off": {
+                    meaning: "Stay away",
+                    example: "Keep off the grass, please.",
+                    chinese: "請勿踐踏草坪。",
+                    scenario: "規則、保護"
+                },
+                "keep in": {
+                    meaning: "Stay inside or control",
+                    example: "Try to keep your anger in.",
+                    chinese: "試著控制你的憤怒。",
+                    scenario: "情緒管理、限制"
+                }
+            }
+        };
+
+        // 創建完整題庫
+        let questions = [];
+        Object.keys(phrasalVerbs).forEach(verb => {
+            Object.keys(phrasalVerbs[verb]).forEach(phrasal => {
+                const data = phrasalVerbs[verb][phrasal];
+                questions.push({
+                    question: `What does "${phrasal}" mean?`,
+                    example: data.example,
+                    answer: data.meaning,
+                    phrasal: phrasal
+                });
+            });
+        });
+
+        // 全局變量
+        let currentVerb = 'take';
+        let currentQuestion = 0;
+        let correctCount = 0;
+        let totalCount = 0;
+        let isQuizActive = false;
+
+        // DOM 元素
+        const quizContent = document.getElementById('quiz-content');
+        const quizOptions = document.getElementById('quizOptions');
+        const startButton = document.getElementById('start-quiz');
+        const nextButton = document.getElementById('next-question');
+        const resetButton = document.getElementById('reset-stats');
+        const correctAnswers = document.getElementById('correct-answers');
+        const totalQuestions = document.getElementById('total-questions');
+        const accuracy = document.getElementById('accuracy');
+
+        // 初始化
+        function init() {
+            createVerbButtons();
+            displayPhrasalVerbs(currentVerb);
+            
+            // 綁定事件監聽器
+            startButton.addEventListener('click', startQuiz);
+            nextButton.addEventListener('click', nextQuestion);
+            resetButton.addEventListener('click', resetStats);
+        }
+
+        // 創建動詞按鈕
+        function createVerbButtons() {
+            const verbSelector = document.getElementById('verbSelector');
+            const verbs = Object.keys(phrasalVerbs);
+            
+            verbs.forEach(verb => {
+                const button = document.createElement('button');
+                button.className = 'verb-btn';
+                button.textContent = verb;
+                button.addEventListener('click', () => selectVerb(verb));
+                if (verb === currentVerb) {
+                    button.classList.add('active');
+                }
+                verbSelector.appendChild(button);
+            });
+        }
+
+        // 選擇動詞
+        function selectVerb(verb) {
+            currentVerb = verb;
+            
+            // 更新按鈕狀態
+            document.querySelectorAll('.verb-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent === verb) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            displayPhrasalVerbs(verb);
+        }
+
+        // 顯示片語動詞
+        function displayPhrasalVerbs(verb) {
+            const container = document.getElementById('phrasalVerbs');
+            container.innerHTML = '';
+            
+            const verbData = phrasalVerbs[verb];
+            Object.entries(verbData).forEach(([phrasal, data]) => {
+                const card = document.createElement('div');
+                card.className = 'phrasal-card';
+                card.innerHTML = `
+                    <div class="phrasal-title">${phrasal}</div>
+                    <div class="phrasal-meaning">${data.meaning}</div>
+                    <div class="phrasal-example">
+                        <div class="english-example">${data.example}</div>
+                        <div class="chinese-example">${data.chinese}</div>
+                    </div>
+                    <div class="scenario">${data.scenario}</div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // 開始測驗
+        function startQuiz() {
+            isQuizActive = true;
+            currentQuestion = 0;
+            shuffleArray(questions);
+            showQuestion();
+            startButton.disabled = true;
+            nextButton.disabled = true;
+        }
+
+        // 顯示問題
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                endQuiz();
+                return;
+            }
+
+            const question = questions[currentQuestion];
+            
+            // 生成錯誤選項
+            const wrongAnswers = [];
+            const allMeanings = [];
+            Object.keys(phrasalVerbs).forEach(verb => {
+                Object.keys(phrasalVerbs[verb]).forEach(phrasal => {
+                    const meaning = phrasalVerbs[verb][phrasal].meaning;
+                    if (meaning !== question.answer) {
+                        allMeanings.push(meaning);
+                    }
+                });
+            });
+            
+            shuffleArray(allMeanings);
+            wrongAnswers.push(...allMeanings.slice(0, 3));
+
+            // 混合選項
+            const allOptions = [question.answer, ...wrongAnswers];
+            shuffleArray(allOptions);
+
+            // 更新UI
+            quizContent.innerHTML = `
+                <strong>${question.question}</strong><br>
+                <em style="color: #64748b; font-size: 0.9rem;">例句：${question.example}</em>
+            `;
+
+            quizOptions.innerHTML = '';
+            allOptions.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'quiz-option';
+                button.textContent = option;
+                button.addEventListener('click', () => checkAnswer(option, button, question.answer));
+                quizOptions.appendChild(button);
+            });
+        }
+
+        // 檢查答案
+        function checkAnswer(selectedAnswer, buttonElement, correctAnswer) {
+            totalCount++;
+            
+            if (selectedAnswer === correctAnswer) {
+                correctCount++;
+                buttonElement.classList.add('correct');
+            } else {
+                buttonElement.classList.add('incorrect');
+                // 標示正確答案
+                document.querySelectorAll('.quiz-option').forEach(btn => {
+                    if (btn.textContent === correctAnswer) {
+                        btn.classList.add('correct');
+                    }
+                });
+            }
+
+            // 禁用所有按鈕
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.disabled = true;
+            });
+
+            updateStats();
+            currentQuestion++;
+            
+            if (currentQuestion < questions.length) {
+                nextButton.disabled = false;
+            } else {
+                setTimeout(endQuiz, 2000);
+            }
+        }
+
+        // 下一題
+        function nextQuestion() {
+            if (isQuizActive && currentQuestion < questions.length) {
+                showQuestion();
+                nextButton.disabled = true;
+            }
+        }
+
+        // 結束測驗
+        function endQuiz() {
+            isQuizActive = false;
+            quizContent.innerHTML = `
+                <div style="text-align: center;">
+                    <h3 style="color: #4f46e5; margin-bottom: 10px;">🎉 測驗完成！</h3>
+                    <p>您答對了 ${correctCount} 題，共 ${totalCount} 題</p>
+                    <p>正確率：${totalCount > 0 ? ((correctCount / totalCount) * 100).toFixed(1) : 0}%</p>
+                </div>
+            `;
+            quizOptions.innerHTML = '';
+            startButton.disabled = false;
+            nextButton.disabled = true;
+        }
+
+        // 更新統計
+        function updateStats() {
+            correctAnswers.textContent = correctCount;
+            totalQuestions.textContent = totalCount;
+            const acc = totalCount > 0 ? ((correctCount / totalCount) * 100).toFixed(1) : 0;
+            accuracy.textContent = acc + '%';
+        }
+
+        // 重置統計
+        function resetStats() {
+            correctCount = 0;
+            totalCount = 0;
+            currentQuestion = 0;
+            isQuizActive = false;
+            updateStats();
+            
+            quizContent.innerHTML = '點擊「開始測驗」開始練習！';
+            quizOptions.innerHTML = '';
+            startButton.disabled = false;
+            nextButton.disabled = true;
+        }
+
+        // 洗牌函數
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // 頁面載入完成後初始化
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
