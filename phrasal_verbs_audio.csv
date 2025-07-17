@@ -1,0 +1,187 @@
+id,verb,phrasal,text,filename
+1,take,take after,take after,audio/take_after.mp3
+2,take,take after,She takes after her father's sense of humor.,audio/take_after_example.mp3
+3,take,take_away,take away,audio/take_away.mp3
+4,take,take_away,Can you take away the trash?,audio/take_away_example.mp3
+5,take,take_back,take back,audio/take_back.mp3
+6,take,take_back,I take back what I said.,audio/take_back_example.mp3
+7,take,take_down,take down,audio/take_down.mp3
+8,take,take_down,Please take down the decorations.,audio/take_down_example.mp3
+9,take,take_in,take in,audio/take_in.mp3
+10,take,take_in,She took in the stray cat.,audio/take_in_example.mp3
+11,take,take_off,take off,audio/take_off.mp3
+12,take,take_off,The plane will take off soon.,audio/take_off_example.mp3
+13,take,take_on,take on,audio/take_on.mp3
+14,take,take_on,He decided to take on the challenge.,audio/take_on_example.mp3
+15,take,take_out,take out,audio/take_out.mp3
+16,take,take_out,Let's take out the trash.,audio/take_out_example.mp3
+17,take,take_over,take over,audio/take_over.mp3
+18,take,take_over,She will take over the company.,audio/take_over_example.mp3
+19,take,take_up,take up,audio/take_up.mp3
+20,take,take_up,I want to take up painting.,audio/take_up_example.mp3
+21,get,get_along,get along,audio/get_along.mp3
+22,get,get_along,We get along very well.,audio/get_along_example.mp3
+23,get,get_away,get away,audio/get_away.mp3
+24,get,get_away,I need to get away from here.,audio/get_away_example.mp3
+25,get,get_back,get back,audio/get_back.mp3
+26,get,get_back,When will you get back home?,audio/get_back_example.mp3
+27,get,get_down,get down,audio/get_down.mp3
+28,get,get_down,Get down from the ladder.,audio/get_down_example.mp3
+29,get,get_in,get in,audio/get_in.mp3
+30,get,get_in,Get in the car quickly.,audio/get_in_example.mp3
+31,get,get_off,get off,audio/get_off.mp3
+32,get,get_off,I get off work at 5 PM.,audio/get_off_example.mp3
+33,get,get_on,get on,audio/get_on.mp3
+34,get,get_on,Let's get on the bus.,audio/get_on_example.mp3
+35,get,get_out,get out,audio/get_out.mp3
+36,get,get_out,Get out of my room!,audio/get_out_example.mp3
+37,get,get_over,get over,audio/get_over.mp3
+38,get,get_over,It's hard to get over a breakup.,audio/get_over_example.mp3
+39,get,get_through,get through,audio/get_through.mp3
+40,get,get_through,I hope to get through this exam.,audio/get_through_example.mp3
+41,get,get_up,get up,audio/get_up.mp3
+42,get,get_up,I get up at 7 AM every day.,audio/get_up_example.mp3
+43,put,put_away,put away,audio/put_away.mp3
+44,put,put_away,Please put away your toys.,audio/put_away_example.mp3
+45,put,put_back,put back,audio/put_back.mp3
+46,put,put_back,Put back the book on the shelf.,audio/put_back_example.mp3
+47,put,put_down,put down,audio/put_down.mp3
+48,put,put_down,Put down the heavy box.,audio/put_down_example.mp3
+49,put,put_off,put off,audio/put_off.mp3
+50,put,put_off,Don't put off your homework.,audio/put_off_example.mp3
+51,put,put_on,put on,audio/put_on.mp3
+52,put,put_on,Put on your jacket.,audio/put_on_example.mp3
+53,put,put_out,put out,audio/put_out.mp3
+54,put,put_out,Please put out the fire.,audio/put_out_example.mp3
+55,put,put_together,put together,audio/put_together.mp3
+56,put,put_together,Let's put together a plan.,audio/put_together_example.mp3
+57,put,put_up,put up,audio/put_up.mp3
+58,put,put_up,We need to put up a tent.,audio/put_up_example.mp3
+59,make,make_out,make out,audio/make_out.mp3
+60,make,make_out,I can't make out what he's saying.,audio/make_out_example.mp3
+61,make,make_up,make up,audio/make_up.mp3
+62,make,make_up,They decided to make up after the fight.,audio/make_up_example.mp3
+63,make,make_over,make over,audio/make_over.mp3
+64,make,make_over,She wants to make over her bedroom.,audio/make_over_example.mp3
+65,give,give_away,give away,audio/give_away.mp3
+66,give,give_away,I will give away my old clothes.,audio/give_away_example.mp3
+67,give,give_back,give back,audio/give_back.mp3
+68,give,give_back,Please give back my book.,audio/give_back_example.mp3
+69,give,give_in,give in,audio/give_in.mp3
+70,give,give_in,Don't give in to pressure.,audio/give_in_example.mp3
+71,give,give_out,give out,audio/give_out.mp3
+72,give,give_out,The teacher will give out the papers.,audio/give_out_example.mp3
+73,give,give_up,give up,audio/give_up.mp3
+74,give,give_up,Never give up on your dreams.,audio/give_up_example.mp3
+75,come,come_along,come along,audio/come_along.mp3
+76,come,come_along,Come along with us!,audio/come_along_example.mp3
+77,come,come_back,come back,audio/come_back.mp3
+78,come,come_back,When will you come back?,audio/come_back_example.mp3
+79,come,come_down,come down,audio/come_down.mp3
+80,come,come_down,Come down from the tree.,audio/come_down_example.mp3
+81,come,come_in,come in,audio/come_in.mp3
+82,come,come_in,Come in and sit down.,audio/come_in_example.mp3
+83,come,come_on,come on,audio/come_on.mp3
+84,come,come_on,Come on! Let's go!,audio/come_on_example.mp3
+85,come,come_out,come out,audio/come_out.mp3
+86,come,come_out,The sun will come out tomorrow.,audio/come_out_example.mp3
+87,come,come_over,come over,audio/come_over.mp3
+88,come,come_over,Why don't you come over tonight?,audio/come_over_example.mp3
+89,come,come_up,come up,audio/come_up.mp3
+90,come,come_up,A problem has come up.,audio/come_up_example.mp3
+91,go,go_away,go away,audio/go_away.mp3
+92,go,go_away,Please go away and leave me alone.,audio/go_away_example.mp3
+93,go,go_back,go back,audio/go_back.mp3
+94,go,go_back,I want to go back home.,audio/go_back_example.mp3
+95,go,go_down,go down,audio/go_down.mp3
+96,go,go_down,The price will go down soon.,audio/go_down_example.mp3
+97,go,go_in,go in,audio/go_in.mp3
+98,go,go_in,Let's go in the house.,audio/go_in_example.mp3
+99,go,go_off,go off,audio/go_off.mp3
+100,go,go_off,The alarm will go off at 6 AM.,audio/go_off_example.mp3
+101,go,go_on,go on,audio/go_on.mp3
+102,go,go_on,Go on with your story.,audio/go_on_example.mp3
+103,go,go_out,go out,audio/go_out.mp3
+104,go,go_out,Let's go out for dinner.,audio/go_out_example.mp3
+105,go,go_over,go over,audio/go_over.mp3
+106,go,go_over,Let's go over the plan again.,audio/go_over_example.mp3
+107,go,go_through,go through,audio/go_through.mp3
+108,go,go_through,I don't want to go through that again.,audio/go_through_example.mp3
+109,go,go_up,go up,audio/go_up.mp3
+110,go,go_up,The temperature will go up tomorrow.,audio/go_up_example.mp3
+111,look,look_after,look after,audio/look_after.mp3
+112,look,look_after,I look after my little sister.,audio/look_after_example.mp3
+113,look,look_at,look at,audio/look_at.mp3
+114,look,look_at,Look at this beautiful flower.,audio/look_at_example.mp3
+115,look,look_for,look for,audio/look_for.mp3
+116,look,look_for,I'm looking for my keys.,audio/look_for_example.mp3
+117,look,look_forward,look forward,audio/look_forward.mp3
+118,look,look_forward,I look forward to seeing you.,audio/look_forward_example.mp3
+119,look,look_into,look into,audio/look_into.mp3
+120,look,look_into,We need to look into this matter.,audio/look_into_example.mp3
+121,look,look_out,look out,audio/look_out.mp3
+122,look,look_out,Look out for the car!,audio/look_out_example.mp3
+123,look,look_over,look over,audio/look_over.mp3
+124,look,look_over,Please look over my essay.,audio/look_over_example.mp3
+125,look,look_up,look up,audio/look_up.mp3
+126,look,look_up,Look up the word in the dictionary.,audio/look_up_example.mp3
+127,turn,turn_around,turn around,audio/turn_around.mp3
+128,turn,turn_around,Turn around and face me.,audio/turn_around_example.mp3
+129,turn,turn_back,turn back,audio/turn_back.mp3
+130,turn,turn_back,It's too late to turn back now.,audio/turn_back_example.mp3
+131,turn,turn_down,turn down,audio/turn_down.mp3
+132,turn,turn_down,Please turn down the volume.,audio/turn_down_example.mp3
+133,turn,turn_in,turn in,audio/turn_in.mp3
+134,turn,turn_in,Turn in your homework tomorrow.,audio/turn_in_example.mp3
+135,turn,turn_off,turn off,audio/turn_off.mp3
+136,turn,turn_off,Turn off the lights before leaving.,audio/turn_off_example.mp3
+137,turn,turn_on,turn on,audio/turn_on.mp3
+138,turn,turn_on,Turn on the television.,audio/turn_on_example.mp3
+139,turn,turn_out,turn out,audio/turn_out.mp3
+140,turn,turn_out,Everything will turn out fine.,audio/turn_out_example.mp3
+141,turn,turn_over,turn over,audio/turn_over.mp3
+142,turn,turn_over,Turn over the paper.,audio/turn_over_example.mp3
+143,turn,turn_up,turn up,audio/turn_up.mp3
+144,turn,turn_up,Turn up the music louder.,audio/turn_up_example.mp3
+145,bring,bring_about,bring about,audio/bring_about.mp3
+146,bring,bring_about,This will bring about change.,audio/bring_about_example.mp3
+147,bring,bring_back,bring back,audio/bring_back.mp3
+148,bring,bring_back,Please bring back my book.,audio/bring_back_example.mp3
+149,bring,bring_down,bring down,audio/bring_down.mp3
+150,bring,bring_down,The rain will bring down the temperature.,audio/bring_down_example.mp3
+151,bring,bring_in,bring in,audio/bring_in.mp3
+152,bring,bring_in,Bring in the groceries from the car.,audio/bring_in_example.mp3
+153,bring,bring_out,bring out,audio/bring_out.mp3
+154,bring,bring_out,This color brings out your eyes.,audio/bring_out_example.mp3
+155,bring,bring_up,bring up,audio/bring_up.mp3
+156,bring,bring_up,Don't bring up that topic again.,audio/bring_up_example.mp3
+157,pick,pick_out,pick out,audio/pick_out.mp3
+158,pick,pick_out,Pick out your favorite color.,audio/pick_out_example.mp3
+159,pick,pick_up,pick up,audio/pick_up.mp3
+160,pick,pick_up,Pick up the phone when it rings.,audio/pick_up_example.mp3
+161,find,find_out,find out,audio/find_out.mp3
+162,find,find_out,I need to find out the truth.,audio/find_out_example.mp3
+163,work,work_out,work out,audio/work_out.mp3
+164,work,work_out,I work out at the gym every day.,audio/work_out_example.mp3
+165,run,run_away,run away,audio/run_away.mp3
+166,run,run_away,The dog tried to run away.,audio/run_away_example.mp3
+167,run,run_into,run into,audio/run_into.mp3
+168,run,run_into,I ran into an old friend yesterday.,audio/run_into_example.mp3
+169,run,run_out,run out,audio/run_out.mp3
+170,run,run_out,We're running out of time.,audio/run_out_example.mp3
+171,break,break_down,break down,audio/break_down.mp3
+172,break,break_down,The car broke down on the highway.,audio/break_down_example.mp3
+173,break,break_in,break in,audio/break_in.mp3
+174,break,break_in,Someone tried to break in last night.,audio/break_in_example.mp3
+175,break,break_out,break out,audio/break_out.mp3
+176,break,break_out,A fire broke out in the building.,audio/break_out_example.mp3
+177,break,break_up,break up,audio/break_up.mp3
+178,break,break_up,They decided to break up.,audio/break_up_example.mp3
+179,keep,keep_away,keep away,audio/keep_away.mp3
+180,keep,keep_away,Keep away from the dangerous area.,audio/keep_away_example.mp3
+181,keep,keep_out,keep out,audio/keep_out.mp3
+182,keep,keep_out,The sign says to keep out of the area.,audio/keep_out_example.mp3
+183,keep,keep_off,keep off,audio/keep_off.mp3
+184,keep,keep_off,"Keep off the grass, please.",audio/keep_off_example.mp3
+185,keep,keep_in,keep in,audio/keep_in.mp3
+186,keep,keep_in,Try to keep your anger in.,audio/keep_in_example.mp3
