@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一週營養菜單規劃 - Crock-Pot MultiMeal Multicooker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            font-size: 1rem;
+            opacity: 0.85;
+            font-style: italic;
+        }
+        
+        .main-content {
+            padding: 40px 30px;
+        }
+        
+        .info-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid #f59e0b;
+        }
+        
+        .info-section h2 {
+            color: #92400e;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-section li {
+            padding: 8px 0;
+            color: #78350f;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-section li:before {
+            content: "✓";
+            color: #f59e0b;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .weekly-menu {
+            display: grid;
+            gap: 30px;
+        }
+        
+        .day-card {
+            background: #f8fafc;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .day-card:hover {
+            border-color: #4f46e5;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .day-header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 20px 25px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cuisine-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+        
+        .meals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 25px;
+        }
+        
+        .meal-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .meal-card h3 {
+            color: #4f46e5;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .meal-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .crock-pot-icon {
+            color: #dc2626;
+            margin-right: 5px;
+        }
+        
+        .ingredients, .method {
+            margin-top: 15px;
+        }
+        
+        .ingredients h4, .method h4 {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .ingredients ul, .method ol {
+            padding-left: 20px;
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .ingredients li, .method li {
+            margin: 5px 0;
+        }
+        
+        .cooking-time {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+        
+        .veggie-note {
+            background: #d1fae5;
+            color: #065f46;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-size: 0.95rem;
+            border-left: 3px solid #10b981;
+        }
+        
+        .nutrition-tip {
+            background: #fce7f3;
+            color: #9f1239;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #e11d48;
+        }
+        
+        .nutrition-tip h3 {
+            margin-bottom: 10px;
+            color: #9f1239;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .day-card {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-utensils"></i> 一週營養菜單規劃</h1>
+            <p>Crock-Pot MultiMeal Multicooker 專用食譜</p>
+            <p class="subtitle">適合13-14歲成長期青少年 | 中餐70% + 西餐30%</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="info-section">
+                <h2><i class="fas fa-info-circle"></i> 菜單設計原則</h2>
+                <ul>
+                    <li>主菜使用 Crock-Pot MultiMeal Multicooker 烹調，方便省時</li>
+                    <li>蔬菜採用快炒或汆燙方式，保持營養與口感</li>
+                    <li>中餐比例70%，西餐比例30%，符合孩子口味偏好</li>
+                    <li>高蛋白質、充足熱量，滿足13-14歲成長期營養需求</li>
+                    <li>每餐搭配蔬菜，均衡飲食</li>
+                </ul>
+            </div>
+            
+            <div class="weekly-menu">
+                <!-- Monday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期一 Monday</span>
+                        <span class="cuisine-badge">中餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">皮蛋瘦肉粥</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>白米 1杯</li>
+                                    <li>瘦肉片 150g</li>
+                                    <li>皮蛋 2顆</li>
+                                    <li>薑絲、蔥花適量</li>
+                                    <li>鹽、胡椒粉</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 6-8小時</div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>紅燒牛肉</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>牛腱 600g</li>
+                                    <li>紅蘿蔔、白蘿蔔各1條</li>
+                                    <li>洋蔥1顆、薑、蒜</li>
+                                    <li>醬油、冰糖、八角</li>
+                                    <li>米酒、豆瓣醬</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 高溫 4-5小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：炒青江菜、燙A菜
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">蒜泥白肉 + 炒時蔬</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>五花肉 400g</li>
+                                    <li>蒜泥、醬油膏</li>
+                                    <li>白飯</li>
+                                    <li>炒高麗菜、燙豆芽菜</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tuesday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期二 Tuesday</span>
+                        <span class="cuisine-badge">西餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">法式吐司 + 牛奶</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>吐司麵包 3-4片</li>
+                                    <li>雞蛋 2顆</li>
+                                    <li>牛奶 200ml</li>
+                                    <li>奶油、楓糖漿</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>義式燉雞</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>雞腿 4-5隻</li>
+                                    <li>蕃茄罐頭 400g</li>
+                                    <li>洋蔥、蒜頭、紅椒</li>
+                                    <li>義式香料、黑橄欖</li>
+                                    <li>橄欖油、鹽、胡椒</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 6小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：燙綠花椰菜、炒蘑菇
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">千層麵 + 沙拉</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>千層麵片</li>
+                                    <li>牛絞肉、起司</li>
+                                    <li>番茄醬、白醬</li>
+                                    <li>生菜沙拉</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wednesday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期三 Wednesday</span>
+                        <span class="cuisine-badge">中餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">蔥油餅 + 豆漿</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>蔥油餅 2-3張</li>
+                                    <li>雞蛋 1-2顆</li>
+                                    <li>無糖豆漿</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>麻油雞</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>雞腿切塊 600g</li>
+                                    <li>老薑 100g</li>
+                                    <li>黑麻油 3大匙</li>
+                                    <li>米酒 300ml</li>
+                                    <li>枸杞、紅棗</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 4小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：炒菠菜、燙玉米筍
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">清蒸魚 + 炒青菜</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>鱸魚 1條</li>
+                                    <li>薑絲、蔥絲</li>
+                                    <li>醬油、米酒</li>
+                                    <li>炒空心菜、白飯</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Thursday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期四 Thursday</span>
+                        <span class="cuisine-badge">中餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">肉包 + 小米粥</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>肉包 2-3個</li>
+                                    <li>小米粥 1碗</li>
+                                    <li>小菜（花生、豆腐乳）</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>滷肉飯</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>五花肉丁 600g</li>
+                                    <li>紅蔥頭 5-6顆</li>
+                                    <li>醬油、冰糖、五香粉</li>
+                                    <li>滷蛋、油豆腐</li>
+                                    <li>八角、米酒</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 6-7小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：燙青江菜、炒高麗菜
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">宮保雞丁 + 炒時蔬</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>雞胸肉切丁 300g</li>
+                                    <li>花生、乾辣椒</li>
+                                    <li>青椒、紅椒</li>
+                                    <li>炒芥藍菜、白飯</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Friday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期五 Friday</span>
+                        <span class="cuisine-badge">西餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">培根蛋三明治</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>吐司 2-3片</li>
+                                    <li>培根 3-4條</li>
+                                    <li>雞蛋 2顆</li>
+                                    <li>起司片、生菜</li>
+                                    <li>柳橙汁</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>燉牛肉</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>牛肋條 600g</li>
+                                    <li>馬鈴薯、紅蘿蔔各2條</li>
+                                    <li>洋蔥 2顆、蒜頭</li>
+                                    <li>番茄醬、紅酒</li>
+                                    <li>月桂葉、百里香</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 8小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：燙綠花椰、炒蘆筍
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">烤雞翅 + 薯條</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>雞翅 8-10隻</li>
+                                    <li>烤肉醬、蒜粉</li>
+                                    <li>馬鈴薯薯條</li>
+                                    <li>玉米沙拉</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Saturday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期六 Saturday</span>
+                        <span class="cuisine-badge">中餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">蛋餅 + 紅茶</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>蛋餅皮 2-3張</li>
+                                    <li>雞蛋 2-3顆</li>
+                                    <li>蔥花、玉米粒</li>
+                                    <li>醬油膏</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>東坡肉</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>五花肉 800g（切大塊）</li>
+                                    <li>醬油、米酒各200ml</li>
+                                    <li>冰糖 50g</li>
+                                    <li>薑片、蔥段</li>
+                                    <li>八角、桂皮</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 低溫 6-8小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：燙白菜、炒豆芽菜
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">三杯雞 + 炒青菜</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>雞腿切塊 500g</li>
+                                    <li>九層塔、老薑、蒜頭</li>
+                                    <li>麻油、醬油、米酒</li>
+                                    <li>炒地瓜葉、白飯</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sunday -->
+                <div class="day-card">
+                    <div class="day-header">
+                        <span>星期日 Sunday</span>
+                        <span class="cuisine-badge">中餐日</span>
+                    </div>
+                    <div class="meals-grid">
+                        <div class="meal-card">
+                            <h3><i class="fas fa-coffee"></i> 早餐</h3>
+                            <div class="meal-title">水煎包 + 豆漿</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>水煎包 3-4個</li>
+                                    <li>無糖豆漿</li>
+                                    <li>小黃瓜</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-sun"></i> 午餐</h3>
+                            <div class="meal-title"><i class="fas fa-fire crock-pot-icon"></i>排骨湯</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>排骨 600g</li>
+                                    <li>白蘿蔔 1條</li>
+                                    <li>紅蘿蔔 1條</li>
+                                    <li>玉米 2條</li>
+                                    <li>薑片、鹽</li>
+                                </ul>
+                            </div>
+                            <div class="cooking-time"><i class="fas fa-clock"></i> Crock-Pot 高溫 4-5小時</div>
+                            <div class="veggie-note">
+                                <i class="fas fa-leaf"></i> 搭配：炒青江菜、燙秋葵
+                            </div>
+                        </div>
+                        
+                        <div class="meal-card">
+                            <h3><i class="fas fa-moon"></i> 晚餐</h3>
+                            <div class="meal-title">糖醋排骨 + 炒時蔬</div>
+                            <div class="ingredients">
+                                <h4>食材：</h4>
+                                <ul>
+                                    <li>小排骨 400g</li>
+                                    <li>番茄醬、糖、醋</li>
+                                    <li>鳳梨、青椒、紅椒</li>
+                                    <li>炒芥藍菜、白飯</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nutrition-tip">
+                <h3><i class="fas fa-heartbeat"></i> 營養小貼士</h3>
+                <p><strong>青少年成長期營養建議：</strong></p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>每日蛋白質攝取：約70-85克（肉類、豆類、蛋、奶製品）</li>
+                    <li>每日鈣質：1200-1300毫克（牛奶、優格、起司、豆腐）</li>
+                    <li>豐富蔬菜水果：每日至少5份，提供維生素和纖維</li>
+                    <li>充足水分：每日2000ml以上</li>
+                    <li>避免過多油炸和高糖食品</li>
+                </ul>
+            </div>
+            
+            <div class="nutrition-tip" style="background: #e0f2fe; color: #075985; border-left-color: #0284c7;">
+                <h3><i class="fas fa-utensils"></i> Crock-Pot 使用技巧</h3>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>前一晚準備食材，早上放入Crock-Pot，下班即可享用</li>
+                    <li>肉類建議先煎香再放入，風味更佳</li>
+                    <li>低溫烹調時間較長但肉質更軟嫩</li>
+                    <li>高溫適合趕時間或較小塊食材</li>
+                    <li>避免頻繁開蓋，以免熱氣流失</li>
+                    <li>蔬菜建議最後1-2小時加入，避免過度軟爛</li>
+                </ul>
+            </div>
+            
+            <div class="nutrition-tip" style="background: #f3e8ff; color: #6b21a8; border-left-color: #9333ea; margin-bottom: 0;">
+                <h3><i class="fas fa-calendar-check"></i> 採買清單建議</h3>
+                <p>建議週末一次採買主要食材，新鮮蔬菜可分兩次購買（週日、週三），確保新鮮度。冷凍肉品可提前解凍，早上放入Crock-Pot前處理。</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Print functionality
+        window.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
