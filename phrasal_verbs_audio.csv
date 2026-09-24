@@ -183,3 +183,117 @@ id,verb,phrasal,text,filename
 182,keep,keep off,"Keep off the grass, please.",audio/keep_off_example.mp3
 183,keep,keep in,keep in,audio/keep_in.mp3
 184,keep,keep in,Try to keep your anger in.,audio/keep_in_example.mp3
+185,pick,pick up,pick up,audio/pick_up.mp3
+186,pick,pick up,Can you pick up some milk on your way home?,audio/pick_up_example.mp3
+187,figure,figure out,figure out,audio/figure_out.mp3
+188,figure,figure out,I'm trying to figure out how this machine works.,audio/figure_out_example.mp3
+189,hang,hang out,hang out,audio/hang_out.mp3
+190,hang,hang out,We usually hang out at the local cafe on weekends.,audio/hang_out_example.mp3
+191,hang,hang on,hang on,audio/hang_on.mp3
+192,hang,hang on,"Hang on a second, I will be right with you.",audio/hang_on_example.mp3
+193,hang,hang up,hang up,audio/hang_up.mp3
+194,hang,hang up,Please do not hang up before I explain everything.,audio/hang_up_example.mp3
+195,hold,hold on,hold on,audio/hold_on.mp3
+196,hold,hold on,Hold on while I grab a pen to write this down.,audio/hold_on_example.mp3
+197,hold,hold up,hold up,audio/hold_up.mp3
+198,hold,hold up,Heavy morning traffic held us up for nearly an hour.,audio/hold_up_example.mp3
+199,check,check in,check in,audio/check_in.mp3
+200,check,check in,We need to check in at the hotel before dinner.,audio/check_in_example.mp3
+201,check,check out,check out,audio/check_out.mp3
+202,check,check out,You should definitely check out that new bookstore.,audio/check_out_example.mp3
+203,call,call off,call off,audio/call_off.mp3
+204,call,call off,They decided to call off the soccer match due to heavy rain.,audio/call_off_example.mp3
+205,call,call back,call back,audio/call_back.mp3
+206,call,call back,"I am in a meeting right now, so I will call you back later.",audio/call_back_example.mp3
+207,show,show up,show up,audio/show_up.mp3
+208,show,show up,Only ten people showed up for the presentation.,audio/show_up_example.mp3
+209,show,show off,show off,audio/show_off.mp3
+210,show,show off,He likes to show off his expensive designer watch.,audio/show_off_example.mp3
+211,drop,drop by,drop by,audio/drop_by.mp3
+212,drop,drop by,Feel free to drop by my office whenever you have questions.,audio/drop_by_example.mp3
+213,drop,drop off,drop off,audio/drop_off.mp3
+214,drop,drop off,I will drop you off at the MRT station.,audio/drop_off_example.mp3
+215,point,point out,point out,audio/point_out.mp3
+216,point,point out,The editor pointed out several minor typos in the article.,audio/point_out_example.mp3
+217,pass,pass out,pass out,audio/pass_out.mp3
+218,pass,pass out,The room was so stuffy that she nearly passed out.,audio/pass_out_example.mp3
+219,pass,pass away,pass away,audio/pass_away.mp3
+220,pass,pass away,His grandmother passed away peacefully in her sleep.,audio/pass_away_example.mp3
+221,watch,watch out,watch out,audio/watch_out.mp3
+222,watch,watch out,Watch out for fast-moving bicycles on the sidewalk.,audio/watch_out_example.mp3
+223,follow,follow up,follow up,audio/follow_up.mp3
+224,follow,follow up,I will follow up with the client early next week.,audio/follow_up_example.mp3
+225,reach,reach out,reach out,audio/reach_out.mp3
+226,reach,reach out,Please reach out to our support team if you encounter any bugs.,audio/reach_out_example.mp3
+227,wrap,wrap up,wrap up,audio/wrap_up.mp3
+228,wrap,wrap up,Let us wrap up today's discussion and summarize action items.,audio/wrap_up_example.mp3
+229,fill,fill out,fill out,audio/fill_out.mp3
+230,fill,fill out,Every applicant must fill out this health questionnaire.,audio/fill_out_example.mp3
+231,fill,fill in,fill in,audio/fill_in.mp3
+232,fill,fill in,Can you fill in for Sarah while she is away on vacation?,audio/fill_in_example.mp3
+233,sign,sign up,sign up,audio/sign_up.mp3
+234,sign,sign up,Hundreds of learners signed up for the free online workshop.,audio/sign_up_example.mp3
+235,sign,sign off,sign off,audio/sign_off.mp3
+236,sign,sign off,The executive director finally signed off on the new budget proposal.,audio/sign_off_example.mp3
+237,roll,roll out,roll out,audio/roll_out.mp3
+238,roll,roll out,The tech firm plans to roll out the updated mobile feature next month.,audio/roll_out_example.mp3
+239,work,work on,work on,audio/work_on.mp3
+240,work,work on,Our engineering squad is working on a high-speed database engine.,audio/work_on_example.mp3
+241,carry,carry out,carry out,audio/carry_out.mp3
+242,carry,carry out,Scientists carried out multiple tests to confirm the hypothesis.,audio/carry_out_example.mp3
+243,carry,carry on,carry on,audio/carry_on.mp3
+244,carry,carry on,"Despite the noisy distractions, they carried on studying.",audio/carry_on_example.mp3
+245,stand,stand out,stand out,audio/stand_out.mp3
+246,stand,stand out,Her impressive public speaking skills made her stand out among candidates.,audio/stand_out_example.mp3
+247,stand,stand by,stand by,audio/stand_by.mp3
+248,stand,stand by,I will always stand by my teammates when challenges arise.,audio/stand_by_example.mp3
+249,calm,calm down,calm down,audio/calm_down.mp3
+250,calm,calm down,Please take a deep slow breath and calm down.,audio/calm_down_example.mp3
+251,settle,settle down,settle down,audio/settle_down.mp3
+252,settle,settle down,"After wandering for years, he finally settled down in Canada.",audio/settle_down_example.mp3
+253,grow,grow up,grow up,audio/grow_up.mp3
+254,grow,grow up,I grew up in a quiet farming village surrounded by mountains.,audio/grow_up_example.mp3
+255,fall,fall apart,fall apart,audio/fall_apart.mp3
+256,fall,fall apart,That worn-out leather wallet is beginning to fall apart.,audio/fall_apart_example.mp3
+257,fall,fall behind,fall behind,audio/fall_behind.mp3
+258,fall,fall behind,"If you procrastinate on homework, you will fall behind quickly.",audio/fall_behind_example.mp3
+259,pay,pay off,pay off,audio/pay_off.mp3
+260,pay,pay off,Your rigorous consistency will surely pay off in future examinations.,audio/pay_off_example.mp3
+261,pay,pay back,pay back,audio/pay_back.mp3
+262,pay,pay back,I promise to pay you back as soon as my wage arrives.,audio/pay_back_example.mp3
+263,cut,cut down,cut down,audio/cut_down.mp3
+264,cut,cut down,The physician recommended that he cut down on sugary drinks.,audio/cut_down_example.mp3
+265,cut,cut off,cut off,audio/cut_off.mp3
+266,cut,cut off,The sudden earthquake cut off electrical supply to the entire district.,audio/cut_off_example.mp3
+267,end,end up,end up,audio/end_up.mp3
+268,end,end up,We took a wrong highway exit and ended up in a strange town.,audio/end_up_example.mp3
+269,sort,sort out,sort out,audio/sort_out.mp3
+270,sort,sort out,Give me ten minutes to sort out these messy sales receipts.,audio/sort_out_example.mp3
+271,blow,blow up,blow up,audio/blow_up.mp3
+272,blow,blow up,He blew up when he discovered his computer files were deleted.,audio/blow_up_example.mp3
+273,burn,burn out,burn out,audio/burn_out.mp3
+274,burn,burn out,Working excessive overtime without rest will make you burn out rapidly.,audio/burn_out_example.mp3
+275,cheer,cheer up,cheer up,audio/cheer_up.mp3
+276,cheer,cheer up,We brought some warm chicken soup to cheer up our sick neighbor.,audio/cheer_up_example.mp3
+277,count,count on,count on,audio/count_on.mp3
+278,count,count on,You can always count on us whenever you face trouble.,audio/count_on_example.mp3
+279,run,run out of,run out of,audio/run_out_of.mp3
+280,run,run out of,The emergency clinic ran out of oxygen tanks during the blizzard.,audio/run_out_of_example.mp3
+281,look,look out for,look out for,audio/look_out_for.mp3
+282,look,look out for,Older siblings should look out for younger ones at crowded amusement parks.,audio/look_out_for_example.mp3
+283,keep,keep away from,keep away from,audio/keep_away_from.mp3
+284,keep,keep away from,Hikers are advised to keep away from unstable cliffs during rains.,audio/keep_away_from_example.mp3
+285,back,back up,back up,audio/back_up.mp3
+286,back,back up,Always remember to back up your project code before system upgrades.,audio/back_up_example.mp3
+287,back,back down,back down,audio/back_down.mp3
+288,back,back down,Neither side in the debate was willing to back down from its stance.,audio/back_down_example.mp3
+289,wind,wind up,wind up,audio/wind_up.mp3
+290,wind,wind up,"If you drive recklessly, you could wind up in hospital.",audio/wind_up_example.mp3
+291,take,take apart,take apart,audio/take_apart.mp3
+292,take,take apart,The apprentice took the carburetor apart to clean every valve.,audio/take_apart_example.mp3
+293,fall,fall through,fall through,audio/fall_through.mp3
+294,fall,fall through,The real estate deal fell through because financing was denied.,audio/fall_through_example.mp3
+295,catch,catch up,catch up,audio/catch_up.mp3
+296,catch,catch up,Let us have coffee tomorrow afternoon and catch up on our lives.,audio/catch_up_example.mp3
+297,stick,stick to,stick to,audio/stick_to.mp3
+298,stick,stick to,"If you truly want noticeable fitness gains, stick to your training schedule.",audio/stick_to_example.mp3

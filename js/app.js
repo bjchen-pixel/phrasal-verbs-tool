@@ -11,6 +11,7 @@
     allVerbs: [],
     particlesMeta: {},
     currentTab: 'cards', // 'cards' | 'flashcards' | 'quiz' | 'mindmap'
+    activeLevelFilter: 'all', // 'all' | '1' | '2'
     activeVerbFilter: 'all',
     activeParticleFilter: 'all',
     activeStatusFilter: 'all', // 'all' | 'learning' | 'mastered' | 'starred'
@@ -93,6 +94,7 @@
     elements.flashcardInner = document.getElementById('flashcardInner');
     elements.flashcardProgressText = document.getElementById('flashcardProgressText');
     elements.flashcardProgressBar = document.getElementById('flashcardProgressBar');
+    elements.flashcardLevelSelect = document.getElementById('flashcardLevelSelect');
     elements.fcFrontPhrase = document.getElementById('fcFrontPhrase');
     elements.fcFrontBadge = document.getElementById('fcFrontBadge');
     elements.fcFrontScenario = document.getElementById('fcFrontScenario');
@@ -114,6 +116,7 @@
     elements.quizPlay = document.getElementById('quizPlay');
     elements.quizResult = document.getElementById('quizResult');
     elements.quizStartBtn = document.getElementById('quizStartBtn');
+    elements.quizLevelSelect = document.getElementById('quizLevelSelect');
     elements.quizQuestionCountSelect = document.getElementById('quizQuestionCountSelect');
     elements.quizPrompt = document.getElementById('quizPrompt');
     elements.quizScenarioBadge = document.getElementById('quizScenarioBadge');
@@ -153,6 +156,16 @@
       renderCardsView();
     });
 
+    // Level filter buttons
+    document.querySelectorAll('[data-level-filter]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('[data-level-filter]').forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        state.activeLevelFilter = e.currentTarget.dataset.levelFilter;
+        renderCardsView();
+      });
+    });
+
     document.querySelectorAll('[data-status-filter]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('[data-status-filter]').forEach(b => b.classList.remove('active'));
@@ -161,6 +174,13 @@
         renderCardsView();
       });
     });
+
+    // Flashcard level select
+    if (elements.flashcardLevelSelect) {
+      elements.flashcardLevelSelect.addEventListener('change', (e) => {
+        initFlashcardDeck(e.target.value);
+      });
+    }
 
     // Flashcard events
     elements.flashcardInner.addEventListener('click', toggleFlashcardFlip);
@@ -390,6 +410,10 @@
 
   function getFilteredVerbs() {
     return state.allVerbs.filter(item => {
+      // Level filter
+      if (state.activeLevelFilter !== 'all' && item.level !== parseInt(state.activeLevelFilter, 10)) {
+        return false;
+      }
       // Verb filter
       if (state.activeVerbFilter !== 'all' && item.verb !== state.activeVerbFilter) {
         return false;
@@ -451,6 +475,7 @@
               <div class="phrase-heading">
                 <span>${item.phrasal}</span>
                 <span class="particle-badge" title="介系詞">${item.particle}</span>
+                <span class="level-badge level-${item.level}" title="學習階段">L${item.level}</span>
               </div>
               <div class="chinese-meaning">${item.chineseMeaning}</div>
             </div>
@@ -543,8 +568,13 @@
   // ==========================================================================
   // 3D Flashcard Deck
   // ==========================================================================
-  function initFlashcardDeck() {
-    state.flashcardDeck = [...state.allVerbs];
+  function initFlashcardDeck(levelFilter) {
+    const filter = levelFilter || (elements.flashcardLevelSelect ? elements.flashcardLevelSelect.value : 'all');
+    if (filter === 'all') {
+      state.flashcardDeck = [...state.allVerbs];
+    } else {
+      state.flashcardDeck = state.allVerbs.filter(v => v.level === parseInt(filter, 10));
+    }
     state.flashcardIndex = 0;
     state.flashcardFlipped = false;
     renderCurrentFlashcard();
@@ -566,7 +596,7 @@
 
     // Front
     elements.fcFrontPhrase.textContent = item.phrasal;
-    elements.fcFrontBadge.textContent = item.particle.toUpperCase();
+    elements.fcFrontBadge.innerHTML = `<span class="particle-badge">${item.particle.toUpperCase()}</span> <span class="level-badge level-${item.level}" style="margin-left: 4px;">L${item.level}</span>`;
     elements.fcFrontScenario.innerHTML = `<i class="fas fa-tag"></i> ${item.scenario}`;
 
     // Back
@@ -611,7 +641,11 @@
   // Quiz Hub
   // ==========================================================================
   function startQuiz() {
-    const pool = [...state.allVerbs];
+    const levelVal = elements.quizLevelSelect ? elements.quizLevelSelect.value : 'all';
+    let pool = levelVal === 'all'
+      ? [...state.allVerbs]
+      : state.allVerbs.filter(v => v.level === parseInt(levelVal, 10));
+
     if (pool.length < 4) return;
 
     // Shuffle pool

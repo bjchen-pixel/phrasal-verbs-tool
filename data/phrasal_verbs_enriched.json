@@ -1,6 +1,8 @@
 {
   "meta": {
-    "total": 92,
+    "total": 150,
+    "level1Count": 92,
+    "level2Count": 58,
     "particles": {
       "up": {
         "core": "向上、徹底完成、顯現提高",
@@ -85,6 +87,18 @@
       "without": {
         "core": "缺乏、省去不用",
         "desc": "沒有亦可、省去度過（do without）。"
+      },
+      "apart": {
+        "core": "分開散裂、獨立存在",
+        "desc": "表示物理上的分開、破碎散架（fall apart）或將機器零件逐一拆解（take apart）。"
+      },
+      "behind": {
+        "core": "落於後方、遺留積欠",
+        "desc": "表示位置在後、進度落後於他人（fall behind）或把事情拋在腦後。"
+      },
+      "to": {
+        "core": "朝向附著、堅持恪守",
+        "desc": "表示目標指向、或是堅守原則原則不放（stick to）。"
       }
     }
   },
@@ -102,7 +116,8 @@
       "clozeSentence": "She _______ her father's sense of humor.",
       "scenario": "描述家族相似性",
       "audio": "audio/take_after.mp3",
-      "exampleAudio": "audio/take_after_example.mp3"
+      "exampleAudio": "audio/take_after_example.mp3",
+      "level": 1
     },
     {
       "id": "take_away",
@@ -117,7 +132,8 @@
       "clozeSentence": "Can you _______ the trash?",
       "scenario": "清理、點餐",
       "audio": "audio/take_away.mp3",
-      "exampleAudio": "audio/take_away_example.mp3"
+      "exampleAudio": "audio/take_away_example.mp3",
+      "level": 1
     },
     {
       "id": "take_back",
@@ -132,7 +148,8 @@
       "clozeSentence": "I _______ what I said.",
       "scenario": "道歉、退貨",
       "audio": "audio/take_back.mp3",
-      "exampleAudio": "audio/take_back_example.mp3"
+      "exampleAudio": "audio/take_back_example.mp3",
+      "level": 1
     },
     {
       "id": "take_down",
@@ -147,7 +164,8 @@
       "clozeSentence": "_______ the meeting notes.",
       "scenario": "筆記、移除裝飾",
       "audio": "audio/take_down.mp3",
-      "exampleAudio": "audio/take_down_example.mp3"
+      "exampleAudio": "audio/take_down_example.mp3",
+      "level": 1
     },
     {
       "id": "take_in",
@@ -162,7 +180,8 @@
       "clozeSentence": "It's hard to _______ all the details.",
       "scenario": "學習、收養、改衣",
       "audio": "audio/take_in.mp3",
-      "exampleAudio": "audio/take_in_example.mp3"
+      "exampleAudio": "audio/take_in_example.mp3",
+      "level": 1
     },
     {
       "id": "take_off",
@@ -177,7 +196,8 @@
       "clozeSentence": "_______ your jacket.",
       "scenario": "穿脫、旅行、成功",
       "audio": "audio/take_off.mp3",
-      "exampleAudio": "audio/take_off_example.mp3"
+      "exampleAudio": "audio/take_off_example.mp3",
+      "level": 1
     },
     {
       "id": "take_on",
@@ -192,7 +212,8 @@
       "clozeSentence": "Don't _______ too much work.",
       "scenario": "工作、挑戰、招聘",
       "audio": "audio/take_on.mp3",
-      "exampleAudio": "audio/take_on_example.mp3"
+      "exampleAudio": "audio/take_on_example.mp3",
+      "level": 1
     },
     {
       "id": "take_out",
@@ -207,7 +228,8 @@
       "clozeSentence": "He _______ his phone to check.",
       "scenario": "付錢、約會、點餐",
       "audio": "audio/take_out.mp3",
-      "exampleAudio": "audio/take_out_example.mp3"
+      "exampleAudio": "audio/take_out_example.mp3",
+      "level": 1
     },
     {
       "id": "take_over",
@@ -222,7 +244,8 @@
       "clozeSentence": "She _______ the project.",
       "scenario": "業務交接",
       "audio": "audio/take_over.mp3",
-      "exampleAudio": "audio/take_over_example.mp3"
+      "exampleAudio": "audio/take_over_example.mp3",
+      "level": 1
     },
     {
       "id": "take_up",
@@ -237,7 +260,8 @@
       "clozeSentence": "I _______ yoga last month.",
       "scenario": "興趣、空間安排",
       "audio": "audio/take_up.mp3",
-      "exampleAudio": "audio/take_up_example.mp3"
+      "exampleAudio": "audio/take_up_example.mp3",
+      "level": 1
     },
     {
       "id": "get_along",
@@ -252,7 +276,8 @@
       "clozeSentence": "I _______ well with my neighbors.",
       "scenario": "人際關係",
       "audio": "audio/get_along.mp3",
-      "exampleAudio": "audio/get_along_example.mp3"
+      "exampleAudio": "audio/get_along_example.mp3",
+      "level": 1
     },
     {
       "id": "get_around",
@@ -267,7 +292,8 @@
       "clozeSentence": "She _______ by subway.",
       "scenario": "交通、消息傳播",
       "audio": "audio/get_around.mp3",
-      "exampleAudio": "audio/get_around_example.mp3"
+      "exampleAudio": "audio/get_around_example.mp3",
+      "level": 1
     },
     {
       "id": "get_away",
@@ -282,7 +308,8 @@
       "clozeSentence": "We _______ for a weekend trip.",
       "scenario": "旅行、放鬆",
       "audio": "audio/get_away.mp3",
-      "exampleAudio": "audio/get_away_example.mp3"
+      "exampleAudio": "audio/get_away_example.mp3",
+      "level": 1
     },
     {
       "id": "get_back",
@@ -297,7 +324,8 @@
       "clozeSentence": "I'll _______ to you later.",
       "scenario": "回覆、取物",
       "audio": "audio/get_back.mp3",
-      "exampleAudio": "audio/get_back_example.mp3"
+      "exampleAudio": "audio/get_back_example.mp3",
+      "level": 1
     },
     {
       "id": "get_by",
@@ -312,7 +340,8 @@
       "clozeSentence": "I can _______ with my limited French.",
       "scenario": "語言、經濟",
       "audio": "audio/get_by.mp3",
-      "exampleAudio": "audio/get_by_example.mp3"
+      "exampleAudio": "audio/get_by_example.mp3",
+      "level": 1
     },
     {
       "id": "get_in",
@@ -327,7 +356,8 @@
       "clozeSentence": "_______ the car, we're late!",
       "scenario": "交通、進入",
       "audio": "audio/get_in.mp3",
-      "exampleAudio": "audio/get_in_example.mp3"
+      "exampleAudio": "audio/get_in_example.mp3",
+      "level": 1
     },
     {
       "id": "get_off",
@@ -342,7 +372,8 @@
       "clozeSentence": "I _______ at 5 p.m.",
       "scenario": "下班、法律",
       "audio": "audio/get_off.mp3",
-      "exampleAudio": "audio/get_off_example.mp3"
+      "exampleAudio": "audio/get_off_example.mp3",
+      "level": 1
     },
     {
       "id": "get_on",
@@ -357,7 +388,8 @@
       "clozeSentence": "_______ the bus quickly.",
       "scenario": "交通、工作進度",
       "audio": "audio/get_on.mp3",
-      "exampleAudio": "audio/get_on_example.mp3"
+      "exampleAudio": "audio/get_on_example.mp3",
+      "level": 1
     },
     {
       "id": "get_out",
@@ -372,7 +404,8 @@
       "clozeSentence": "Let's _______ and have fun.",
       "scenario": "外出、秘密",
       "audio": "audio/get_out.mp3",
-      "exampleAudio": "audio/get_out_example.mp3"
+      "exampleAudio": "audio/get_out_example.mp3",
+      "level": 1
     },
     {
       "id": "get_over",
@@ -387,7 +420,8 @@
       "clozeSentence": "She _______ her fear of public speaking.",
       "scenario": "情感、挑戰",
       "audio": "audio/get_over.mp3",
-      "exampleAudio": "audio/get_over_example.mp3"
+      "exampleAudio": "audio/get_over_example.mp3",
+      "level": 1
     },
     {
       "id": "get_through",
@@ -402,7 +436,8 @@
       "clozeSentence": "I _______ the exam.",
       "scenario": "考試、聯繫",
       "audio": "audio/get_through.mp3",
-      "exampleAudio": "audio/get_through_example.mp3"
+      "exampleAudio": "audio/get_through_example.mp3",
+      "level": 1
     },
     {
       "id": "get_up",
@@ -417,7 +452,8 @@
       "clozeSentence": "I _______ at 6 a.m. daily.",
       "scenario": "日常、行動",
       "audio": "audio/get_up.mp3",
-      "exampleAudio": "audio/get_up_example.mp3"
+      "exampleAudio": "audio/get_up_example.mp3",
+      "level": 1
     },
     {
       "id": "make_for",
@@ -432,7 +468,8 @@
       "clozeSentence": "Good teamwork _______ success.",
       "scenario": "結果、移動",
       "audio": "audio/make_for.mp3",
-      "exampleAudio": "audio/make_for_example.mp3"
+      "exampleAudio": "audio/make_for_example.mp3",
+      "level": 1
     },
     {
       "id": "make_it",
@@ -447,7 +484,8 @@
       "clozeSentence": "She _______ to the top of the company.",
       "scenario": "成功、趕時間",
       "audio": "audio/make_it.mp3",
-      "exampleAudio": "audio/make_it_example.mp3"
+      "exampleAudio": "audio/make_it_example.mp3",
+      "level": 1
     },
     {
       "id": "make_out",
@@ -462,7 +500,8 @@
       "clozeSentence": "I can't _______ the handwriting.",
       "scenario": "閱讀、親密行為",
       "audio": "audio/make_out.mp3",
-      "exampleAudio": "audio/make_out_example.mp3"
+      "exampleAudio": "audio/make_out_example.mp3",
+      "level": 1
     },
     {
       "id": "make_up",
@@ -477,7 +516,8 @@
       "clozeSentence": "He _______ a funny story.",
       "scenario": "說謊、關係修復",
       "audio": "audio/make_up.mp3",
-      "exampleAudio": "audio/make_up_example.mp3"
+      "exampleAudio": "audio/make_up_example.mp3",
+      "level": 1
     },
     {
       "id": "make_over",
@@ -492,7 +532,8 @@
       "clozeSentence": "They _______ their old apartment.",
       "scenario": "裝修、外觀改變",
       "audio": "audio/make_over.mp3",
-      "exampleAudio": "audio/make_over_example.mp3"
+      "exampleAudio": "audio/make_over_example.mp3",
+      "level": 1
     },
     {
       "id": "break_down",
@@ -507,7 +548,8 @@
       "clozeSentence": "The car _______ on the highway.",
       "scenario": "機械故障、情緒",
       "audio": "audio/break_down.mp3",
-      "exampleAudio": "audio/break_down_example.mp3"
+      "exampleAudio": "audio/break_down_example.mp3",
+      "level": 1
     },
     {
       "id": "break_in",
@@ -522,7 +564,8 @@
       "clozeSentence": "Someone _______ last night.",
       "scenario": "安全、新品",
       "audio": "audio/break_in.mp3",
-      "exampleAudio": "audio/break_in_example.mp3"
+      "exampleAudio": "audio/break_in_example.mp3",
+      "level": 1
     },
     {
       "id": "break_off",
@@ -537,7 +580,8 @@
       "clozeSentence": "They _______ their engagement.",
       "scenario": "關係、談判",
       "audio": "audio/break_off.mp3",
-      "exampleAudio": "audio/break_off_example.mp3"
+      "exampleAudio": "audio/break_off_example.mp3",
+      "level": 1
     },
     {
       "id": "break_out",
@@ -552,7 +596,8 @@
       "clozeSentence": "A fire _______ in the building.",
       "scenario": "災害、逃跑",
       "audio": "audio/break_out.mp3",
-      "exampleAudio": "audio/break_out_example.mp3"
+      "exampleAudio": "audio/break_out_example.mp3",
+      "level": 1
     },
     {
       "id": "break_up",
@@ -567,7 +612,8 @@
       "clozeSentence": "They _______ after two years.",
       "scenario": "感情、會議",
       "audio": "audio/break_up.mp3",
-      "exampleAudio": "audio/break_up_example.mp3"
+      "exampleAudio": "audio/break_up_example.mp3",
+      "level": 1
     },
     {
       "id": "run_into",
@@ -582,7 +628,8 @@
       "clozeSentence": "I _______ an old friend yesterday.",
       "scenario": "社交、困難",
       "audio": "audio/run_into.mp3",
-      "exampleAudio": "audio/run_into_example.mp3"
+      "exampleAudio": "audio/run_into_example.mp3",
+      "level": 1
     },
     {
       "id": "run_out",
@@ -597,7 +644,8 @@
       "clozeSentence": "We _______ of milk.",
       "scenario": "資源短缺",
       "audio": "audio/run_out.mp3",
-      "exampleAudio": "audio/run_out_example.mp3"
+      "exampleAudio": "audio/run_out_example.mp3",
+      "level": 1
     },
     {
       "id": "run_over",
@@ -612,7 +660,8 @@
       "clozeSentence": "A car _______ my bike.",
       "scenario": "事故、檢查",
       "audio": "audio/run_over.mp3",
-      "exampleAudio": "audio/run_over_example.mp3"
+      "exampleAudio": "audio/run_over_example.mp3",
+      "level": 1
     },
     {
       "id": "run_through",
@@ -627,7 +676,8 @@
       "clozeSentence": "I _______ the document quickly.",
       "scenario": "檢查、財務",
       "audio": "audio/run_through.mp3",
-      "exampleAudio": "audio/run_through_example.mp3"
+      "exampleAudio": "audio/run_through_example.mp3",
+      "level": 1
     },
     {
       "id": "run_up",
@@ -642,7 +692,8 @@
       "clozeSentence": "He _______ a huge bill at the bar.",
       "scenario": "消費、債務",
       "audio": "audio/run_up.mp3",
-      "exampleAudio": "audio/run_up_example.mp3"
+      "exampleAudio": "audio/run_up_example.mp3",
+      "level": 1
     },
     {
       "id": "do_away_with",
@@ -657,7 +708,8 @@
       "clozeSentence": "They _______ outdated policies.",
       "scenario": "制度改變",
       "audio": "audio/do_away_with.mp3",
-      "exampleAudio": "audio/do_away_with_example.mp3"
+      "exampleAudio": "audio/do_away_with_example.mp3",
+      "level": 1
     },
     {
       "id": "do_over",
@@ -672,7 +724,8 @@
       "clozeSentence": "I need to _______ this essay over.",
       "scenario": "工作重做",
       "audio": "audio/do_over.mp3",
-      "exampleAudio": "audio/do_over_example.mp3"
+      "exampleAudio": "audio/do_over_example.mp3",
+      "level": 1
     },
     {
       "id": "do_up",
@@ -687,7 +740,8 @@
       "clozeSentence": "We're _______ the living room.",
       "scenario": "裝修、整理衣物",
       "audio": "audio/do_up.mp3",
-      "exampleAudio": "audio/do_up_example.mp3"
+      "exampleAudio": "audio/do_up_example.mp3",
+      "level": 1
     },
     {
       "id": "do_with",
@@ -702,7 +756,8 @@
       "clozeSentence": "I could _______ a coffee.",
       "scenario": "需求、解釋",
       "audio": "audio/do_with.mp3",
-      "exampleAudio": "audio/do_with_example.mp3"
+      "exampleAudio": "audio/do_with_example.mp3",
+      "level": 1
     },
     {
       "id": "do_without",
@@ -717,7 +772,8 @@
       "clozeSentence": "I can _______ dessert tonight.",
       "scenario": "缺少應對",
       "audio": "audio/do_without.mp3",
-      "exampleAudio": "audio/do_without_example.mp3"
+      "exampleAudio": "audio/do_without_example.mp3",
+      "level": 1
     },
     {
       "id": "have_on",
@@ -732,7 +788,8 @@
       "clozeSentence": "She _______ a blue scarf.",
       "scenario": "穿著、行程",
       "audio": "audio/have_on.mp3",
-      "exampleAudio": "audio/have_on_example.mp3"
+      "exampleAudio": "audio/have_on_example.mp3",
+      "level": 1
     },
     {
       "id": "have_over",
@@ -747,7 +804,8 @@
       "clozeSentence": "We _______ friends over for lunch.",
       "scenario": "社交聚會",
       "audio": "audio/have_over.mp3",
-      "exampleAudio": "audio/have_over_example.mp3"
+      "exampleAudio": "audio/have_over_example.mp3",
+      "level": 1
     },
     {
       "id": "have_to",
@@ -762,7 +820,8 @@
       "clozeSentence": "I _______ finish this by tonight.",
       "scenario": "責任、義務",
       "audio": "audio/have_to.mp3",
-      "exampleAudio": "audio/have_to_example.mp3"
+      "exampleAudio": "audio/have_to_example.mp3",
+      "level": 1
     },
     {
       "id": "have_out",
@@ -777,7 +836,8 @@
       "clozeSentence": "Let's _______ it out and solve this issue.",
       "scenario": "爭端解決",
       "audio": "audio/have_out.mp3",
-      "exampleAudio": "audio/have_out_example.mp3"
+      "exampleAudio": "audio/have_out_example.mp3",
+      "level": 1
     },
     {
       "id": "have_up",
@@ -792,7 +852,8 @@
       "clozeSentence": "He was _______ for parking illegally.",
       "scenario": "法律、討論",
       "audio": "audio/have_up.mp3",
-      "exampleAudio": "audio/have_up_example.mp3"
+      "exampleAudio": "audio/have_up_example.mp3",
+      "level": 1
     },
     {
       "id": "put_across",
@@ -807,7 +868,8 @@
       "clozeSentence": "She _______ her point across clearly.",
       "scenario": "演講、溝通",
       "audio": "audio/put_across.mp3",
-      "exampleAudio": "audio/put_across_example.mp3"
+      "exampleAudio": "audio/put_across_example.mp3",
+      "level": 1
     },
     {
       "id": "put_in",
@@ -822,7 +884,8 @@
       "clozeSentence": "I _______ three hours on this task.",
       "scenario": "努力、裝修",
       "audio": "audio/put_in.mp3",
-      "exampleAudio": "audio/put_in_example.mp3"
+      "exampleAudio": "audio/put_in_example.mp3",
+      "level": 1
     },
     {
       "id": "put_off",
@@ -837,7 +900,8 @@
       "clozeSentence": "The meeting was _______ until next week.",
       "scenario": "改期、反感",
       "audio": "audio/put_off.mp3",
-      "exampleAudio": "audio/put_off_example.mp3"
+      "exampleAudio": "audio/put_off_example.mp3",
+      "level": 1
     },
     {
       "id": "put_out",
@@ -852,7 +916,8 @@
       "clozeSentence": "_______ the cigarette.",
       "scenario": "消防、出版、不滿",
       "audio": "audio/put_out.mp3",
-      "exampleAudio": "audio/put_out_example.mp3"
+      "exampleAudio": "audio/put_out_example.mp3",
+      "level": 1
     },
     {
       "id": "put_up",
@@ -867,7 +932,8 @@
       "clozeSentence": "They _______ a tent.",
       "scenario": "露營、留宿、告示",
       "audio": "audio/put_up.mp3",
-      "exampleAudio": "audio/put_up_example.mp3"
+      "exampleAudio": "audio/put_up_example.mp3",
+      "level": 1
     },
     {
       "id": "go_for",
@@ -882,7 +948,8 @@
       "clozeSentence": "I'll _______ the pasta.",
       "scenario": "點餐、努力",
       "audio": "audio/go_for.mp3",
-      "exampleAudio": "audio/go_for_example.mp3"
+      "exampleAudio": "audio/go_for_example.mp3",
+      "level": 1
     },
     {
       "id": "go_off",
@@ -897,7 +964,8 @@
       "clozeSentence": "The milk _______.",
       "scenario": "食物、警報",
       "audio": "audio/go_off.mp3",
-      "exampleAudio": "audio/go_off_example.mp3"
+      "exampleAudio": "audio/go_off_example.mp3",
+      "level": 1
     },
     {
       "id": "go_on",
@@ -912,7 +980,8 @@
       "clozeSentence": "_______, tell me more!",
       "scenario": "鼓勵、詢問",
       "audio": "audio/go_on.mp3",
-      "exampleAudio": "audio/go_on_example.mp3"
+      "exampleAudio": "audio/go_on_example.mp3",
+      "level": 1
     },
     {
       "id": "go_over",
@@ -927,7 +996,8 @@
       "clozeSentence": "Let's _______ the plan again.",
       "scenario": "檢查、探訪",
       "audio": "audio/go_over.mp3",
-      "exampleAudio": "audio/go_over_example.mp3"
+      "exampleAudio": "audio/go_over_example.mp3",
+      "level": 1
     },
     {
       "id": "go_through",
@@ -942,7 +1012,8 @@
       "clozeSentence": "She _______ a hard time.",
       "scenario": "情感、整理",
       "audio": "audio/go_through.mp3",
-      "exampleAudio": "audio/go_through_example.mp3"
+      "exampleAudio": "audio/go_through_example.mp3",
+      "level": 1
     },
     {
       "id": "come_across",
@@ -957,7 +1028,8 @@
       "clozeSentence": "I _______ an old photo.",
       "scenario": "發現、第一印象",
       "audio": "audio/come_across.mp3",
-      "exampleAudio": "audio/come_across_example.mp3"
+      "exampleAudio": "audio/come_across_example.mp3",
+      "level": 1
     },
     {
       "id": "come_back",
@@ -972,7 +1044,8 @@
       "clozeSentence": "I'll _______ later.",
       "scenario": "返回、時尚",
       "audio": "audio/come_back.mp3",
-      "exampleAudio": "audio/come_back_example.mp3"
+      "exampleAudio": "audio/come_back_example.mp3",
+      "level": 1
     },
     {
       "id": "come_by",
@@ -987,7 +1060,8 @@
       "clozeSentence": "Jobs are hard to _______.",
       "scenario": "資源、探訪",
       "audio": "audio/come_by.mp3",
-      "exampleAudio": "audio/come_by_example.mp3"
+      "exampleAudio": "audio/come_by_example.mp3",
+      "level": 1
     },
     {
       "id": "come_up",
@@ -1002,7 +1076,8 @@
       "clozeSentence": "Something _______, so I'm late.",
       "scenario": "突發事件、討論",
       "audio": "audio/come_up.mp3",
-      "exampleAudio": "audio/come_up_example.mp3"
+      "exampleAudio": "audio/come_up_example.mp3",
+      "level": 1
     },
     {
       "id": "come_up_with",
@@ -1017,7 +1092,8 @@
       "clozeSentence": "She _______ a great plan.",
       "scenario": "創意、建議",
       "audio": "audio/come_up_with.mp3",
-      "exampleAudio": "audio/come_up_with_example.mp3"
+      "exampleAudio": "audio/come_up_with_example.mp3",
+      "level": 1
     },
     {
       "id": "set_about",
@@ -1032,7 +1108,8 @@
       "clozeSentence": "She _______ cleaning the house.",
       "scenario": "開工、行動",
       "audio": "audio/set_about.mp3",
-      "exampleAudio": "audio/set_about_example.mp3"
+      "exampleAudio": "audio/set_about_example.mp3",
+      "level": 1
     },
     {
       "id": "set_aside",
@@ -1047,7 +1124,8 @@
       "clozeSentence": "_______ some time for studying.",
       "scenario": "時間管理",
       "audio": "audio/set_aside.mp3",
-      "exampleAudio": "audio/set_aside_example.mp3"
+      "exampleAudio": "audio/set_aside_example.mp3",
+      "level": 1
     },
     {
       "id": "set_off",
@@ -1062,7 +1140,8 @@
       "clozeSentence": "We _______ for the beach at dawn.",
       "scenario": "旅行、事件",
       "audio": "audio/set_off.mp3",
-      "exampleAudio": "audio/set_off_example.mp3"
+      "exampleAudio": "audio/set_off_example.mp3",
+      "level": 1
     },
     {
       "id": "set_out",
@@ -1077,7 +1156,8 @@
       "clozeSentence": "They _______ to build a new app.",
       "scenario": "創業、表達",
       "audio": "audio/set_out.mp3",
-      "exampleAudio": "audio/set_out_example.mp3"
+      "exampleAudio": "audio/set_out_example.mp3",
+      "level": 1
     },
     {
       "id": "set_up",
@@ -1092,7 +1172,8 @@
       "clozeSentence": "They _______ a new company.",
       "scenario": "創業、計劃",
       "audio": "audio/set_up.mp3",
-      "exampleAudio": "audio/set_up_example.mp3"
+      "exampleAudio": "audio/set_up_example.mp3",
+      "level": 1
     },
     {
       "id": "look_after",
@@ -1107,7 +1188,8 @@
       "clozeSentence": "She _______ her younger brother on weekends.",
       "scenario": "育兒、寵物照顧",
       "audio": "audio/look_after.mp3",
-      "exampleAudio": "audio/look_after_example.mp3"
+      "exampleAudio": "audio/look_after_example.mp3",
+      "level": 1
     },
     {
       "id": "look_for",
@@ -1122,7 +1204,8 @@
       "clozeSentence": "I'm _______ my keys everywhere.",
       "scenario": "尋找物品",
       "audio": "audio/look_for.mp3",
-      "exampleAudio": "audio/look_for_example.mp3"
+      "exampleAudio": "audio/look_for_example.mp3",
+      "level": 1
     },
     {
       "id": "look_into",
@@ -1137,7 +1220,8 @@
       "clozeSentence": "They're _______ the cause of the issue.",
       "scenario": "問題解決、研究",
       "audio": "audio/look_into.mp3",
-      "exampleAudio": "audio/look_into_example.mp3"
+      "exampleAudio": "audio/look_into_example.mp3",
+      "level": 1
     },
     {
       "id": "look_out",
@@ -1152,7 +1236,8 @@
       "clozeSentence": "_______! There's a car coming!",
       "scenario": "警告、安全",
       "audio": "audio/look_out.mp3",
-      "exampleAudio": "audio/look_out_example.mp3"
+      "exampleAudio": "audio/look_out_example.mp3",
+      "level": 1
     },
     {
       "id": "look_up",
@@ -1167,7 +1252,8 @@
       "clozeSentence": "I _______ the word in the dictionary.",
       "scenario": "查詢、樂觀",
       "audio": "audio/look_up.mp3",
-      "exampleAudio": "audio/look_up_example.mp3"
+      "exampleAudio": "audio/look_up_example.mp3",
+      "level": 1
     },
     {
       "id": "turn_down",
@@ -1182,7 +1268,8 @@
       "clozeSentence": "She _______ the job offer.",
       "scenario": "工作機會、音量控制",
       "audio": "audio/turn_down.mp3",
-      "exampleAudio": "audio/turn_down_example.mp3"
+      "exampleAudio": "audio/turn_down_example.mp3",
+      "level": 1
     },
     {
       "id": "turn_into",
@@ -1197,7 +1284,8 @@
       "clozeSentence": "The caterpillar _______ a butterfly.",
       "scenario": "轉變",
       "audio": "audio/turn_into.mp3",
-      "exampleAudio": "audio/turn_into_example.mp3"
+      "exampleAudio": "audio/turn_into_example.mp3",
+      "level": 1
     },
     {
       "id": "turn_off",
@@ -1212,7 +1300,8 @@
       "clozeSentence": "_______ the lights before leaving.",
       "scenario": "電器、情感",
       "audio": "audio/turn_off.mp3",
-      "exampleAudio": "audio/turn_off_example.mp3"
+      "exampleAudio": "audio/turn_off_example.mp3",
+      "level": 1
     },
     {
       "id": "turn_on",
@@ -1227,7 +1316,8 @@
       "clozeSentence": "_______ the TV, please.",
       "scenario": "電器、熱情",
       "audio": "audio/turn_on.mp3",
-      "exampleAudio": "audio/turn_on_example.mp3"
+      "exampleAudio": "audio/turn_on_example.mp3",
+      "level": 1
     },
     {
       "id": "turn_up",
@@ -1242,7 +1332,8 @@
       "clozeSentence": "He _______ late to the party.",
       "scenario": "到達、音量控制",
       "audio": "audio/turn_up.mp3",
-      "exampleAudio": "audio/turn_up_example.mp3"
+      "exampleAudio": "audio/turn_up_example.mp3",
+      "level": 1
     },
     {
       "id": "bring_up",
@@ -1257,7 +1348,8 @@
       "clozeSentence": "She _______ an interesting point in the meeting.",
       "scenario": "討論、養育",
       "audio": "audio/bring_up.mp3",
-      "exampleAudio": "audio/bring_up_example.mp3"
+      "exampleAudio": "audio/bring_up_example.mp3",
+      "level": 1
     },
     {
       "id": "bring_about",
@@ -1272,7 +1364,8 @@
       "clozeSentence": "The new policy _______ many changes.",
       "scenario": "改變、影響",
       "audio": "audio/bring_about.mp3",
-      "exampleAudio": "audio/bring_about_example.mp3"
+      "exampleAudio": "audio/bring_about_example.mp3",
+      "level": 1
     },
     {
       "id": "bring_along",
@@ -1287,7 +1380,8 @@
       "clozeSentence": "Can I _______ a friend along to the party?",
       "scenario": "社交、攜帶",
       "audio": "audio/bring_along.mp3",
-      "exampleAudio": "audio/bring_along_example.mp3"
+      "exampleAudio": "audio/bring_along_example.mp3",
+      "level": 1
     },
     {
       "id": "bring_back",
@@ -1302,7 +1396,8 @@
       "clozeSentence": "This song _______ old memories.",
       "scenario": "回憶、歸還",
       "audio": "audio/bring_back.mp3",
-      "exampleAudio": "audio/bring_back_example.mp3"
+      "exampleAudio": "audio/bring_back_example.mp3",
+      "level": 1
     },
     {
       "id": "bring_out",
@@ -1317,7 +1412,8 @@
       "clozeSentence": "They _______ a new product line.",
       "scenario": "產品發布、特點",
       "audio": "audio/bring_out.mp3",
-      "exampleAudio": "audio/bring_out_example.mp3"
+      "exampleAudio": "audio/bring_out_example.mp3",
+      "level": 1
     },
     {
       "id": "give_up",
@@ -1332,7 +1428,8 @@
       "clozeSentence": "He _______ smoking last year.",
       "scenario": "改變習慣",
       "audio": "audio/give_up.mp3",
-      "exampleAudio": "audio/give_up_example.mp3"
+      "exampleAudio": "audio/give_up_example.mp3",
+      "level": 1
     },
     {
       "id": "give_in",
@@ -1347,7 +1444,8 @@
       "clozeSentence": "She _______ to her kids' demands.",
       "scenario": "妥協、爭論",
       "audio": "audio/give_in.mp3",
-      "exampleAudio": "audio/give_in_example.mp3"
+      "exampleAudio": "audio/give_in_example.mp3",
+      "level": 1
     },
     {
       "id": "give_out",
@@ -1362,7 +1460,8 @@
       "clozeSentence": "They _______ free samples at the store.",
       "scenario": "分享、資源耗盡",
       "audio": "audio/give_out.mp3",
-      "exampleAudio": "audio/give_out_example.mp3"
+      "exampleAudio": "audio/give_out_example.mp3",
+      "level": 1
     },
     {
       "id": "give_away",
@@ -1377,7 +1476,8 @@
       "clozeSentence": "Don’t _______ the surprise!",
       "scenario": "禮物、秘密",
       "audio": "audio/give_away.mp3",
-      "exampleAudio": "audio/give_away_example.mp3"
+      "exampleAudio": "audio/give_away_example.mp3",
+      "level": 1
     },
     {
       "id": "give_back",
@@ -1392,7 +1492,8 @@
       "clozeSentence": "I _______ the book back to her.",
       "scenario": "歸還、慈善",
       "audio": "audio/give_back.mp3",
-      "exampleAudio": "audio/give_back_example.mp3"
+      "exampleAudio": "audio/give_back_example.mp3",
+      "level": 1
     },
     {
       "id": "keep_up",
@@ -1407,7 +1508,8 @@
       "clozeSentence": "_______ with the latest trends.",
       "scenario": "進度、學習",
       "audio": "audio/keep_up.mp3",
-      "exampleAudio": "audio/keep_up_example.mp3"
+      "exampleAudio": "audio/keep_up_example.mp3",
+      "level": 1
     },
     {
       "id": "keep_on",
@@ -1422,7 +1524,8 @@
       "clozeSentence": "She _______ working despite being tired.",
       "scenario": "堅持、行動",
       "audio": "audio/keep_on.mp3",
-      "exampleAudio": "audio/keep_on_example.mp3"
+      "exampleAudio": "audio/keep_on_example.mp3",
+      "level": 1
     },
     {
       "id": "keep_out",
@@ -1437,7 +1540,8 @@
       "clozeSentence": "The sign says '_______'.",
       "scenario": "安全、限制",
       "audio": "audio/keep_out.mp3",
-      "exampleAudio": "audio/keep_out_example.mp3"
+      "exampleAudio": "audio/keep_out_example.mp3",
+      "level": 1
     },
     {
       "id": "keep_off",
@@ -1452,7 +1556,8 @@
       "clozeSentence": "_______ the grass, please.",
       "scenario": "規則、保護",
       "audio": "audio/keep_off.mp3",
-      "exampleAudio": "audio/keep_off_example.mp3"
+      "exampleAudio": "audio/keep_off_example.mp3",
+      "level": 1
     },
     {
       "id": "keep_in",
@@ -1467,7 +1572,936 @@
       "clozeSentence": "Try to _______ your anger in.",
       "scenario": "情緒管理、限制",
       "audio": "audio/keep_in.mp3",
-      "exampleAudio": "audio/keep_in_example.mp3"
+      "exampleAudio": "audio/keep_in_example.mp3",
+      "level": 1
+    },
+    {
+      "id": "pick_up",
+      "level": 2,
+      "verb": "pick",
+      "phrasal": "pick up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "接電話、接送人、順便買、習得技能",
+      "meaning": "Collect someone/something, answer a call, or learn casually",
+      "example": "Can you pick up some milk on your way home?",
+      "exampleChinese": "你回家的路上能順便買點牛奶嗎？",
+      "clozeSentence": "Can you _______ some milk on your way home?",
+      "scenario": "生活採買、接送",
+      "audio": "audio/pick_up.mp3",
+      "exampleAudio": "audio/pick_up_example.mp3"
+    },
+    {
+      "id": "figure_out",
+      "level": 2,
+      "verb": "figure",
+      "phrasal": "figure out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "想通、弄明白、解決問題",
+      "meaning": "Understand, solve, or find the answer to something",
+      "example": "I'm trying to figure out how this machine works.",
+      "exampleChinese": "我正在試著弄明白這台機器是怎麼運作的。",
+      "clozeSentence": "I'm trying to _______ how this machine works.",
+      "scenario": "思考、解決難題",
+      "audio": "audio/figure_out.mp3",
+      "exampleAudio": "audio/figure_out_example.mp3"
+    },
+    {
+      "id": "hang_out",
+      "level": 2,
+      "verb": "hang",
+      "phrasal": "hang out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "外出閒晃、聚聚聚會",
+      "meaning": "Spend casual time relaxing with friends",
+      "example": "We usually hang out at the local cafe on weekends.",
+      "exampleChinese": "我們週末通常會在那家當地的咖啡廳聚聚消磨時間。",
+      "clozeSentence": "We usually _______ at the local cafe on weekends.",
+      "scenario": "社交、休閒",
+      "audio": "audio/hang_out.mp3",
+      "exampleAudio": "audio/hang_out_example.mp3"
+    },
+    {
+      "id": "hang_on",
+      "level": 2,
+      "verb": "hang",
+      "phrasal": "hang on",
+      "particle": "on",
+      "primaryParticle": "on",
+      "chineseMeaning": "稍等一下、堅持住",
+      "meaning": "Wait a short time or hold tightly",
+      "example": "Hang on a second, I will be right with you.",
+      "exampleChinese": "稍等我一下，我馬上就來找你。",
+      "clozeSentence": "_______ a second, I will be right with you.",
+      "scenario": "等待、短暫中斷",
+      "audio": "audio/hang_on.mp3",
+      "exampleAudio": "audio/hang_on_example.mp3"
+    },
+    {
+      "id": "hang_up",
+      "level": 2,
+      "verb": "hang",
+      "phrasal": "hang up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "掛斷電話",
+      "meaning": "End a telephone call by placing the receiver down",
+      "example": "Please do not hang up before I explain everything.",
+      "exampleChinese": "在我解釋完一切之前，請先別掛斷電話。",
+      "clozeSentence": "Please do not _______ before I explain everything.",
+      "scenario": "通訊聯絡",
+      "audio": "audio/hang_up.mp3",
+      "exampleAudio": "audio/hang_up_example.mp3"
+    },
+    {
+      "id": "hold_on",
+      "level": 2,
+      "verb": "hold",
+      "phrasal": "hold on",
+      "particle": "on",
+      "primaryParticle": "on",
+      "chineseMeaning": "稍等片刻、撐住",
+      "meaning": "Wait a short moment or endure a difficult situation",
+      "example": "Hold on while I grab a pen to write this down.",
+      "exampleChinese": "等我一下，我拿支筆把這個記下來。",
+      "clozeSentence": "_______ while I grab a pen to write this down.",
+      "scenario": "電話、日常等待",
+      "audio": "audio/hold_on.mp3",
+      "exampleAudio": "audio/hold_on_example.mp3"
+    },
+    {
+      "id": "hold_up",
+      "level": 2,
+      "verb": "hold",
+      "phrasal": "hold up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "延誤阻礙、支撐住",
+      "meaning": "Delay progress or remain strong under pressure",
+      "example": "Heavy morning traffic held us up for nearly an hour.",
+      "exampleChinese": "早晨繁重的車流讓我們延誤了將近一個小時。",
+      "clozeSentence": "Heavy morning traffic _______ us up for nearly an hour.",
+      "scenario": "交通、進度受阻",
+      "audio": "audio/hold_up.mp3",
+      "exampleAudio": "audio/hold_up_example.mp3"
+    },
+    {
+      "id": "check_in",
+      "level": 2,
+      "verb": "check",
+      "phrasal": "check in",
+      "particle": "in",
+      "primaryParticle": "in",
+      "chineseMeaning": "辦理報到、入住手續",
+      "meaning": "Register arrival at an airport, hotel, or clinic",
+      "example": "We need to check in at the hotel before dinner.",
+      "exampleChinese": "我們需要在吃晚餐前到飯店辦理入住手續。",
+      "clozeSentence": "We need to _______ at the hotel before dinner.",
+      "scenario": "飯店、機場旅行",
+      "audio": "audio/check_in.mp3",
+      "exampleAudio": "audio/check_in_example.mp3"
+    },
+    {
+      "id": "check_out",
+      "level": 2,
+      "verb": "check",
+      "phrasal": "check out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "退房結帳、去查看瞧瞧",
+      "meaning": "Pay and leave a hotel, or inspect something interesting",
+      "example": "You should definitely check out that new bookstore.",
+      "exampleChinese": "你一定要抽空去瞧瞧那家新開的書店。",
+      "clozeSentence": "You should definitely _______ that new bookstore.",
+      "scenario": "旅遊、探索新事物",
+      "audio": "audio/check_out.mp3",
+      "exampleAudio": "audio/check_out_example.mp3"
+    },
+    {
+      "id": "call_off",
+      "level": 2,
+      "verb": "call",
+      "phrasal": "call off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "取消活動或會議",
+      "meaning": "Cancel an event, arrangement, or scheduled activity",
+      "example": "They decided to call off the soccer match due to heavy rain.",
+      "exampleChinese": "因為下大雨，他們決定取消這場足球比賽。",
+      "clozeSentence": "They decided to _______ the soccer match due to heavy rain.",
+      "scenario": "行程取消、會議",
+      "audio": "audio/call_off.mp3",
+      "exampleAudio": "audio/call_off_example.mp3"
+    },
+    {
+      "id": "call_back",
+      "level": 2,
+      "verb": "call",
+      "phrasal": "call back",
+      "particle": "back",
+      "primaryParticle": "back",
+      "chineseMeaning": "回電話",
+      "meaning": "Return a phone call to someone later",
+      "example": "I am in a meeting right now, so I will call you back later.",
+      "exampleChinese": "我現在正在開會，稍後會回電話給你。",
+      "clozeSentence": "I am in a meeting right now, so I will _______ you back later.",
+      "scenario": "電話溝通",
+      "audio": "audio/call_back.mp3",
+      "exampleAudio": "audio/call_back_example.mp3"
+    },
+    {
+      "id": "show_up",
+      "level": 2,
+      "verb": "show",
+      "phrasal": "show up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "出席、到場現身",
+      "meaning": "Arrive or appear at an appointed place",
+      "example": "Only ten people showed up for the presentation.",
+      "exampleChinese": "只有十個人出席了那場簡報說明會。",
+      "clozeSentence": "Only ten people _______ for the presentation.",
+      "scenario": "約會、會議出席",
+      "audio": "audio/show_up.mp3",
+      "exampleAudio": "audio/show_up_example.mp3"
+    },
+    {
+      "id": "show_off",
+      "level": 2,
+      "verb": "show",
+      "phrasal": "show off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "炫耀、賣弄顯擺",
+      "meaning": "Display abilities or possessions to impress others",
+      "example": "He likes to show off his expensive designer watch.",
+      "exampleChinese": "他很喜歡炫耀他那支昂貴的名牌手錶。",
+      "clozeSentence": "He likes to _______ his expensive designer watch.",
+      "scenario": "社交行為",
+      "audio": "audio/show_off.mp3",
+      "exampleAudio": "audio/show_off_example.mp3"
+    },
+    {
+      "id": "drop_by",
+      "level": 2,
+      "verb": "drop",
+      "phrasal": "drop by",
+      "particle": "by",
+      "primaryParticle": "by",
+      "chineseMeaning": "順道拜訪、順路來訪",
+      "meaning": "Visit someone informally without making an appointment",
+      "example": "Feel free to drop by my office whenever you have questions.",
+      "exampleChinese": "你如果有任何問題，隨時歡迎順道來我的辦公室。",
+      "clozeSentence": "Feel free to _______ my office whenever you have questions.",
+      "scenario": "拜訪、人際往來",
+      "audio": "audio/drop_by.mp3",
+      "exampleAudio": "audio/drop_by_example.mp3"
+    },
+    {
+      "id": "drop_off",
+      "level": 2,
+      "verb": "drop",
+      "phrasal": "drop off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "順路送達、把...放下",
+      "meaning": "Deliver something or leave someone at a destination",
+      "example": "I will drop you off at the MRT station.",
+      "exampleChinese": "我順路送你到捷運站下車。",
+      "clozeSentence": "I will _______ you off at the MRT station.",
+      "scenario": "交通接送、送貨",
+      "audio": "audio/drop_off.mp3",
+      "exampleAudio": "audio/drop_off_example.mp3"
+    },
+    {
+      "id": "point_out",
+      "level": 2,
+      "verb": "point",
+      "phrasal": "point out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "指出錯誤、點出重點",
+      "meaning": "Direct attention toward an important fact or mistake",
+      "example": "The editor pointed out several minor typos in the article.",
+      "exampleChinese": "編輯指出了文章中的幾處小拼字錯誤。",
+      "clozeSentence": "The editor _______ several minor typos in the article.",
+      "scenario": "工作審查、討論",
+      "audio": "audio/point_out.mp3",
+      "exampleAudio": "audio/point_out_example.mp3"
+    },
+    {
+      "id": "pass_out",
+      "level": 2,
+      "verb": "pass",
+      "phrasal": "pass out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "昏倒、失去知覺",
+      "meaning": "Become unconscious suddenly, usually from heat or exhaustion",
+      "example": "The room was so stuffy that she nearly passed out.",
+      "exampleChinese": "房間裡太悶熱了，她差點暈倒過去。",
+      "clozeSentence": "The room was so stuffy that she nearly _______.",
+      "scenario": "健康急救",
+      "audio": "audio/pass_out.mp3",
+      "exampleAudio": "audio/pass_out_example.mp3"
+    },
+    {
+      "id": "pass_away",
+      "level": 2,
+      "verb": "pass",
+      "phrasal": "pass away",
+      "particle": "away",
+      "primaryParticle": "away",
+      "chineseMeaning": "過世、逝世（委婉說法）",
+      "meaning": "Polite euphemism meaning to die",
+      "example": "His grandmother passed away peacefully in her sleep.",
+      "exampleChinese": "他的祖母在睡夢中安詳離世。",
+      "clozeSentence": "His grandmother _______ peacefully in her sleep.",
+      "scenario": "悼念、生老病死",
+      "audio": "audio/pass_away.mp3",
+      "exampleAudio": "audio/pass_away_example.mp3"
+    },
+    {
+      "id": "watch_out",
+      "level": 2,
+      "verb": "watch",
+      "phrasal": "watch out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "當心、小心注意",
+      "meaning": "Be alert and cautious of potential danger",
+      "example": "Watch out for fast-moving bicycles on the sidewalk.",
+      "exampleChinese": "在人行道上要當心快速騎行的自行車。",
+      "clozeSentence": "_______ for fast-moving bicycles on the sidewalk.",
+      "scenario": "安全警示",
+      "audio": "audio/watch_out.mp3",
+      "exampleAudio": "audio/watch_out_example.mp3"
+    },
+    {
+      "id": "follow_up",
+      "level": 2,
+      "verb": "follow",
+      "phrasal": "follow up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "後續跟進、進一步追蹤",
+      "meaning": "Take further action on something already started",
+      "example": "I will follow up with the client early next week.",
+      "exampleChinese": "我下週初會再向客戶做進一步的追蹤跟進。",
+      "clozeSentence": "I will _______ with the client early next week.",
+      "scenario": "職場工作、客戶服務",
+      "audio": "audio/follow_up.mp3",
+      "exampleAudio": "audio/follow_up_example.mp3"
+    },
+    {
+      "id": "reach_out",
+      "level": 2,
+      "verb": "reach",
+      "phrasal": "reach out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "主動聯絡、接洽尋求合作",
+      "meaning": "Contact someone to offer help, collaborate, or communicate",
+      "example": "Please reach out to our support team if you encounter any bugs.",
+      "exampleChinese": "如果您遇到任何問題，請隨時主動聯繫我們的支援團隊。",
+      "clozeSentence": "Please _______ to our support team if you encounter any bugs.",
+      "scenario": "職場溝通、商務書信",
+      "audio": "audio/reach_out.mp3",
+      "exampleAudio": "audio/reach_out_example.mp3"
+    },
+    {
+      "id": "wrap_up",
+      "level": 2,
+      "verb": "wrap",
+      "phrasal": "wrap up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "圓滿結束、收尾工作",
+      "meaning": "Conclude a meeting, project, or task successfully",
+      "example": "Let us wrap up today's discussion and summarize action items.",
+      "exampleChinese": "讓我們結束今天的討論，並總結後續執行項目。",
+      "clozeSentence": "Let us _______ today's discussion and summarize action items.",
+      "scenario": "會議主持、工作結案",
+      "audio": "audio/wrap_up.mp3",
+      "exampleAudio": "audio/wrap_up_example.mp3"
+    },
+    {
+      "id": "fill_out",
+      "level": 2,
+      "verb": "fill",
+      "phrasal": "fill out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "填寫整份表格",
+      "meaning": "Complete an application form by providing all required info",
+      "example": "Every applicant must fill out this health questionnaire.",
+      "exampleChinese": "每位申請人都必須完整填寫這份健康問卷。",
+      "clozeSentence": "Every applicant must _______ this health questionnaire.",
+      "scenario": "行政手續、辦公",
+      "audio": "audio/fill_out.mp3",
+      "exampleAudio": "audio/fill_out_example.mp3"
+    },
+    {
+      "id": "fill_in",
+      "level": 2,
+      "verb": "fill",
+      "phrasal": "fill in",
+      "particle": "in",
+      "primaryParticle": "in",
+      "chineseMeaning": "填補空格、臨時代班",
+      "meaning": "Fill specific fields or temporarily replace an absent colleague",
+      "example": "Can you fill in for Sarah while she is away on vacation?",
+      "exampleChinese": "莎拉休假期間，你能替她代班一下嗎？",
+      "clozeSentence": "Can you _______ for Sarah while she is away on vacation?",
+      "scenario": "職場代班、填表",
+      "audio": "audio/fill_in.mp3",
+      "exampleAudio": "audio/fill_in_example.mp3"
+    },
+    {
+      "id": "sign_up",
+      "level": 2,
+      "verb": "sign",
+      "phrasal": "sign up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "報名參加、註冊帳號",
+      "meaning": "Enroll in an event, class, or register for a service",
+      "example": "Hundreds of learners signed up for the free online workshop.",
+      "exampleChinese": "數百名學員報名參加了這場免費的線上工作坊。",
+      "clozeSentence": "Hundreds of learners _______ for the free online workshop.",
+      "scenario": "報名、帳號註冊",
+      "audio": "audio/sign_up.mp3",
+      "exampleAudio": "audio/sign_up_example.mp3"
+    },
+    {
+      "id": "sign_off",
+      "level": 2,
+      "verb": "sign",
+      "phrasal": "sign off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "簽署批准、審核通過",
+      "meaning": "Give official formal approval to conclude or release something",
+      "example": "The executive director finally signed off on the new budget proposal.",
+      "exampleChinese": "執行董事終於簽署核准了這項新預算提案。",
+      "clozeSentence": "The executive director finally _______ on the new budget proposal.",
+      "scenario": "主管核可、公文簽核",
+      "audio": "audio/sign_off.mp3",
+      "exampleAudio": "audio/sign_off_example.mp3"
+    },
+    {
+      "id": "roll_out",
+      "level": 2,
+      "verb": "roll",
+      "phrasal": "roll out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "正式發布推行（新功能/產品）",
+      "meaning": "Officially introduce a new system, product, or policy to users",
+      "example": "The tech firm plans to roll out the updated mobile feature next month.",
+      "exampleChinese": "這家科技公司計劃於下個月正式推出升級的手機新功能。",
+      "clozeSentence": "The tech firm plans to _______ the updated mobile feature next month.",
+      "scenario": "產品發布、政策推行",
+      "audio": "audio/roll_out.mp3",
+      "exampleAudio": "audio/roll_out_example.mp3"
+    },
+    {
+      "id": "work_on",
+      "level": 2,
+      "verb": "work",
+      "phrasal": "work on",
+      "particle": "on",
+      "primaryParticle": "on",
+      "chineseMeaning": "致力於、著手處理",
+      "meaning": "Spend time and effort improving or developing something",
+      "example": "Our engineering squad is working on a high-speed database engine.",
+      "exampleChinese": "我們的工程團隊目前正致力於開發一款高速資料庫引擎。",
+      "clozeSentence": "Our engineering squad is _______ a high-speed database engine.",
+      "scenario": "專案開發、工作日常",
+      "audio": "audio/work_on.mp3",
+      "exampleAudio": "audio/work_on_example.mp3"
+    },
+    {
+      "id": "carry_out",
+      "level": 2,
+      "verb": "carry",
+      "phrasal": "carry out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "落實執行、付諸實施",
+      "meaning": "Perform, complete, or execute a planned task or experiment",
+      "example": "Scientists carried out multiple tests to confirm the hypothesis.",
+      "exampleChinese": "科學家們執行了多次測試以驗證該項假設。",
+      "clozeSentence": "Scientists _______ multiple tests to confirm the hypothesis.",
+      "scenario": "研究試驗、專案執行",
+      "audio": "audio/carry_out.mp3",
+      "exampleAudio": "audio/carry_out_example.mp3"
+    },
+    {
+      "id": "carry_on",
+      "level": 2,
+      "verb": "carry",
+      "phrasal": "carry on",
+      "particle": "on",
+      "primaryParticle": "on",
+      "chineseMeaning": "繼續進行、堅持下去",
+      "meaning": "Continue doing something without pausing",
+      "example": "Despite the noisy distractions, they carried on studying.",
+      "exampleChinese": "儘管周遭噪音干擾，他們依然繼續堅持讀書。",
+      "clozeSentence": "Despite the noisy distractions, they _______ studying.",
+      "scenario": "學習日常、專注堅持",
+      "audio": "audio/carry_on.mp3",
+      "exampleAudio": "audio/carry_on_example.mp3"
+    },
+    {
+      "id": "stand_out",
+      "level": 2,
+      "verb": "stand",
+      "phrasal": "stand out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "脫穎而出、格外引人注目",
+      "meaning": "Be very noticeable, distinctive, or clearly superior",
+      "example": "Her impressive public speaking skills made her stand out among candidates.",
+      "exampleChinese": "她出色的公開演講能力讓她在眾多候選人中脫穎而出。",
+      "clozeSentence": "Her impressive public speaking skills made her _______ among candidates.",
+      "scenario": "面試求職、才華展現",
+      "audio": "audio/stand_out.mp3",
+      "exampleAudio": "audio/stand_out_example.mp3"
+    },
+    {
+      "id": "stand_by",
+      "level": 2,
+      "verb": "stand",
+      "phrasal": "stand by",
+      "particle": "by",
+      "primaryParticle": "by",
+      "chineseMeaning": "力挺支持、隨時待命",
+      "meaning": "Support someone in difficult times, or remain ready for action",
+      "example": "I will always stand by my teammates when challenges arise.",
+      "exampleChinese": "每當挑戰來臨時，我總是會堅定地力挺我的隊友。",
+      "clozeSentence": "I will always _______ my teammates when challenges arise.",
+      "scenario": "團隊支持、待命狀態",
+      "audio": "audio/stand_by.mp3",
+      "exampleAudio": "audio/stand_by_example.mp3"
+    },
+    {
+      "id": "calm_down",
+      "level": 2,
+      "verb": "calm",
+      "phrasal": "calm down",
+      "particle": "down",
+      "primaryParticle": "down",
+      "chineseMeaning": "平靜下來、放鬆情緒",
+      "meaning": "Become peaceful, quiet, or less agitated",
+      "example": "Please take a deep slow breath and calm down.",
+      "exampleChinese": "請緩緩深吸一口氣，讓自己平靜下來。",
+      "clozeSentence": "Please take a deep slow breath and _______.",
+      "scenario": "情緒調節",
+      "audio": "audio/calm_down.mp3",
+      "exampleAudio": "audio/calm_down_example.mp3"
+    },
+    {
+      "id": "settle_down",
+      "level": 2,
+      "verb": "settle",
+      "phrasal": "settle down",
+      "particle": "down",
+      "primaryParticle": "down",
+      "chineseMeaning": "安定下來、定居生活",
+      "meaning": "Begin living a stable, peaceful, and permanent routine",
+      "example": "After wandering for years, he finally settled down in Canada.",
+      "exampleChinese": "漂泊多年之後，他終於在加拿大安頓定居下來。",
+      "clozeSentence": "After wandering for years, he finally _______ in Canada.",
+      "scenario": "生活規劃、成家立業",
+      "audio": "audio/settle_down.mp3",
+      "exampleAudio": "audio/settle_down_example.mp3"
+    },
+    {
+      "id": "grow_up",
+      "level": 2,
+      "verb": "grow",
+      "phrasal": "grow up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "長大成人、成熟成長",
+      "meaning": "Develop from childhood into adulthood",
+      "example": "I grew up in a quiet farming village surrounded by mountains.",
+      "exampleChinese": "我在一個群山環繞的寧靜農村長大成人。",
+      "clozeSentence": "I _______ in a quiet farming village surrounded by mountains.",
+      "scenario": "童年回憶、成長歷程",
+      "audio": "audio/grow_up.mp3",
+      "exampleAudio": "audio/grow_up_example.mp3"
+    },
+    {
+      "id": "fall_apart",
+      "level": 2,
+      "verb": "fall",
+      "phrasal": "fall apart",
+      "particle": "apart",
+      "primaryParticle": "apart",
+      "chineseMeaning": "散架毀壞、心態崩潰",
+      "meaning": "Break into pieces physically or fail completely emotionally",
+      "example": "That worn-out leather wallet is beginning to fall apart.",
+      "exampleChinese": "那個用得老舊的皮夾已經開始快散架了。",
+      "clozeSentence": "That worn-out leather wallet is beginning to _______.",
+      "scenario": "物品老化、心理壓力",
+      "audio": "audio/fall_apart.mp3",
+      "exampleAudio": "audio/fall_apart_example.mp3"
+    },
+    {
+      "id": "fall_behind",
+      "level": 2,
+      "verb": "fall",
+      "phrasal": "fall behind",
+      "particle": "behind",
+      "primaryParticle": "behind",
+      "chineseMeaning": "落後進度、脫節",
+      "meaning": "Fail to maintain the necessary pace or schedule",
+      "example": "If you procrastinate on homework, you will fall behind quickly.",
+      "exampleChinese": "如果你老是拖延功課，很快就會落後進度。",
+      "clozeSentence": "If you procrastinate on homework, you will _______ quickly.",
+      "scenario": "課業學習、工作效率",
+      "audio": "audio/fall_behind.mp3",
+      "exampleAudio": "audio/fall_behind_example.mp3"
+    },
+    {
+      "id": "pay_off",
+      "level": 2,
+      "verb": "pay",
+      "phrasal": "pay off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "得到豐厚回報、清償債務",
+      "meaning": "Yield good results after effort, or settle debt entirely",
+      "example": "Your rigorous consistency will surely pay off in future examinations.",
+      "exampleChinese": "你嚴謹持之以恆的努力，在未來的考試中必將得到回報。",
+      "clozeSentence": "Your rigorous consistency will surely _______ in future examinations.",
+      "scenario": "努力成果、投資",
+      "audio": "audio/pay_off.mp3",
+      "exampleAudio": "audio/pay_off_example.mp3"
+    },
+    {
+      "id": "pay_back",
+      "level": 2,
+      "verb": "pay",
+      "phrasal": "pay back",
+      "particle": "back",
+      "primaryParticle": "back",
+      "chineseMeaning": "還錢、償還人情",
+      "meaning": "Return borrowed money or repay a kind favor",
+      "example": "I promise to pay you back as soon as my wage arrives.",
+      "exampleChinese": "我保證薪水一入帳就立刻把錢還你。",
+      "clozeSentence": "I promise to _______ you back as soon as my wage arrives.",
+      "scenario": "金錢借貸、人情往來",
+      "audio": "audio/pay_back.mp3",
+      "exampleAudio": "audio/pay_back_example.mp3"
+    },
+    {
+      "id": "cut_down",
+      "level": 2,
+      "verb": "cut",
+      "phrasal": "cut down",
+      "particle": "down",
+      "primaryParticle": "down",
+      "chineseMeaning": "縮減用量、減少花費",
+      "meaning": "Reduce the quantity or frequency of something consumed",
+      "example": "The physician recommended that he cut down on sugary drinks.",
+      "exampleChinese": "醫生建議他必須減少含糖飲料的攝取量。",
+      "clozeSentence": "The physician recommended that he _______ on sugary drinks.",
+      "scenario": "健康生活、預算控管",
+      "audio": "audio/cut_down.mp3",
+      "exampleAudio": "audio/cut_down_example.mp3"
+    },
+    {
+      "id": "cut_off",
+      "level": 2,
+      "verb": "cut",
+      "phrasal": "cut off",
+      "particle": "off",
+      "primaryParticle": "off",
+      "chineseMeaning": "切斷電源、阻絕通訊",
+      "meaning": "Interrupt or disconnect a supply of electricity, water, or phone",
+      "example": "The sudden earthquake cut off electrical supply to the entire district.",
+      "exampleChinese": "突如其來的地震切斷了整個區域的電力供應。",
+      "clozeSentence": "The sudden earthquake _______ electrical supply to the entire district.",
+      "scenario": "意外災害、水電通訊",
+      "audio": "audio/cut_off.mp3",
+      "exampleAudio": "audio/cut_off_example.mp3"
+    },
+    {
+      "id": "end_up",
+      "level": 2,
+      "verb": "end",
+      "phrasal": "end up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "最終成為、落得...下場",
+      "meaning": "Finally reach a specific place or state after a journey or process",
+      "example": "We took a wrong highway exit and ended up in a strange town.",
+      "exampleChinese": "我們下錯了公路交流道，結果最終來到了一座陌生小鎮。",
+      "clozeSentence": "We took a wrong highway exit and _______ in a strange town.",
+      "scenario": "意外走向、命運結果",
+      "audio": "audio/end_up.mp3",
+      "exampleAudio": "audio/end_up_example.mp3"
+    },
+    {
+      "id": "sort_out",
+      "level": 2,
+      "verb": "sort",
+      "phrasal": "sort out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "梳理整理、妥善解決問題",
+      "meaning": "Organize neatly or resolve a complicated difficulty",
+      "example": "Give me ten minutes to sort out these messy sales receipts.",
+      "exampleChinese": "給我十分鐘，讓我把這些凌亂的銷售發票整理好。",
+      "clozeSentence": "Give me ten minutes to _______ these messy sales receipts.",
+      "scenario": "資料整理、排解紛爭",
+      "audio": "audio/sort_out.mp3",
+      "exampleAudio": "audio/sort_out_example.mp3"
+    },
+    {
+      "id": "blow_up",
+      "level": 2,
+      "verb": "blow",
+      "phrasal": "blow up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "爆炸發作、大發雷霆",
+      "meaning": "Explode violently or suddenly become furious with anger",
+      "example": "He blew up when he discovered his computer files were deleted.",
+      "exampleChinese": "當他發現自己的電腦檔案被刪除時，頓時大發雷霆。",
+      "clozeSentence": "He _______ when he discovered his computer files were deleted.",
+      "scenario": "脾氣爆發、物理爆炸",
+      "audio": "audio/blow_up.mp3",
+      "exampleAudio": "audio/blow_up_example.mp3"
+    },
+    {
+      "id": "burn_out",
+      "level": 2,
+      "verb": "burn",
+      "phrasal": "burn out",
+      "particle": "out",
+      "primaryParticle": "out",
+      "chineseMeaning": "精疲力竭、身心俱疲燃盡",
+      "meaning": "Become completely exhausted through chronic overwork and stress",
+      "example": "Working excessive overtime without rest will make you burn out rapidly.",
+      "exampleChinese": "過度加班而不休息，會讓你很快陷入身心俱疲的倦怠期。",
+      "clozeSentence": "Working excessive overtime without rest will make you _______ rapidly.",
+      "scenario": "職場過勞、心理健康",
+      "audio": "audio/burn_out.mp3",
+      "exampleAudio": "audio/burn_out_example.mp3"
+    },
+    {
+      "id": "cheer_up",
+      "level": 2,
+      "verb": "cheer",
+      "phrasal": "cheer up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "振作精神、開心起來",
+      "meaning": "Become happier or cause someone to feel encouraged",
+      "example": "We brought some warm chicken soup to cheer up our sick neighbor.",
+      "exampleChinese": "我們帶了點熱雞湯去探望生病的鄰居，希望能讓他打起精神來。",
+      "clozeSentence": "We brought some warm chicken soup to _______ our sick neighbor.",
+      "scenario": "安慰打氣、人情關懷",
+      "audio": "audio/cheer_up.mp3",
+      "exampleAudio": "audio/cheer_up_example.mp3"
+    },
+    {
+      "id": "count_on",
+      "level": 2,
+      "verb": "count",
+      "phrasal": "count on",
+      "particle": "on",
+      "primaryParticle": "on",
+      "chineseMeaning": "信賴仰賴、指望某人",
+      "meaning": "Rely with certainty on someone for trustworthy support",
+      "example": "You can always count on us whenever you face trouble.",
+      "exampleChinese": "每當你遇到困難時，隨時都可以信賴依靠我們。",
+      "clozeSentence": "You can always _______ us whenever you face trouble.",
+      "scenario": "信任承諾、朋友相挺",
+      "audio": "audio/count_on.mp3",
+      "exampleAudio": "audio/count_on_example.mp3"
+    },
+    {
+      "id": "run_out_of",
+      "level": 2,
+      "verb": "run",
+      "phrasal": "run out of",
+      "particle": "out of",
+      "primaryParticle": "out",
+      "chineseMeaning": "用光耗盡（物資/時間）",
+      "meaning": "Use up all of something so none remains available",
+      "example": "The emergency clinic ran out of oxygen tanks during the blizzard.",
+      "exampleChinese": "暴風雪期間，該急診診所的氧氣瓶全部消耗殆盡了。",
+      "clozeSentence": "The emergency clinic _______ oxygen tanks during the blizzard.",
+      "scenario": "資源告急、庫存短缺",
+      "audio": "audio/run_out_of.mp3",
+      "exampleAudio": "audio/run_out_of_example.mp3"
+    },
+    {
+      "id": "look_out_for",
+      "level": 2,
+      "verb": "look",
+      "phrasal": "look out for",
+      "particle": "out for",
+      "primaryParticle": "out",
+      "chineseMeaning": "留意警惕、照顧保護",
+      "meaning": "Keep watch carefully for danger or look after someone's welfare",
+      "example": "Older siblings should look out for younger ones at crowded amusement parks.",
+      "exampleChinese": "在擁擠的遊樂園裡，哥哥姐姐應該要多加照顧年幼的弟妹。",
+      "clozeSentence": "Older siblings should _______ younger ones at crowded amusement parks.",
+      "scenario": "照顧保護、小心周遭",
+      "audio": "audio/look_out_for.mp3",
+      "exampleAudio": "audio/look_out_for_example.mp3"
+    },
+    {
+      "id": "keep_away_from",
+      "level": 2,
+      "verb": "keep",
+      "phrasal": "keep away from",
+      "particle": "away from",
+      "primaryParticle": "away",
+      "chineseMeaning": "遠離危險、避開接觸",
+      "meaning": "Maintain a safe physical distance from hazards",
+      "example": "Hikers are advised to keep away from unstable cliffs during rains.",
+      "exampleChinese": "雨天時強烈建議登山客遠離鬆動不穩定的懸崖邊緣。",
+      "clozeSentence": "Hikers are advised to _______ unstable cliffs during rains.",
+      "scenario": "戶外安全、警告指示",
+      "audio": "audio/keep_away_from.mp3",
+      "exampleAudio": "audio/keep_away_from_example.mp3"
+    },
+    {
+      "id": "back_up",
+      "level": 2,
+      "verb": "back",
+      "phrasal": "back up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "資料備份、背後力挺支持",
+      "meaning": "Make a safety copy of data or provide confirming support",
+      "example": "Always remember to back up your project code before system upgrades.",
+      "exampleChinese": "在系統升級之前，切記務必備份您的專案原始碼。",
+      "clozeSentence": "Always remember to _______ your project code before system upgrades.",
+      "scenario": "資料安全、同事力挺",
+      "audio": "audio/back_up.mp3",
+      "exampleAudio": "audio/back_up_example.mp3"
+    },
+    {
+      "id": "back_down",
+      "level": 2,
+      "verb": "back",
+      "phrasal": "back down",
+      "particle": "down",
+      "primaryParticle": "down",
+      "chineseMeaning": "妥協讓步、放棄立場",
+      "meaning": "Yield in a dispute or withdraw a strong demand",
+      "example": "Neither side in the debate was willing to back down from its stance.",
+      "exampleChinese": "辯論中的雙方都沒有任何一方願意從自己的立場妥協讓步。",
+      "clozeSentence": "Neither side in the debate was willing to _______ from its stance.",
+      "scenario": "談判博弈、爭端討論",
+      "audio": "audio/back_down.mp3",
+      "exampleAudio": "audio/back_down_example.mp3"
+    },
+    {
+      "id": "wind_up",
+      "level": 2,
+      "verb": "wind",
+      "phrasal": "wind up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "最終落得...下場、收尾結束",
+      "meaning": "Arrive at an unexpected final state, or conclude business",
+      "example": "If you drive recklessly, you could wind up in hospital.",
+      "exampleChinese": "如果你開車橫衝直撞，最終很可能會進醫院。",
+      "clozeSentence": "If you drive recklessly, you could _______ in hospital.",
+      "scenario": "後果警告、終局收尾",
+      "audio": "audio/wind_up.mp3",
+      "exampleAudio": "audio/wind_up_example.mp3"
+    },
+    {
+      "id": "take_apart",
+      "level": 2,
+      "verb": "take",
+      "phrasal": "take apart",
+      "particle": "apart",
+      "primaryParticle": "apart",
+      "chineseMeaning": "拆解零件、分拆機器",
+      "meaning": "Dismantle something into its individual separate components",
+      "example": "The apprentice took the carburetor apart to clean every valve.",
+      "exampleChinese": "學徒把化油器全部拆解開來，以便徹底清洗每個閥門。",
+      "clozeSentence": "The apprentice _______ the carburetor apart to clean every valve.",
+      "scenario": "機械修繕、硬體拆裝",
+      "audio": "audio/take_apart.mp3",
+      "exampleAudio": "audio/take_apart_example.mp3"
+    },
+    {
+      "id": "fall_through",
+      "level": 2,
+      "verb": "fall",
+      "phrasal": "fall through",
+      "particle": "through",
+      "primaryParticle": "through",
+      "chineseMeaning": "計畫泡湯、協議破局",
+      "meaning": "Fail to occur or collapse before final execution",
+      "example": "The real estate deal fell through because financing was denied.",
+      "exampleChinese": "這筆房地產交易因銀行貸款未獲核准而最終告吹泡湯。",
+      "clozeSentence": "The real estate deal _______ because financing was denied.",
+      "scenario": "合約破局、商務挫折",
+      "audio": "audio/fall_through.mp3",
+      "exampleAudio": "audio/fall_through_example.mp3"
+    },
+    {
+      "id": "catch_up",
+      "level": 2,
+      "verb": "catch",
+      "phrasal": "catch up",
+      "particle": "up",
+      "primaryParticle": "up",
+      "chineseMeaning": "趕上進度、敘舊聊近況",
+      "meaning": "Reach the same level as others or exchange recent news",
+      "example": "Let us have coffee tomorrow afternoon and catch up on our lives.",
+      "exampleChinese": "我們明天下午喝杯咖啡，好好聊聊近況敘敘舊吧。",
+      "clozeSentence": "Let us have coffee tomorrow afternoon and _______ on our lives.",
+      "scenario": "朋友敘舊、學業趕超",
+      "audio": "audio/catch_up.mp3",
+      "exampleAudio": "audio/catch_up_example.mp3"
+    },
+    {
+      "id": "stick_to",
+      "level": 2,
+      "verb": "stick",
+      "phrasal": "stick to",
+      "particle": "to",
+      "primaryParticle": "to",
+      "chineseMeaning": "堅持到底、恪守承諾",
+      "meaning": "Adhere firmly to a plan, routine, diet, or promise",
+      "example": "If you truly want noticeable fitness gains, stick to your training schedule.",
+      "exampleChinese": "如果你真心渴望顯著的健身成效，請務必恪守你的訓練日程。",
+      "clozeSentence": "If you truly want noticeable fitness gains, _______ your training schedule.",
+      "scenario": "自律堅持、承諾履行",
+      "audio": "audio/stick_to.mp3",
+      "exampleAudio": "audio/stick_to_example.mp3"
+    },
+    {
+      "id": "brush_up_on",
+      "level": 2,
+      "verb": "brush",
+      "phrasal": "brush up on",
+      "particle": "up on",
+      "primaryParticle": "up",
+      "chineseMeaning": "溫習重溫、快速複習技能",
+      "meaning": "Improve or refresh knowledge of something learned in the past",
+      "example": "I need to brush up on my English before traveling abroad.",
+      "exampleChinese": "出國旅行之前，我需要好好溫習一下我的英文。",
+      "clozeSentence": "I need to _______ my English before traveling abroad.",
+      "scenario": "進修複習、技能提升",
+      "audio": "audio/brush_up_on.mp3",
+      "exampleAudio": "audio/brush_up_on_example.mp3"
     }
   ]
 }
