@@ -79,8 +79,8 @@ phrasal-verbs-tool/
 ├── data/
 │   ├── phrasal_verbs_data.js  # 離線可用的完整資料結構（支援 file:// 免跨域）
 │   └── phrasal_verbs_enriched.json # 結構化 JSON 資料檔（含克漏字與介系詞隱喻）
-├── audio/                     # 252 個高品質 MP3 發音檔（片語 + 例句）
-├── phrasal_verbs_audio.csv    # 完整音訊對應表 (184 條記錄)
+├── audio/                     # 600 個高品質 MP3 發音檔（300 片語 + 300 例句）
+├── phrasal_verbs_audio.csv    # 完整音訊對應表 (600 條記錄)
 ├── generate_all_audio.py      # 音訊生成腳本（基於 edge-tts 神經網路發音）
 └── README.md                  # 專案說明文件
 ```
@@ -106,7 +106,7 @@ npx serve .
 
 ## 🛠️ 音訊補全工具 (Audio Generator)
 
-本專案已全面補齊所有 92 組片語動詞與例句音檔。若日後有新增片語，可隨時執行：
+本專案已全面補齊所有 300 組片語動詞與例句音檔（共 600 首 MP3）。若日後有擴充新增片語，可隨時執行：
 
 ```bash
 python3 generate_all_audio.py
