@@ -1,0 +1,770 @@
+{
+  "take": {
+    "take after": {
+      "meaning": "Resemble someone",
+      "example": "She takes after her father's sense of humor.",
+      "chinese": "她繼承了父親的幽默感。",
+      "scenario": "描述家族相似性",
+      "audio": "audio/take_after.mp3",
+      "exampleAudio": "audio/take_after_example.mp3"
+    },
+    "take away": {
+      "meaning": "Take something away or takeout (food)",
+      "example": "Can you take away the trash?",
+      "chinese": "你能把垃圾拿走嗎？",
+      "scenario": "清理、點餐",
+      "audio": "audio/take_away.mp3",
+      "exampleAudio": "audio/take_away_example.mp3"
+    },
+    "take back": {
+      "meaning": "Return something or retract",
+      "example": "I take back what I said.",
+      "chinese": "我收回我說的話。",
+      "scenario": "道歉、退貨",
+      "audio": "audio/take_back.mp3",
+      "exampleAudio": "audio/take_back_example.mp3"
+    },
+    "take down": {
+      "meaning": "Write down or remove",
+      "example": "Take down the meeting notes.",
+      "chinese": "記下會議筆記。",
+      "scenario": "筆記、移除裝飾",
+      "audio": "audio/take_down.mp3",
+      "exampleAudio": "audio/take_down_example.mp3"
+    },
+    "take in": {
+      "meaning": "Understand, shelter, or alter (clothes)",
+      "example": "It's hard to take in all the details.",
+      "chinese": "很難吸收所有細節。",
+      "scenario": "學習、收養、改衣",
+      "audio": "audio/take_in.mp3",
+      "exampleAudio": "audio/take_in_example.mp3"
+    },
+    "take off": {
+      "meaning": "Remove clothing, take flight, or succeed",
+      "example": "Take off your jacket.",
+      "chinese": "脫下你的外套。",
+      "scenario": "穿脫、旅行、成功",
+      "audio": "audio/take_off.mp3",
+      "exampleAudio": "audio/take_off_example.mp3"
+    },
+    "take on": {
+      "meaning": "Undertake, challenge, or hire",
+      "example": "Don't take on too much work.",
+      "chinese": "別承擔太多工作。",
+      "scenario": "工作、挑戰、招聘",
+      "audio": "audio/take_on.mp3",
+      "exampleAudio": "audio/take_on_example.mp3"
+    },
+    "take out": {
+      "meaning": "Take something out or takeout",
+      "example": "He took out his phone to check.",
+      "chinese": "他拿出手機查看。",
+      "scenario": "付錢、約會、點餐",
+      "audio": "audio/take_out.mp3",
+      "exampleAudio": "audio/take_out_example.mp3"
+    },
+    "take over": {
+      "meaning": "Take control",
+      "example": "She took over the project.",
+      "chinese": "她接管了這個項目。",
+      "scenario": "業務交接",
+      "audio": "audio/take_over.mp3",
+      "exampleAudio": "audio/take_over_example.mp3"
+    },
+    "take up": {
+      "meaning": "Start a hobby or occupy space",
+      "example": "I took up yoga last month.",
+      "chinese": "我上個月開始練瑜伽。",
+      "scenario": "興趣、空間安排",
+      "audio": "audio/take_up.mp3",
+      "exampleAudio": "audio/take_up_example.mp3"
+    }
+  },
+  "get": {
+    "get along": {
+      "meaning": "Get on well with someone",
+      "example": "I get along well with my neighbors.",
+      "chinese": "我和鄰居相處得很融洽。",
+      "scenario": "人際關係",
+      "audio": "audio/get_along.mp3",
+      "exampleAudio": "audio/get_along_example.mp3"
+    },
+    "get around": {
+      "meaning": "Move around or spread",
+      "example": "She gets around by subway.",
+      "chinese": "她搭地鐵四處走動。",
+      "scenario": "交通、消息傳播",
+      "audio": "audio/get_around.mp3",
+      "exampleAudio": "audio/get_around_example.mp3"
+    },
+    "get away": {
+      "meaning": "Escape or take a break",
+      "example": "We got away for a weekend trip.",
+      "chinese": "我們去度了個週末假。",
+      "scenario": "旅行、放鬆",
+      "audio": "audio/get_away.mp3",
+      "exampleAudio": "audio/get_away_example.mp3"
+    },
+    "get back": {
+      "meaning": "Return or retrieve",
+      "example": "I'll get back to you later.",
+      "chinese": "我稍後回覆你。",
+      "scenario": "回覆、取物",
+      "audio": "audio/get_back.mp3",
+      "exampleAudio": "audio/get_back_example.mp3"
+    },
+    "get by": {
+      "meaning": "Manage with limited resources",
+      "example": "I can get by with my limited French.",
+      "chinese": "我的法語有限，但能應付。",
+      "scenario": "語言、經濟",
+      "audio": "audio/get_by.mp3",
+      "exampleAudio": "audio/get_by_example.mp3"
+    },
+    "get in": {
+      "meaning": "Enter or arrive",
+      "example": "Get in the car, we're late!",
+      "chinese": "快上車，我們遲到了！",
+      "scenario": "交通、進入",
+      "audio": "audio/get_in.mp3",
+      "exampleAudio": "audio/get_in_example.mp3"
+    },
+    "get off": {
+      "meaning": "Leave or escape punishment",
+      "example": "I get off at 5 p.m.",
+      "chinese": "我下午5點下班。",
+      "scenario": "下班、法律",
+      "audio": "audio/get_off.mp3",
+      "exampleAudio": "audio/get_off_example.mp3"
+    },
+    "get on": {
+      "meaning": "Board or make progress",
+      "example": "Get on the bus quickly.",
+      "chinese": "快上公車。",
+      "scenario": "交通、工作進度",
+      "audio": "audio/get_on.mp3",
+      "exampleAudio": "audio/get_on_example.mp3"
+    },
+    "get out": {
+      "meaning": "Leave or leak",
+      "example": "Let's get out and have fun.",
+      "chinese": "我們出去玩吧。",
+      "scenario": "外出、秘密",
+      "audio": "audio/get_out.mp3",
+      "exampleAudio": "audio/get_out_example.mp3"
+    },
+    "get over": {
+      "meaning": "Recover from",
+      "example": "She got over her fear of public speaking.",
+      "chinese": "她克服了公開演講的恐懼。",
+      "scenario": "情感、挑戰",
+      "audio": "audio/get_over.mp3",
+      "exampleAudio": "audio/get_over_example.mp3"
+    },
+    "get through": {
+      "meaning": "Complete or contact",
+      "example": "I got through the exam.",
+      "chinese": "我通過了考試。",
+      "scenario": "考試、聯繫",
+      "audio": "audio/get_through.mp3",
+      "exampleAudio": "audio/get_through_example.mp3"
+    },
+    "get up": {
+      "meaning": "Wake up or stand",
+      "example": "I get up at 6 a.m. daily.",
+      "chinese": "我每天早上6點起床。",
+      "scenario": "日常、行動",
+      "audio": "audio/get_up.mp3",
+      "exampleAudio": "audio/get_up_example.mp3"
+    }
+  },
+  "make": {
+    "make for": {
+      "meaning": "Lead to or move toward",
+      "example": "Good teamwork makes for success.",
+      "chinese": "良好的團隊合作帶來成功。",
+      "scenario": "結果、移動",
+      "audio": "audio/make_for.mp3",
+      "exampleAudio": "audio/make_for_example.mp3"
+    },
+    "make it": {
+      "meaning": "Succeed or arrive on time",
+      "example": "She made it to the top of the company.",
+      "chinese": "她成功登上公司高層。",
+      "scenario": "成功、趕時間",
+      "audio": "audio/make_it.mp3",
+      "exampleAudio": "audio/make_it_example.mp3"
+    },
+    "make out": {
+      "meaning": "Discern or kiss",
+      "example": "I can't make out the handwriting.",
+      "chinese": "我看不清這字跡。",
+      "scenario": "閱讀、親密行為",
+      "audio": "audio/make_out.mp3",
+      "exampleAudio": "audio/make_out_example.mp3"
+    },
+    "make up": {
+      "meaning": "Invent or reconcile",
+      "example": "He made up a funny story.",
+      "chinese": "他編了個有趣的故事。",
+      "scenario": "說謊、關係修復",
+      "audio": "audio/make_up.mp3",
+      "exampleAudio": "audio/make_up_example.mp3"
+    },
+    "make over": {
+      "meaning": "Transform",
+      "example": "They made over their old apartment.",
+      "chinese": "他們翻新了舊公寓。",
+      "scenario": "裝修、外觀改變",
+      "audio": "audio/make_over.mp3",
+      "exampleAudio": "audio/make_over_example.mp3"
+    }
+  },
+  "break": {
+    "break down": {
+      "meaning": "Stop working or collapse",
+      "example": "The car broke down on the highway.",
+      "chinese": "車在高速公路上拋錨了。",
+      "scenario": "機械故障、情緒",
+      "audio": "audio/break_down.mp3",
+      "exampleAudio": "audio/break_down_example.mp3"
+    },
+    "break in": {
+      "meaning": "Enter forcibly or adapt",
+      "example": "Someone broke in last night.",
+      "chinese": "昨晚有人闖入。",
+      "scenario": "安全、新品",
+      "audio": "audio/break_in.mp3",
+      "exampleAudio": "audio/break_in_example.mp3"
+    },
+    "break off": {
+      "meaning": "End or interrupt",
+      "example": "They broke off their engagement.",
+      "chinese": "他們解除了婚約。",
+      "scenario": "關係、談判",
+      "audio": "audio/break_off.mp3",
+      "exampleAudio": "audio/break_off_example.mp3"
+    },
+    "break out": {
+      "meaning": "Start suddenly or escape",
+      "example": "A fire broke out in the building.",
+      "chinese": "大樓裡發生火災。",
+      "scenario": "災害、逃跑",
+      "audio": "audio/break_out.mp3",
+      "exampleAudio": "audio/break_out_example.mp3"
+    },
+    "break up": {
+      "meaning": "End a relationship or disperse",
+      "example": "They broke up after two years.",
+      "chinese": "他們交往兩年後分手了。",
+      "scenario": "感情、會議",
+      "audio": "audio/break_up.mp3",
+      "exampleAudio": "audio/break_up_example.mp3"
+    }
+  },
+  "run": {
+    "run into": {
+      "meaning": "Meet by chance or encounter (problem)",
+      "example": "I ran into an old friend yesterday.",
+      "chinese": "昨天我偶遇了一個老朋友。",
+      "scenario": "社交、困難",
+      "audio": "audio/run_into.mp3",
+      "exampleAudio": "audio/run_into_example.mp3"
+    },
+    "run out": {
+      "meaning": "Use up",
+      "example": "We ran out of milk.",
+      "chinese": "我們的牛奶用完了。",
+      "scenario": "資源短缺",
+      "audio": "audio/run_out.mp3",
+      "exampleAudio": "audio/run_out_example.mp3"
+    },
+    "run over": {
+      "meaning": "Hit or review quickly",
+      "example": "A car ran over my bike.",
+      "chinese": "一輛車輾過了我的腳踏車。",
+      "scenario": "事故、檢查",
+      "audio": "audio/run_over.mp3",
+      "exampleAudio": "audio/run_over_example.mp3"
+    },
+    "run through": {
+      "meaning": "Review or use up",
+      "example": "I ran through the document quickly.",
+      "chinese": "我快速瀏覽了文件。",
+      "scenario": "檢查、財務",
+      "audio": "audio/run_through.mp3",
+      "exampleAudio": "audio/run_through_example.mp3"
+    },
+    "run up": {
+      "meaning": "Accumulate (expenses)",
+      "example": "He ran up a huge bill at the bar.",
+      "chinese": "他在酒吧累積了高額帳單。",
+      "scenario": "消費、債務",
+      "audio": "audio/run_up.mp3",
+      "exampleAudio": "audio/run_up_example.mp3"
+    }
+  },
+  "do": {
+    "do away with": {
+      "meaning": "Eliminate",
+      "example": "They did away with outdated policies.",
+      "chinese": "他們廢除了過時的政策。",
+      "scenario": "制度改變",
+      "audio": "audio/do_away_with.mp3",
+      "exampleAudio": "audio/do_away_with_example.mp3"
+    },
+    "do over": {
+      "meaning": "Redo",
+      "example": "I need to do this essay over.",
+      "chinese": "我得重寫這篇作文。",
+      "scenario": "工作重做",
+      "audio": "audio/do_over.mp3",
+      "exampleAudio": "audio/do_over_example.mp3"
+    },
+    "do up": {
+      "meaning": "Renovate or fasten",
+      "example": "We're doing up the living room.",
+      "chinese": "我們在裝修客廳。",
+      "scenario": "裝修、整理衣物",
+      "audio": "audio/do_up.mp3",
+      "exampleAudio": "audio/do_up_example.mp3"
+    },
+    "do with": {
+      "meaning": "Need or relate to",
+      "example": "I could do with a coffee.",
+      "chinese": "我需要杯咖啡。",
+      "scenario": "需求、解釋",
+      "audio": "audio/do_with.mp3",
+      "exampleAudio": "audio/do_with_example.mp3"
+    },
+    "do without": {
+      "meaning": "Manage without",
+      "example": "I can do without dessert tonight.",
+      "chinese": "今晚沒甜點我也行。",
+      "scenario": "缺少應對",
+      "audio": "audio/do_without.mp3",
+      "exampleAudio": "audio/do_without_example.mp3"
+    }
+  },
+  "have": {
+    "have on": {
+      "meaning": "Wear or have plans",
+      "example": "She has on a blue scarf.",
+      "chinese": "她戴著藍色圍巾。",
+      "scenario": "穿著、行程",
+      "audio": "audio/have_on.mp3",
+      "exampleAudio": "audio/have_on_example.mp3"
+    },
+    "have over": {
+      "meaning": "Invite to home",
+      "example": "We had friends over for lunch.",
+      "chinese": "我們邀請朋友來家裡吃午餐。",
+      "scenario": "社交聚會",
+      "audio": "audio/have_over.mp3",
+      "exampleAudio": "audio/have_over_example.mp3"
+    },
+    "have to": {
+      "meaning": "Must do something",
+      "example": "I have to finish this by tonight.",
+      "chinese": "我今晚必須完成這個。",
+      "scenario": "責任、義務",
+      "audio": "audio/have_to.mp3",
+      "exampleAudio": "audio/have_to_example.mp3"
+    },
+    "have out": {
+      "meaning": "Discuss thoroughly",
+      "example": "Let's have it out and solve this issue.",
+      "chinese": "我們徹底談談，解決這問題。",
+      "scenario": "爭端解決",
+      "audio": "audio/have_out.mp3",
+      "exampleAudio": "audio/have_out_example.mp3"
+    },
+    "have up": {
+      "meaning": "Summon or discuss",
+      "example": "He was had up for parking illegally.",
+      "chinese": "他因違規停車被傳喚。",
+      "scenario": "法律、討論",
+      "audio": "audio/have_up.mp3",
+      "exampleAudio": "audio/have_up_example.mp3"
+    }
+  },
+  "put": {
+    "put across": {
+      "meaning": "Express clearly",
+      "example": "She put her point across clearly.",
+      "chinese": "她清楚表達了自己的觀點。",
+      "scenario": "演講、溝通",
+      "audio": "audio/put_across.mp3",
+      "exampleAudio": "audio/put_across_example.mp3"
+    },
+    "put in": {
+      "meaning": "Invest effort or install",
+      "example": "I put in three hours on this task.",
+      "chinese": "我在這任務上投入了三小時。",
+      "scenario": "努力、裝修",
+      "audio": "audio/put_in.mp3",
+      "exampleAudio": "audio/put_in_example.mp3"
+    },
+    "put off": {
+      "meaning": "Postpone or discourage",
+      "example": "The meeting was put off until next week.",
+      "chinese": "會議推遲到下週。",
+      "scenario": "改期、反感",
+      "audio": "audio/put_off.mp3",
+      "exampleAudio": "audio/put_off_example.mp3"
+    },
+    "put out": {
+      "meaning": "Extinguish or publish",
+      "example": "Put out the cigarette.",
+      "chinese": "熄掉香菸。",
+      "scenario": "消防、出版、不滿",
+      "audio": "audio/put_out.mp3",
+      "exampleAudio": "audio/put_out_example.mp3"
+    },
+    "put up": {
+      "meaning": "Erect or accommodate",
+      "example": "They put up a tent.",
+      "chinese": "他們搭了帳篷。",
+      "scenario": "露營、留宿、告示",
+      "audio": "audio/put_up.mp3",
+      "exampleAudio": "audio/put_up_example.mp3"
+    }
+  },
+  "go": {
+    "go for": {
+      "meaning": "Choose or pursue",
+      "example": "I'll go for the pasta.",
+      "chinese": "我選義大利麵。",
+      "scenario": "點餐、努力",
+      "audio": "audio/go_for.mp3",
+      "exampleAudio": "audio/go_for_example.mp3"
+    },
+    "go off": {
+      "meaning": "Explode or spoil",
+      "example": "The milk went off.",
+      "chinese": "牛奶壞了。",
+      "scenario": "食物、警報",
+      "audio": "audio/go_off.mp3",
+      "exampleAudio": "audio/go_off_example.mp3"
+    },
+    "go on": {
+      "meaning": "Continue or happen",
+      "example": "Go on, tell me more!",
+      "chinese": "繼續說，我想聽更多！",
+      "scenario": "鼓勵、詢問",
+      "audio": "audio/go_on.mp3",
+      "exampleAudio": "audio/go_on_example.mp3"
+    },
+    "go over": {
+      "meaning": "Review or visit",
+      "example": "Let's go over the plan again.",
+      "chinese": "我們再審查一次計劃。",
+      "scenario": "檢查、探訪",
+      "audio": "audio/go_over.mp3",
+      "exampleAudio": "audio/go_over_example.mp3"
+    },
+    "go through": {
+      "meaning": "Experience or examine",
+      "example": "She went through a hard time.",
+      "chinese": "她經歷了艱難時期。",
+      "scenario": "情感、整理",
+      "audio": "audio/go_through.mp3",
+      "exampleAudio": "audio/go_through_example.mp3"
+    }
+  },
+  "come": {
+    "come across": {
+      "meaning": "Find by chance",
+      "example": "I came across an old photo.",
+      "chinese": "我無意中找到一張舊照片。",
+      "scenario": "發現、第一印象",
+      "audio": "audio/come_across.mp3",
+      "exampleAudio": "audio/come_across_example.mp3"
+    },
+    "come back": {
+      "meaning": "Return or become popular",
+      "example": "I'll come back later.",
+      "chinese": "我稍後回來。",
+      "scenario": "返回、時尚",
+      "audio": "audio/come_back.mp3",
+      "exampleAudio": "audio/come_back_example.mp3"
+    },
+    "come by": {
+      "meaning": "Obtain or visit",
+      "example": "Jobs are hard to come by.",
+      "chinese": "工作難找。",
+      "scenario": "資源、探訪",
+      "audio": "audio/come_by.mp3",
+      "exampleAudio": "audio/come_by_example.mp3"
+    },
+    "come up": {
+      "meaning": "Arise or be mentioned",
+      "example": "Something came up, so I'm late.",
+      "chinese": "臨時有事，所以我遲到了。",
+      "scenario": "突發事件、討論",
+      "audio": "audio/come_up.mp3",
+      "exampleAudio": "audio/come_up_example.mp3"
+    },
+    "come up with": {
+      "meaning": "Propose",
+      "example": "She came up with a great plan.",
+      "chinese": "她提出了很棒的計劃。",
+      "scenario": "創意、建議",
+      "audio": "audio/come_up_with.mp3",
+      "exampleAudio": "audio/come_up_with_example.mp3"
+    }
+  },
+  "set": {
+    "set about": {
+      "meaning": "Start doing",
+      "example": "She set about cleaning the house.",
+      "chinese": "她開始打掃房子。",
+      "scenario": "開工、行動",
+      "audio": "audio/set_about.mp3",
+      "exampleAudio": "audio/set_about_example.mp3"
+    },
+    "set aside": {
+      "meaning": "Reserve",
+      "example": "Set aside some time for studying.",
+      "chinese": "留點時間學習。",
+      "scenario": "時間管理",
+      "audio": "audio/set_aside.mp3",
+      "exampleAudio": "audio/set_aside_example.mp3"
+    },
+    "set off": {
+      "meaning": "Start a journey or trigger",
+      "example": "We set off for the beach at dawn.",
+      "chinese": "我們黎明時出發去海邊。",
+      "scenario": "旅行、事件",
+      "audio": "audio/set_off.mp3",
+      "exampleAudio": "audio/set_off_example.mp3"
+    },
+    "set out": {
+      "meaning": "Begin or explain",
+      "example": "They set out to build a new app.",
+      "chinese": "他們開始開發新應用程式。",
+      "scenario": "創業、表達",
+      "audio": "audio/set_out.mp3",
+      "exampleAudio": "audio/set_out_example.mp3"
+    },
+    "set up": {
+      "meaning": "Establish or arrange",
+      "example": "They set up a new company.",
+      "chinese": "他們成立了一家新公司。",
+      "scenario": "創業、計劃",
+      "audio": "audio/set_up.mp3",
+      "exampleAudio": "audio/set_up_example.mp3"
+    }
+  },
+  "look": {
+    "look after": {
+      "meaning": "Take care of",
+      "example": "She looks after her younger brother on weekends.",
+      "chinese": "她週末照顧弟弟。",
+      "scenario": "育兒、寵物照顧",
+      "audio": "audio/look_after.mp3",
+      "exampleAudio": "audio/look_after_example.mp3"
+    },
+    "look for": {
+      "meaning": "Search for",
+      "example": "I'm looking for my keys everywhere.",
+      "chinese": "我到處找我的鑰匙。",
+      "scenario": "尋找物品",
+      "audio": "audio/look_for.mp3",
+      "exampleAudio": "audio/look_for_example.mp3"
+    },
+    "look into": {
+      "meaning": "Investigate",
+      "example": "They're looking into the cause of the issue.",
+      "chinese": "他們正在調查問題原因。",
+      "scenario": "問題解決、研究",
+      "audio": "audio/look_into.mp3",
+      "exampleAudio": "audio/look_into_example.mp3"
+    },
+    "look out": {
+      "meaning": "Be careful",
+      "example": "Look out! There's a car coming!",
+      "chinese": "小心！有車來了！",
+      "scenario": "警告、安全",
+      "audio": "audio/look_out.mp3",
+      "exampleAudio": "audio/look_out_example.mp3"
+    },
+    "look up": {
+      "meaning": "Search or improve",
+      "example": "I looked up the word in the dictionary.",
+      "chinese": "我在字典裡查了這個詞。",
+      "scenario": "查詢、樂觀",
+      "audio": "audio/look_up.mp3",
+      "exampleAudio": "audio/look_up_example.mp3"
+    }
+  },
+  "turn": {
+    "turn down": {
+      "meaning": "Reject or reduce",
+      "example": "She turned down the job offer.",
+      "chinese": "她拒絕了工作邀請。",
+      "scenario": "工作機會、音量控制",
+      "audio": "audio/turn_down.mp3",
+      "exampleAudio": "audio/turn_down_example.mp3"
+    },
+    "turn into": {
+      "meaning": "Transform",
+      "example": "The caterpillar turned into a butterfly.",
+      "chinese": "毛毛蟲變成了蝴蝶。",
+      "scenario": "轉變",
+      "audio": "audio/turn_into.mp3",
+      "exampleAudio": "audio/turn_into_example.mp3"
+    },
+    "turn off": {
+      "meaning": "Switch off or discourage",
+      "example": "Turn off the lights before leaving.",
+      "chinese": "離開前關燈。",
+      "scenario": "電器、情感",
+      "audio": "audio/turn_off.mp3",
+      "exampleAudio": "audio/turn_off_example.mp3"
+    },
+    "turn on": {
+      "meaning": "Switch on or excite",
+      "example": "Turn on the TV, please.",
+      "chinese": "請開電視。",
+      "scenario": "電器、熱情",
+      "audio": "audio/turn_on.mp3",
+      "exampleAudio": "audio/turn_on_example.mp3"
+    },
+    "turn up": {
+      "meaning": "Arrive or increase",
+      "example": "He turned up late to the party.",
+      "chinese": "他晚到派對。",
+      "scenario": "到達、音量控制",
+      "audio": "audio/turn_up.mp3",
+      "exampleAudio": "audio/turn_up_example.mp3"
+    }
+  },
+  "bring": {
+    "bring up": {
+      "meaning": "Raise or mention",
+      "example": "She brought up an interesting point in the meeting.",
+      "chinese": "她在會議中提出了一個有趣的觀點。",
+      "scenario": "討論、養育",
+      "audio": "audio/bring_up.mp3",
+      "exampleAudio": "audio/bring_up_example.mp3"
+    },
+    "bring about": {
+      "meaning": "Cause or bring about",
+      "example": "The new policy brought about many changes.",
+      "chinese": "新政策帶來了很多改變。",
+      "scenario": "改變、影響",
+      "audio": "audio/bring_about.mp3",
+      "exampleAudio": "audio/bring_about_example.mp3"
+    },
+    "bring along": {
+      "meaning": "Bring someone or something along",
+      "example": "Can I bring a friend along to the party?",
+      "chinese": "我可以帶個朋友去派對嗎？",
+      "scenario": "社交、攜帶",
+      "audio": "audio/bring_along.mp3",
+      "exampleAudio": "audio/bring_along_example.mp3"
+    },
+    "bring back": {
+      "meaning": "Return or recall",
+      "example": "This song brings back old memories.",
+      "chinese": "這首歌喚起了舊回憶。",
+      "scenario": "回憶、歸還",
+      "audio": "audio/bring_back.mp3",
+      "exampleAudio": "audio/bring_back_example.mp3"
+    },
+    "bring out": {
+      "meaning": "Release or highlight",
+      "example": "They brought out a new product line.",
+      "chinese": "他們推出了一個新產品系列。",
+      "scenario": "產品發布、特點",
+      "audio": "audio/bring_out.mp3",
+      "exampleAudio": "audio/bring_out_example.mp3"
+    }
+  },
+  "give": {
+    "give up": {
+      "meaning": "Abandon or stop",
+      "example": "He gave up smoking last year.",
+      "chinese": "他去年戒菸了。",
+      "scenario": "改變習慣",
+      "audio": "audio/give_up.mp3",
+      "exampleAudio": "audio/give_up_example.mp3"
+    },
+    "give in": {
+      "meaning": "Yield or surrender",
+      "example": "She gave in to her kids' demands.",
+      "chinese": "她向孩子們的要求讓步了。",
+      "scenario": "妥協、爭論",
+      "audio": "audio/give_in.mp3",
+      "exampleAudio": "audio/give_in_example.mp3"
+    },
+    "give out": {
+      "meaning": "Distribute or run out",
+      "example": "They gave out free samples at the store.",
+      "chinese": "他們在商店分發免費樣品。",
+      "scenario": "分享、資源耗盡",
+      "audio": "audio/give_out.mp3",
+      "exampleAudio": "audio/give_out_example.mp3"
+    },
+    "give away": {
+      "meaning": "Give for free or reveal",
+      "example": "Don’t give away the surprise!",
+      "chinese": "別洩露驚喜！",
+      "scenario": "禮物、秘密",
+      "audio": "audio/give_away.mp3",
+      "exampleAudio": "audio/give_away_example.mp3"
+    },
+    "give back": {
+      "meaning": "Return or contribute",
+      "example": "I gave the book back to her.",
+      "chinese": "我把書還給了她。",
+      "scenario": "歸還、慈善",
+      "audio": "audio/give_back.mp3",
+      "exampleAudio": "audio/give_back_example.mp3"
+    }
+  },
+  "keep": {
+    "keep up": {
+      "meaning": "Maintain or keep pace",
+      "example": "Keep up with the latest trends.",
+      "chinese": "跟上最新趨勢。",
+      "scenario": "進度、學習",
+      "audio": "audio/keep_up.mp3",
+      "exampleAudio": "audio/keep_up_example.mp3"
+    },
+    "keep on": {
+      "meaning": "Continue",
+      "example": "She kept on working despite being tired.",
+      "chinese": "她雖然累了但繼續工作。",
+      "scenario": "堅持、行動",
+      "audio": "audio/keep_on.mp3",
+      "exampleAudio": "audio/keep_on_example.mp3"
+    },
+    "keep out": {
+      "meaning": "Prevent from entering",
+      "example": "The sign says 'Keep Out'.",
+      "chinese": "標誌上寫著「禁止進入」。",
+      "scenario": "安全、限制",
+      "audio": "audio/keep_out.mp3",
+      "exampleAudio": "audio/keep_out_example.mp3"
+    },
+    "keep off": {
+      "meaning": "Stay away",
+      "example": "Keep off the grass, please.",
+      "chinese": "請勿踐踏草坪。",
+      "scenario": "規則、保護",
+      "audio": "audio/keep_off.mp3",
+      "exampleAudio": "audio/keep_off_example.mp3"
+    },
+    "keep in": {
+      "meaning": "Stay inside or control",
+      "example": "Try to keep your anger in.",
+      "chinese": "試著控制你的憤怒。",
+      "scenario": "情緒管理、限制",
+      "audio": "audio/keep_in.mp3",
+      "exampleAudio": "audio/keep_in_example.mp3"
+    }
+  }
+}
