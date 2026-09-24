@@ -297,3 +297,305 @@ id,verb,phrasal,text,filename
 296,catch,catch up,Let us have coffee tomorrow afternoon and catch up on our lives.,audio/catch_up_example.mp3
 297,stick,stick to,stick to,audio/stick_to.mp3
 298,stick,stick to,"If you truly want noticeable fitness gains, stick to your training schedule.",audio/stick_to_example.mp3
+299,brush,brush up on,brush up on,audio/brush_up_on.mp3
+300,brush,brush up on,I need to brush up on my English before traveling abroad.,audio/brush_up_on_example.mp3
+301,freak,freak out,freak out,audio/freak_out.mp3
+302,freak,freak out,Do not freak out when you see the final bill.,audio/freak_out_example.mp3
+303,chill,chill out,chill out,audio/chill_out.mp3
+304,chill,chill out,Let us just stay home and chill out tonight.,audio/chill_out_example.mp3
+305,zone,zone out,zone out,audio/zone_out.mp3
+306,zone,zone out,I zoned out during the long boring lecture.,audio/zone_out_example.mp3
+307,mess,mess up,mess up,audio/mess_up.mp3
+308,mess,mess up,He apologized sincerely for messing up the presentation.,audio/mess_up_example.mp3
+309,screw,screw up,screw up,audio/screw_up.mp3
+310,screw,screw up,I really screwed up my chance to study in Oxford.,audio/screw_up_example.mp3
+311,rip,rip off,rip off,audio/rip_off.mp3
+312,rip,rip off,Tourist shops often rip off foreign visitors with fake souvenirs.,audio/rip_off_example.mp3
+313,bail,bail out,bail out,audio/bail_out.mp3
+314,bail,bail out,The central bank had to bail out several regional lenders.,audio/bail_out_example.mp3
+315,chicken,chicken out,chicken out,audio/chicken_out.mp3
+316,chicken,chicken out,He was going to skydive but chickened out at the airport.,audio/chicken_out_example.mp3
+317,sleep,sleep in,sleep in,audio/sleep_in.mp3
+318,sleep,sleep in,I usually sleep in until ten on Sunday mornings.,audio/sleep_in_example.mp3
+319,stay,stay up,stay up,audio/stay_up.mp3
+320,stay,stay up,We stayed up all night cramming for the chemistry final.,audio/stay_up_example.mp3
+321,pig,pig out,pig out,audio/pig_out.mp3
+322,pig,pig out,They pigged out on pizza and ice cream during the movie.,audio/pig_out_example.mp3
+323,veg,veg out,veg out,audio/veg_out.mp3
+324,veg,veg out,"After a grueling week, I just want to veg out on the sofa.",audio/veg_out_example.mp3
+325,hit,hit on,hit on,audio/hit_on.mp3
+326,hit,hit on,A stranger attempted to hit on her at the cocktail party.,audio/hit_on_example.mp3
+327,hit,hit it off,hit it off,audio/hit_it_off.mp3
+328,hit,hit it off,The two new coworkers hit it off right from day one.,audio/hit_it_off_example.mp3
+329,ask,ask out,ask out,audio/ask_out.mp3
+330,ask,ask out,He finally gathered the courage to ask her out for coffee.,audio/ask_out_example.mp3
+331,fool,fool around,fool around,audio/fool_around.mp3
+332,fool,fool around,Stop fooling around and concentrate on your assignment.,audio/fool_around_example.mp3
+333,sneak,sneak out,sneak out,audio/sneak_out.mp3
+334,sneak,sneak out,The teenagers sneaked out through the bedroom window at midnight.,audio/sneak_out_example.mp3
+335,creep,creep out,creep out,audio/creep_out.mp3
+336,creep,creep out,That abandoned Victorian mansion really creeps me out.,audio/creep_out_example.mp3
+337,crack,crack up,crack up,audio/crack_up.mp3
+338,crack,crack up,The comedian's hilarious impressions cracked up the entire room.,audio/crack_up_example.mp3
+339,burst,burst out,burst out,audio/burst_out.mp3
+340,burst,burst out,She burst out crying when hearing the tragic news.,audio/burst_out_example.mp3
+341,choke,choke up,choke up,audio/choke_up.mp3
+342,choke,choke up,The award winner choked up while thanking her parents.,audio/choke_up_example.mp3
+343,act,act up,act up,audio/act_up.mp3
+344,act,act up,My old knee injury acts up whenever cold rain approaches.,audio/act_up_example.mp3
+345,goof,goof off,goof off,audio/goof_off.mp3
+346,goof,goof off,Employees caught goofing off during shifts face strict reprimands.,audio/goof_off_example.mp3
+347,freeze,freeze up,freeze up,audio/freeze_up.mp3
+348,freeze,freeze up,The novice speaker froze up as hundreds of eyes stared at him.,audio/freeze_up_example.mp3
+349,clam,clam up,clam up,audio/clam_up.mp3
+350,clam,clam up,The suspect clammed up as soon as legal interrogations started.,audio/clam_up_example.mp3
+351,burn,burn down,burn down,audio/burn_down.mp3
+352,burn,burn down,The historic wooden library burned down in an electrical fire.,audio/burn_down_example.mp3
+353,blow,blow away,blow away,audio/blow_away.mp3
+354,blow,blow away,Her breathtaking performance blew away the judging panel.,audio/blow_away_example.mp3
+355,knock,knock out,knock out,audio/knock_out.mp3
+356,knock,knock out,The boxer knocked out his rival in the final round.,audio/knock_out_example.mp3
+357,iron,iron out,iron out,audio/iron_out.mp3
+358,iron,iron out,Lawyers are meeting to iron out lingering contract issues.,audio/iron_out_example.mp3
+359,hammer,hammer out,hammer out,audio/hammer_out.mp3
+360,hammer,hammer out,Ministers hammered out a landmark climate trade deal.,audio/hammer_out_example.mp3
+361,flesh,flesh out,flesh out,audio/flesh_out.mp3
+362,flesh,flesh out,We need to flesh out this rough marketing idea before pitching.,audio/flesh_out_example.mp3
+363,pencil,pencil in,pencil in,audio/pencil_in.mp3
+364,pencil,pencil in,Let us pencil in lunch next Tuesday and confirm on Monday.,audio/pencil_in_example.mp3
+365,narrow,narrow down,narrow down,audio/narrow_down.mp3
+366,narrow,narrow down,The recruitment committee narrowed down the candidate pool to three.,audio/narrow_down_example.mp3
+367,phase,phase in,phase in,audio/phase_in.mp3
+368,phase,phase in,The automated tax system will be phased in over three fiscal quarters.,audio/phase_in_example.mp3
+369,phase,phase out,phase out,audio/phase_out.mp3
+370,phase,phase out,Automakers will phase out fuel-powered vehicles by next decade.,audio/phase_out_example.mp3
+371,scale,scale up,scale up,audio/scale_up.mp3
+372,scale,scale up,The cloud startup needed extra servers to scale up operations.,audio/scale_up_example.mp3
+373,scale,scale down,scale down,audio/scale_down.mp3
+374,scale,scale down,"Due to sluggish revenues, the enterprise scaled down branch offices.",audio/scale_down_example.mp3
+375,step,step down,step down,audio/step_down.mp3
+376,step,step down,The veteran chief executive stepped down in favor of younger talent.,audio/step_down_example.mp3
+377,step,step up,step up,audio/step_up.mp3
+378,step,step up,Every department must step up to meet rigorous safety protocols.,audio/step_up_example.mp3
+379,step,step in,step in,audio/step_in.mp3
+380,step,step in,The mediator stepped in before arguments turned hostile.,audio/step_in_example.mp3
+381,branch,branch out,branch out,audio/branch_out.mp3
+382,branch,branch out,The bakery decided to branch out into specialty coffee roasted beans.,audio/branch_out_example.mp3
+383,buy,buy out,buy out,audio/buy_out.mp3
+384,buy,buy out,He bought out his partner to own the retail company completely.,audio/buy_out_example.mp3
+385,cash,cash in on,cash in on,audio/cash_in_on.mp3
+386,cash,cash in on,Traders cashed in on surging market volatility.,audio/cash_in_on_example.mp3
+387,draw,draw up,draw up,audio/draw_up.mp3
+388,draw,draw up,Corporate attorneys drew up a mutual non-disclosure agreement.,audio/draw_up_example.mp3
+389,factor,factor in,factor in,audio/factor_in.mp3
+390,factor,factor in,Do not forget to factor in shipping freight and customs duties.,audio/factor_in_example.mp3
+391,lay,lay off,lay off,audio/lay_off.mp3
+392,lay,lay off,The software conglomerate laid off five percent of remote engineers.,audio/lay_off_example.mp3
+393,opt,opt in,opt in,audio/opt_in.mp3
+394,opt,opt in,Customers must opt in to receive commercial promotional alerts.,audio/opt_in_example.mp3
+395,opt,opt out,opt out,audio/opt_out.mp3
+396,opt,opt out,Users can opt out of telemetry data analytics anytime.,audio/opt_out_example.mp3
+397,read,read over,read over,audio/read_over.mp3
+398,read,read over,Please read over the contract terms carefully before signatures.,audio/read_over_example.mp3
+399,rule,rule out,rule out,audio/rule_out.mp3
+400,rule,rule out,Doctors ruled out surgical intervention at this early stage.,audio/rule_out_example.mp3
+401,set,set back,set back,audio/set_back.mp3
+402,set,set back,The component shortage set back production by three full weeks.,audio/set_back_example.mp3
+403,settle,settle on,settle on,audio/settle_on.mp3
+404,settle,settle on,"After lengthy arguments, they settled on the blue brand logo.",audio/settle_on_example.mp3
+405,shore,shore up,shore up,audio/shore_up.mp3
+406,shore,shore up,The treasury moved swiftly to shore up fragile investor confidence.,audio/shore_up_example.mp3
+407,smooth,smooth over,smooth over,audio/smooth_over.mp3
+408,smooth,smooth over,PR executives worked around the clock to smooth over the public relations crisis.,audio/smooth_over_example.mp3
+409,spell,spell out,spell out,audio/spell_out.mp3
+410,spell,spell out,Let me spell out the precise performance metrics we expect.,audio/spell_out_example.mp3
+411,spring,spring up,spring up,audio/spring_up.mp3
+412,spring,spring up,Tech hubs are springing up all across suburban districts.,audio/spring_up_example.mp3
+413,weigh,weigh in,weigh in,audio/weigh_in.mp3
+414,weigh,weigh in,Economic scholars weighed in on the inflation report.,audio/weigh_in_example.mp3
+415,zero,zero in on,zero in on,audio/zero_in_on.mp3
+416,zero,zero in on,Investigators zeroed in on the cyber attacker's primary IP address.,audio/zero_in_on_example.mp3
+417,put,put up with,put up with,audio/put_up_with.mp3
+418,put,put up with,I cannot put up with this unbearable noise any longer.,audio/put_up_with_example.mp3
+419,come,come down with,come down with,audio/come_down_with.mp3
+420,come,come down with,He came down with a severe viral fever after the marathon.,audio/come_down_with_example.mp3
+421,look,look down on,look down on,audio/look_down_on.mp3
+422,look,look down on,One should never look down on humble hard-working individuals.,audio/look_down_on_example.mp3
+423,look,look up to,look up to,audio/look_up_to.mp3
+424,look,look up to,Young athletic learners truly look up to olympic champions.,audio/look_up_to_example.mp3
+425,get,get away with,get away with,audio/get_away_with.mp3
+426,get,get away with,Cheating students should never expect to get away with plagiarism.,audio/get_away_with_example.mp3
+427,stand,stand up for,stand up for,audio/stand_up_for.mp3
+428,stand,stand up for,We must stand up for basic human liberties and justice.,audio/stand_up_for_example.mp3
+429,make,make up for,make up for,audio/make_up_for.mp3
+430,make,make up for,She worked diligently overtime to make up for missed project deadlines.,audio/make_up_for_example.mp3
+431,drop,drop out of,drop out of,audio/drop_out_of.mp3
+432,drop,drop out of,He dropped out of university to pursue entrepreneurship.,audio/drop_out_of_example.mp3
+433,feel,feel up to,feel up to,audio/feel_up_to.mp3
+434,feel,feel up to,I do not feel up to attending crowded evening banquets tonight.,audio/feel_up_to_example.mp3
+435,grow,grow out of,grow out of,audio/grow_out_of.mp3
+436,grow,grow out of,The toddler quickly grew out of his brand-new leather shoes.,audio/grow_out_of_example.mp3
+437,live,live up to,live up to,audio/live_up_to.mp3
+438,live,live up to,The blockbuster sequel failed to live up to audience expectations.,audio/live_up_to_example.mp3
+439,stand,stand up to,stand up to,audio/stand_up_to.mp3
+440,stand,stand up to,This sturdy tent material stands up to severe hurricane gales.,audio/stand_up_to_example.mp3
+441,brush,brush off,brush off,audio/brush_off.mp3
+442,brush,brush off,She brushed off skeptical mockery with a confident smile.,audio/brush_off_example.mp3
+443,fall,fall back on,fall back on,audio/fall_back_on.mp3
+444,fall,fall back on,"When freelancing dried up, he had his family savings to fall back on.",audio/fall_back_on_example.mp3
+445,go,go through with,go through with,audio/go_through_with.mp3
+446,go,go through with,He vowed to go through with legal lawsuits despite threats.,audio/go_through_with_example.mp3
+447,boil,boil down to,boil down to,audio/boil_down_to.mp3
+448,boil,boil down to,The core disagreement boils down to conflicting budget priorities.,audio/boil_down_to_example.mp3
+449,face,face up to,face up to,audio/face_up_to.mp3
+450,face,face up to,Management must face up to current declining sales realities.,audio/face_up_to_example.mp3
+451,talk,talk down to,talk down to,audio/talk_down_to.mp3
+452,talk,talk down to,Nobody appreciates supervisors who talk down to their team.,audio/talk_down_to_example.mp3
+453,pull,pull over,pull over,audio/pull_over.mp3
+454,pull,pull over,The patrol officer signaled the speeding vehicle to pull over.,audio/pull_over_example.mp3
+455,pull,pull off,pull off,audio/pull_off.mp3
+456,pull,pull off,"Against all odds, the underdog squad pulled off a magnificent victory.",audio/pull_off_example.mp3
+457,pull,pull through,pull through,audio/pull_through.mp3
+458,pull,pull through,The emergency surgeon assured relatives the patient would pull through.,audio/pull_through_example.mp3
+459,lock,lock out,lock out,audio/lock_out.mp3
+460,lock,lock out,I left my keys on the kitchen counter and locked myself out.,audio/lock_out_example.mp3
+461,lock,lock in,lock in,audio/lock_in.mp3
+462,lock,lock in,Mortgage borrowers rushed to lock in low mortgage interest rates.,audio/lock_in_example.mp3
+463,wear,wear out,wear out,audio/wear_out.mp3
+464,wear,wear out,Caring for hyperactive toddlers will wear out any parent.,audio/wear_out_example.mp3
+465,wear,wear off,wear off,audio/wear_off.mp3
+466,wear,wear off,The surgical anesthetic is beginning to wear off after hours.,audio/wear_off_example.mp3
+467,tear,tear down,tear down,audio/tear_down.mp3
+468,tear,tear down,Urban planners chose to tear down the unsafe concrete warehouse.,audio/tear_down_example.mp3
+469,tear,tear up,tear up,audio/tear_up.mp3
+470,tear,tear up,"Furious at fraudulent terms, he tore up the contract.",audio/tear_up_example.mp3
+471,rip,rip up,rip up,audio/rip_up.mp3
+472,rip,rip up,Contractors are ripping up old kitchen tiles for renovations.,audio/rip_up_example.mp3
+473,hand,hand in,hand in,audio/hand_in.mp3
+474,hand,hand in,Students are required to hand in essays by Friday afternoon.,audio/hand_in_example.mp3
+475,hand,hand out,hand out,audio/hand_out.mp3
+476,hand,hand out,Volunteers handed out warm blankets to stranded travelers.,audio/hand_out_example.mp3
+477,hand,hand over,hand over,audio/hand_over.mp3
+478,hand,hand over,The outgoing governor handed over gubernatorial records calmly.,audio/hand_over_example.mp3
+479,hold,hold back,hold back,audio/hold_back.mp3
+480,hold,hold back,She tried hard to hold back tears during the farewell toast.,audio/hold_back_example.mp3
+481,leave,leave out,leave out,audio/leave_out.mp3
+482,leave,leave out,Make sure you do not leave out any critical facts.,audio/leave_out_example.mp3
+483,let,let down,let down,audio/let_down.mp3
+484,let,let down,I promised faithfully not to let down my dedicated coach.,audio/let_down_example.mp3
+485,let,let off,let off,audio/let_off.mp3
+486,let,let off,The traffic officer let him off with a gentle verbal warning.,audio/let_off_example.mp3
+487,slow,slow down,slow down,audio/slow_down.mp3
+488,slow,slow down,Motorists must slow down near active school crossings.,audio/slow_down_example.mp3
+489,speed,speed up,speed up,audio/speed_up.mp3
+490,speed,speed up,Automation scripts help speed up data validation tenfold.,audio/speed_up_example.mp3
+491,start,start over,start over,audio/start_over.mp3
+492,start,start over,"If the recipe goes wrong, it is safer to start over.",audio/start_over_example.mp3
+493,stop,stop by,stop by,audio/stop_by.mp3
+494,stop,stop by,Can you stop by the pharmacy on your drive home?,audio/stop_by_example.mp3
+495,switch,switch off,switch off,audio/switch_off.mp3
+496,switch,switch off,Remember to switch off air conditioners upon exiting rooms.,audio/switch_off_example.mp3
+497,switch,switch on,switch on,audio/switch_on.mp3
+498,switch,switch on,Switch on the laboratory ventilators before mixing chemicals.,audio/switch_on_example.mp3
+499,think,think over,think over,audio/think_over.mp3
+500,think,think over,Take the weekend to think over our lucrative employment offer.,audio/think_over_example.mp3
+501,throw,throw away,throw away,audio/throw_away.mp3
+502,throw,throw away,Do not throw away your promising future over silly disputes.,audio/throw_away_example.mp3
+503,throw,throw up,throw up,audio/throw_up.mp3
+504,throw,throw up,Motion sickness caused the child to throw up on the ferry.,audio/throw_up_example.mp3
+505,try,try on,try on,audio/try_on.mp3
+506,try,try on,She wanted to try on that emerald gown in the fitting room.,audio/try_on_example.mp3
+507,try,try out,try out,audio/try_out.mp3
+508,try,try out,Dozens of hopeful athletes tried out for the national squad.,audio/try_out_example.mp3
+509,use,use up,use up,audio/use_up.mp3
+510,use,use up,We used up all our printer cartridges preparing binders.,audio/use_up_example.mp3
+511,warm,warm up,warm up,audio/warm_up.mp3
+512,warm,warm up,Athletes should warm up properly to avoid pulled tendons.,audio/warm_up_example.mp3
+513,wash,wash up,wash up,audio/wash_up.mp3
+514,wash,wash up,It is your sibling's turn to wash up dishes after dinner.,audio/wash_up_example.mp3
+515,wipe,wipe out,wipe out,audio/wipe_out.mp3
+516,wipe,wipe out,The colossal ocean tsunami wiped out ancient coastal villages.,audio/wipe_out_example.mp3
+517,write,write down,write down,audio/write_down.mp3
+518,write,write down,Be sure to write down the courier tracking ID carefully.,audio/write_down_example.mp3
+519,turn,turn around,turn around,audio/turn_around.mp3
+520,turn,turn around,The talented executive turned around the failing airline.,audio/turn_around_example.mp3
+521,look,look around,look around,audio/look_around.mp3
+522,look,look around,Take some leisurely moments to look around this historical museum.,audio/look_around_example.mp3
+523,call,call in,call in,audio/call_in.mp3
+524,call,call in,He had a migraine and called in sick this morning.,audio/call_in_example.mp3
+525,open,open up,open up,audio/open_up.mp3
+526,open,open up,"With deep empathy, he gradually opened up about personal anxieties.",audio/open_up_example.mp3
+527,shut,shut down,shut down,audio/shut_down.mp3
+528,shut,shut down,The plant was forced to shut down after strict safety violations.,audio/shut_down_example.mp3
+529,pass,pass along,pass along,audio/pass_along.mp3
+530,pass,pass along,Please pass along this memo to your regional colleagues.,audio/pass_along_example.mp3
+531,see,see off,see off,audio/see_off.mp3
+532,see,see off,The whole family went to the departure gate to see him off.,audio/see_off_example.mp3
+533,send,send back,send back,audio/send_back.mp3
+534,send,send back,The steak was undercooked so she politely sent it back.,audio/send_back_example.mp3
+535,shut,shut up,shut up,audio/shut_up.mp3
+536,shut,shut up,He rudely commanded the arguing room to shut up.,audio/shut_up_example.mp3
+537,light,light up,light up,audio/light_up.mp3
+538,light,light up,Her radiant eyes lit up when she saw the surprise gift.,audio/light_up_example.mp3
+539,eat,eat out,eat out,audio/eat_out.mp3
+540,eat,eat out,We prefer to eat out at Italian bistros on Friday evenings.,audio/eat_out_example.mp3
+541,eat,eat up,eat up,audio/eat_up.mp3
+542,eat,eat up,Servers processing data can eat up colossal electricity reserves.,audio/eat_up_example.mp3
+543,look,look through,look through,audio/look_through.mp3
+544,look,look through,I will look through the catalog while waiting in the lobby.,audio/look_through_example.mp3
+545,slow,slow up,slow up,audio/slow_up.mp3
+546,slow,slow up,Supply chain congestion slowed up the construction project.,audio/slow_up_example.mp3
+547,check,check up on,check up on,audio/check_up_on.mp3
+548,check,check up on,I called my elderly parents to check up on them.,audio/check_up_on_example.mp3
+549,cross,cross out,cross out,audio/cross_out.mp3
+550,cross,cross out,Cross out any unnecessary bullet points from the draft.,audio/cross_out_example.mp3
+551,die,die down,die down,audio/die_down.mp3
+552,die,die down,The howling typhoon winds finally began to die down.,audio/die_down_example.mp3
+553,dress,dress up,dress up,audio/dress_up.mp3
+554,dress,dress up,Guests dressed up in vintage gowns for the annual gala.,audio/dress_up_example.mp3
+555,drop,drop in,drop in,audio/drop_in.mp3
+556,drop,drop in,Please drop in anytime you happen to be in neighborhood.,audio/drop_in_example.mp3
+557,fade,fade away,fade away,audio/fade_away.mp3
+558,fade,fade away,The morning fog began to fade away as warm sunlight rose.,audio/fade_away_example.mp3
+559,fall,fall out,fall out,audio/fall_out.mp3
+560,fall,fall out,The two business co-founders fell out over financial shares.,audio/fall_out_example.mp3
+561,hand,hand down,hand down,audio/hand_down.mp3
+562,hand,hand down,This silver ring was handed down through four generations.,audio/hand_down_example.mp3
+563,head,head for,head for,audio/head_for.mp3
+564,head,head for,"As thunder boomed, hikers headed for the mountain refuge.",audio/head_for_example.mp3
+565,hold,hold out,hold out,audio/hold_out.mp3
+566,hold,hold out,Supporters held out hope for an unexpected legal victory.,audio/hold_out_example.mp3
+567,hurry,hurry up,hurry up,audio/hurry_up.mp3
+568,hurry,hurry up,Hurry up or we will miss the final commuter train.,audio/hurry_up_example.mp3
+569,keep,keep at,keep at,audio/keep_at.mp3
+570,keep,keep at,Keep at your guitar practice and you will soon master it.,audio/keep_at_example.mp3
+571,let,let in on,let in on,audio/let_in_on.mp3
+572,let,let in on,She finally let me in on her secret surprise plan.,audio/let_in_on_example.mp3
+573,live,live on,live on,audio/live_on.mp3
+574,live,live on,Many retirees live on fixed pensions and modest interest.,audio/live_on_example.mp3
+575,mix,mix up,mix up,audio/mix_up.mp3
+576,mix,mix up,I always mix up identical twins because of their voices.,audio/mix_up_example.mp3
+577,move,move in,move in,audio/move_in.mp3
+578,move,move in,The newlyweds will move in to their downtown condo next week.,audio/move_in_example.mp3
+579,move,move on,move on,audio/move_on.mp3
+580,move,move on,It is healthy to forgive mistakes and move on with optimism.,audio/move_on_example.mp3
+581,pass,pass around,pass around,audio/pass_around.mp3
+582,pass,pass around,Please pass around these glossy brochures to attendees.,audio/pass_around_example.mp3
+583,pull,pull in,pull in,audio/pull_in.mp3
+584,pull,pull in,The high-speed rail train pulled in right on the dot.,audio/pull_in_example.mp3
+585,ring,ring up,ring up,audio/ring_up.mp3
+586,ring,ring up,The store clerk rang up all our grocery purchases swiftly.,audio/ring_up_example.mp3
+587,run,run across,run across,audio/run_across.mp3
+588,run,run across,I ran across an old high school album while cleaning.,audio/run_across_example.mp3
+589,stand,stand in for,stand in for,audio/stand_in_for.mp3
+590,stand,stand in for,The vice president stood in for the ill chairman.,audio/stand_in_for_example.mp3
+591,turn,turn against,turn against,audio/turn_against.mp3
+592,turn,turn against,Corrupted rivals turned against the reformist mayor.,audio/turn_against_example.mp3
+593,wear,wear down,wear down,audio/wear_down.mp3
+594,wear,wear down,Persistent inquiries finally wore down the reluctant witness.,audio/wear_down_example.mp3
+595,hang,hang around,hang around,audio/hang_around.mp3
+596,hang,hang around,Teens love to hang around the sports complex after dusk.,audio/hang_around_example.mp3
+597,pass,pass by,pass by,audio/pass_by.mp3
+598,pass,pass by,Do not let this golden educational scholarship pass by.,audio/pass_by_example.mp3
+599,read,read up on,read up on,audio/read_up_on.mp3
+600,read,read up on,You should read up on local customs before traveling overseas.,audio/read_up_on_example.mp3
