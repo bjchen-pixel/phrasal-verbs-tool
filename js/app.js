@@ -419,8 +419,13 @@
         return false;
       }
       // Particle filter
-      if (state.activeParticleFilter !== 'all' && item.particle !== state.activeParticleFilter) {
-        return false;
+      if (state.activeParticleFilter !== 'all') {
+        const p = state.activeParticleFilter.toLowerCase();
+        const p1 = (item.particle || '').toLowerCase();
+        const p2 = (item.primaryParticle || '').toLowerCase();
+        if (p1 !== p && p2 !== p && !p1.split(' ').includes(p)) {
+          return false;
+        }
       }
       // Status filter
       if (state.activeStatusFilter === 'starred' && !state.starred.has(item.id)) {
@@ -448,7 +453,18 @@
 
   function renderCardsView() {
     const list = getFilteredVerbs();
-    elements.cardsCountLabel.textContent = `共 ${list.length} 個片語`;
+    let label = `共 ${list.length} 個片語`;
+    if (state.activeParticleFilter !== 'all') {
+      label += ` · 介系詞：<span style="color:var(--primary); font-weight:700;">${state.activeParticleFilter.toUpperCase()}</span>`;
+    }
+    elements.cardsCountLabel.innerHTML = `${label} ${state.activeParticleFilter !== 'all' ? `<button id="clearParticleFilterBtn" style="margin-left:8px; padding:2px 8px; font-size:0.75rem; border-radius:12px; background:var(--bg-tertiary); border:1px solid var(--border-color); color:var(--primary); cursor:pointer;">清除篩選 ✕</button>` : ''}`;
+    const clearBtn = document.getElementById('clearParticleFilterBtn');
+    if (clearBtn) {
+      clearBtn.onclick = () => {
+        state.activeParticleFilter = 'all';
+        renderCardsView();
+      };
+    }
     elements.cardsContainer.innerHTML = '';
 
     if (list.length === 0) {
