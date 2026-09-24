@@ -1,0 +1,13 @@
+# Local private configurations and deployment notes (DO NOT COMMIT)
+*.local
+*.local.*
+.env
+.env.*
+server_info.*
+deploy_info.*
+
+# Python & System files
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
